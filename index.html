@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Six Bricks Factory - App FR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="color-strip" aria-hidden="true">
+      <span class="brick-red"></span>
+      <span class="brick-orange"></span>
+      <span class="brick-yellow"></span>
+      <span class="brick-green"></span>
+      <span class="brick-blue"></span>
+      <span class="brick-cyan"></span>
+    </div>
+
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow" data-i18n="kicker">La première appli française Six Bricks</p>
+          <img class="brand-logo" src="assets/six-bricks-factory-logo.jpeg" alt="Six Bricks Factory" />
+          <h1 class="visually-hidden">Six Bricks Factory</h1>
+          <p data-i18n="heroText">
+            Des activités Six Bricks à l’infini, avec ou sans plateau, pour stimuler le langage,
+            les mathématiques, la mémoire, l’attention, la motricité, la créativité, les fonctions exécutives,
+            les compétences sociales et le plaisir d’apprendre, de la petite enfance jusqu’au grand âge.
+          </p>
+          <p class="creator-credit" data-i18n="creatorCredit">
+            Créée par Chloé Schmidt-Dhonneur, docteure en sciences de l’éducation et formatrice Six Bricks.
+          </p>
+        </div>
+        <div class="hero-tools">
+          <select id="languageSelect" class="language-select" aria-label="Langue">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+      </header>
+
+      <nav class="mode-tabs" aria-label="Modes">
+        <button class="tab-button is-active" type="button" data-tab="finder" data-i18n="tabFinder">Trouver une idée</button>
+        <button class="tab-button" type="button" data-tab="generator" data-i18n="tabGenerator">Générer à l’infini</button>
+        <button class="tab-button" type="button" data-tab="stories" data-i18n="tabStories">Histoires infinies</button>
+      </nav>
+
+      <section class="tab-panel" id="finderPanel">
+        <section class="planner" aria-label="Recherche d'activité">
+          <form class="filters" id="filters">
+            <label>
+              <span data-i18n="category">Catégorie</span>
+              <select name="category">
+                <option value="all" data-i18n="all">Toutes</option>
+                <option value="Perception">Perception</option>
+                <option value="Littératie">Littératie</option>
+                <option value="Numératie">Numératie</option>
+                <option value="Physique">Physique</option>
+                <option value="Socio-émotionnel">Socio-émotionnel</option>
+                <option value="Groupes et jeux">Groupes et jeux</option>
+                <option value="Mouvement">Mouvement</option>
+                <option value="B-Line">B-Line</option>
+                <option value="Plateaux & feuilles">Plateaux & feuilles</option>
+                <option value="Play Box & communauté">Play Box & communauté</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="participants">Participants</span>
+              <select name="group">
+                <option value="all" data-i18n="any">Peu importe</option>
+                <option value="solo" data-i18n="solo">1 participant</option>
+                <option value="duo" data-i18n="duo">2 participants</option>
+                <option value="small" data-i18n="smallGroup">Petit groupe</option>
+                <option value="class" data-i18n="wholeClass">Grand groupe</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="context">Contexte</span>
+              <select name="context">
+                <option value="all" data-i18n="any">Peu importe</option>
+                <option value="table" data-i18n="table">À table</option>
+                <option value="floor" data-i18n="floor">Au sol</option>
+                <option value="outside" data-i18n="outside">Dehors</option>
+                <option value="transition">Transition</option>
+                <option value="calm" data-i18n="calm">Retour au calme</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="duration">Durée</span>
+              <select name="duration">
+                <option value="all" data-i18n="any">Peu importe</option>
+                <option value="short">3 à 5 min</option>
+                <option value="medium">5 à 10 min</option>
+                <option value="long">10 à 20 min</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="goal">Objectif</span>
+              <select name="goal">
+                <option value="all" data-i18n="any">Peu importe</option>
+                <option value="attention" data-i18n="attention">Attention</option>
+                <option value="memory" data-i18n="memory">Mémoire</option>
+                <option value="language" data-i18n="language">Langage</option>
+                <option value="math" data-i18n="math">Maths</option>
+                <option value="movement" data-i18n="movement">Motricité</option>
+                <option value="cooperation" data-i18n="cooperation">Coopération</option>
+                <option value="emotion" data-i18n="emotions">Émotions</option>
+                <option value="spatial" data-i18n="spatial">Repérage spatial</option>
+                <option value="executive" data-i18n="executive">Fonctions exécutives</option>
+              </select>
+            </label>
+
+            <div class="filter-actions">
+              <button class="primary-action" type="submit" data-i18n="findActivity">Trouver une activité</button>
+              <button class="secondary-action" type="button" id="surpriseButton" data-i18n="surprise">Surprends-moi</button>
+            </div>
+          </form>
+
+          <aside class="quick-stats" aria-label="Résumé">
+            <strong id="matchCount">0</strong>
+            <span data-i18n="available">activités disponibles avec ces filtres</span>
+          </aside>
+        </section>
+
+        <section class="activity-card" id="activityCard" aria-live="polite">
+          <div class="card-header">
+            <div>
+              <p class="eyebrow" id="activityCategory">Catégorie</p>
+              <h2 id="activityTitle">Choisis des filtres pour commencer</h2>
+            </div>
+            <button class="icon-button" id="favoriteButton" type="button" aria-label="Ajouter aux favoris">☆</button>
+          </div>
+
+          <div class="tags" id="activityTags"></div>
+
+          <p class="summary" id="activitySummary">
+            L’activité recommandée apparaîtra ici avec une version prête à animer.
+          </p>
+
+          <div class="activity-layout">
+            <section>
+              <h3 data-i18n="materials">Matériel</h3>
+              <ul id="materialsList"></ul>
+            </section>
+            <section>
+              <h3 data-i18n="steps">Déroulé</h3>
+              <ol id="stepsList"></ol>
+            </section>
+          </div>
+
+          <div class="tips-grid">
+            <div>
+              <h3 data-i18n="variation">Variante</h3>
+              <p id="variationText"></p>
+            </div>
+            <div>
+              <h3 data-i18n="question">Question à poser</h3>
+              <p id="questionText"></p>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <button class="secondary-action" type="button" id="previousButton" data-i18n="previous">Précédente</button>
+            <button class="primary-action" type="button" id="nextButton" data-i18n="anotherIdea">Autre idée</button>
+          </div>
+        </section>
+
+        <section class="favorites-panel" aria-label="Favoris">
+          <div>
+            <h2 data-i18n="favoritesTitle">Favoris</h2>
+          </div>
+          <div class="favorites-list" id="favoritesList">Aucune activité gardée pour l’instant.</div>
+        </section>
+      </section>
+
+      <section class="tab-panel is-hidden" id="generatorPanel">
+        <section class="generator-grid">
+          <form class="filters generator-controls" id="generatorForm">
+            <label>
+              <span data-i18n="activityFamily">Famille d’activité</span>
+              <select name="family">
+                <option value="free" data-i18n="freeActivity">Sans plateau</option>
+                <option value="lined" data-i18n="linedBoard">Plateau ligné</option>
+                <option value="movement" data-i18n="movementBoard">Plateau de mouvements</option>
+                <option value="backToBack" data-i18n="backToBack">Dos à dos</option>
+                <option value="listenCopy" data-i18n="listenCopy">Écoute et fais pareil</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="participants">Participants</span>
+              <select name="group">
+                <option value="solo" data-i18n="solo">1 participant</option>
+                <option value="duo" data-i18n="duo">2 participants</option>
+                <option value="small" data-i18n="smallGroup">Petit groupe</option>
+                <option value="class" data-i18n="wholeClass">Grand groupe</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="goal">Objectif</span>
+              <select name="goal">
+                <option value="attention" data-i18n="attention">Attention</option>
+                <option value="memory" data-i18n="memory">Mémoire</option>
+                <option value="language" data-i18n="language">Langage</option>
+                <option value="math" data-i18n="math">Maths</option>
+                <option value="movement" data-i18n="movement">Motricité</option>
+                <option value="cooperation" data-i18n="cooperation">Coopération</option>
+              </select>
+            </label>
+            <button class="primary-action" type="submit" data-i18n="generateActivity">Générer une activité</button>
+          </form>
+
+          <section class="activity-card generated-card" id="generatedActivityCard" aria-live="polite">
+            <p class="eyebrow" data-i18n="infiniteGenerator">Générateur infini</p>
+            <h2 id="generatedActivityTitle">Défi express des briques</h2>
+            <div class="tags" id="generatedActivityTags"></div>
+            <p class="summary" id="generatedActivitySummary"></p>
+            <div class="activity-layout">
+              <section>
+                <h3 data-i18n="materials">Matériel</h3>
+                <ul id="generatedMaterials"></ul>
+              </section>
+              <section>
+                <h3 data-i18n="steps">Déroulé</h3>
+                <ol id="generatedSteps"></ol>
+              </section>
+            </div>
+            <div class="tips-grid">
+              <div>
+                <h3 data-i18n="variation">Variante</h3>
+                <p id="generatedVariation"></p>
+              </div>
+              <div>
+                <h3 data-i18n="question">Question à poser</h3>
+                <p id="generatedQuestion"></p>
+              </div>
+            </div>
+            <div class="story-prompts">
+              <h3 data-i18n="proposals">Propositions rapides</h3>
+              <ul id="generatedProposals"></ul>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section class="tab-panel is-hidden" id="storiesPanel">
+        <section class="generator-grid">
+          <form class="filters generator-controls" id="storyForm">
+            <label>
+              <span data-i18n="storyLevel">Difficulté</span>
+              <select name="level">
+                <option value="1" data-i18n="storyLevel1">Facile</option>
+                <option value="2" data-i18n="storyLevel2">Plus difficile</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="colorMode">Couleurs</span>
+              <select name="colorMode">
+                <option value="with" data-i18n="withColors">Citer les couleurs</option>
+                <option value="without" data-i18n="withoutColors">Sans citer les couleurs</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="theme">Thème</span>
+              <select name="theme">
+                <option value="adventure" data-i18n="adventure">Aventure</option>
+                <option value="emotion" data-i18n="emotions">Émotions</option>
+                <option value="nature" data-i18n="nature">Nature</option>
+                <option value="mystery" data-i18n="mystery">Mystère</option>
+              </select>
+            </label>
+            <button class="primary-action" type="submit" data-i18n="generateStory">Générer une histoire</button>
+          </form>
+
+          <section class="story-card" aria-live="polite">
+            <p class="eyebrow" data-i18n="storyGenerator">Histoires infinies</p>
+            <h2 id="storyTitle">La mission des six briques</h2>
+            <div class="story-text" id="storyText"></div>
+            <div class="story-prompts">
+              <h3 data-i18n="buildPrompts">Invitations à construire</h3>
+              <ol id="storyPrompts"></ol>
+            </div>
+          </section>
+        </section>
+      </section>
+
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
