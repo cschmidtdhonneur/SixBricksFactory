@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Six Bricks Factory - App FR</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=8" />
   </head>
   <body>
     <div class="color-strip" aria-hidden="true">
@@ -18,10 +18,40 @@
 
     <main class="app-shell">
       <header class="hero">
-        <div>
+        <div class="hero-main">
+          <div class="hero-brand">
           <p class="eyebrow" data-i18n="kicker">La première appli française Six Bricks</p>
           <img class="brand-logo" src="assets/six-bricks-factory-logo.jpeg" alt="Six Bricks Factory" />
           <h1 class="visually-hidden">Six Bricks Factory</h1>
+          </div>
+          <aside class="factory-panel" aria-label="Résumé Six Bricks Factory">
+            <p class="factory-kicker" data-i18n="factoryKicker">Aujourd’hui dans la Factory</p>
+            <div class="factory-stats">
+              <div>
+                <strong>108</strong>
+                <span data-i18n="factoryActivities">activités</span>
+              </div>
+              <div>
+                <strong>3</strong>
+                <span data-i18n="factoryModes">modes</span>
+              </div>
+              <div>
+                <strong>6</strong>
+                <span data-i18n="factoryColors">couleurs</span>
+              </div>
+            </div>
+            <div class="factory-chips">
+              <span data-i18n="factoryChipActivities">Activités</span>
+              <span data-i18n="factoryChipStories">Histoires</span>
+              <span data-i18n="factoryChipMats">Plateaux</span>
+              <span>FR · EN · 中文</span>
+            </div>
+            <p class="factory-note" data-i18n="factoryNote">
+              Une idée claire, prête à lire ou à animer, en quelques clics.
+            </p>
+          </aside>
+        </div>
+        <div>
           <p data-i18n="heroText">
             Des activités Six Bricks à l’infini, avec ou sans plateau, pour stimuler le langage,
             les mathématiques, la mémoire, l’attention, la motricité, la créativité, les fonctions exécutives,
@@ -42,8 +72,8 @@
 
       <nav class="mode-tabs" aria-label="Modes">
         <button class="tab-button is-active" type="button" data-tab="finder" data-i18n="tabFinder">Trouver une idée</button>
-        <button class="tab-button" type="button" data-tab="generator" data-i18n="tabGenerator">Générer à l’infini</button>
-        <button class="tab-button" type="button" data-tab="stories" data-i18n="tabStories">Histoires infinies</button>
+        <button class="tab-button" type="button" data-tab="generator" data-i18n="tabGenerator">Créer une activité</button>
+        <button class="tab-button" type="button" data-tab="stories" data-i18n="tabStories">Créer une histoire</button>
       </nav>
 
       <section class="tab-panel" id="finderPanel">
@@ -192,15 +222,6 @@
               </select>
             </label>
             <label>
-              <span data-i18n="participants">Participants</span>
-              <select name="group">
-                <option value="solo" data-i18n="solo">1 participant</option>
-                <option value="duo" data-i18n="duo">2 participants</option>
-                <option value="small" data-i18n="smallGroup">Petit groupe</option>
-                <option value="class" data-i18n="wholeClass">Grand groupe</option>
-              </select>
-            </label>
-            <label>
               <span data-i18n="goal">Objectif</span>
               <select name="goal">
                 <option value="attention" data-i18n="attention">Attention</option>
@@ -211,11 +232,11 @@
                 <option value="cooperation" data-i18n="cooperation">Coopération</option>
               </select>
             </label>
-            <button class="primary-action" type="submit" data-i18n="generateActivity">Générer une activité</button>
+            <button class="primary-action" type="submit" data-i18n="generateActivity">Créer une nouvelle activité</button>
           </form>
 
           <section class="activity-card generated-card" id="generatedActivityCard" aria-live="polite">
-            <p class="eyebrow" data-i18n="infiniteGenerator">Générateur infini</p>
+            <p class="eyebrow" data-i18n="activitySheet">Fiche d’activité</p>
             <h2 id="generatedActivityTitle">Défi express des briques</h2>
             <div class="tags" id="generatedActivityTags"></div>
             <p class="summary" id="generatedActivitySummary"></p>
@@ -251,38 +272,62 @@
         <section class="generator-grid">
           <form class="filters generator-controls" id="storyForm">
             <label>
-              <span data-i18n="storyLevel">Difficulté</span>
+              <span data-i18n="storyLevel">Niveau d’histoire</span>
               <select name="level">
-                <option value="1" data-i18n="storyLevel1">Facile</option>
-                <option value="2" data-i18n="storyLevel2">Plus difficile</option>
+                <option value="1" data-i18n="storyLevel1">Niveau 1 - couleurs nommées</option>
+                <option value="2" data-i18n="storyLevel2">Niveau 2 - couleurs sous-entendues</option>
               </select>
             </label>
             <label>
-              <span data-i18n="colorMode">Couleurs</span>
-              <select name="colorMode">
-                <option value="with" data-i18n="withColors">Citer les couleurs</option>
-                <option value="without" data-i18n="withoutColors">Sans citer les couleurs</option>
+              <span data-i18n="colorCount">Nombre de couleurs</span>
+              <select name="colorCount">
+                <option value="6">6 couleurs</option>
+                <option value="3">3 couleurs</option>
               </select>
             </label>
             <label>
-              <span data-i18n="theme">Thème</span>
+              <span data-i18n="storyTheme">Thème de l’histoire</span>
               <select name="theme">
-                <option value="adventure" data-i18n="adventure">Aventure</option>
-                <option value="emotion" data-i18n="emotions">Émotions</option>
-                <option value="nature" data-i18n="nature">Nature</option>
-                <option value="mystery" data-i18n="mystery">Mystère</option>
+                <option value="random" data-i18n="themeRandom">Libre / aléatoire</option>
+                <option value="marche" data-i18n="themeMarket">Marché</option>
+                <option value="foret" data-i18n="themeForest">Forêt</option>
+                <option value="plage" data-i18n="themeBeach">Plage</option>
+                <option value="ferme" data-i18n="themeFarm">Ferme</option>
+                <option value="anniversaire" data-i18n="themeBirthday">Anniversaire</option>
+                <option value="ecole" data-i18n="themeSchool">École</option>
+                <option value="jardin" data-i18n="themeGarden">Jardin</option>
+                <option value="feteForaine" data-i18n="themeFair">Fête foraine</option>
+                <option value="noel" data-i18n="themeChristmas">Noël</option>
+                <option value="animaux" data-i18n="themeAnimals">Animaux</option>
+                <option value="cuisine" data-i18n="themeKitchen">Cuisine</option>
+                <option value="voyage" data-i18n="themeTravel">Voyage</option>
+                <option value="espace" data-i18n="themeSpace">Espace</option>
+                <option value="pirates" data-i18n="themePirates">Pirates</option>
+                <option value="magie" data-i18n="themeMagic">Magie</option>
               </select>
             </label>
-            <button class="primary-action" type="submit" data-i18n="generateStory">Générer une histoire</button>
+            <label>
+              <span data-i18n="correctionOption">Correction</span>
+              <select name="showCorrection">
+                <option value="hidden" data-i18n="hideCorrection">Masquer au départ</option>
+                <option value="visible" data-i18n="showCorrection">Afficher au départ</option>
+              </select>
+            </label>
+            <button class="primary-action" type="submit" data-i18n="generateStory">Créer une nouvelle histoire</button>
           </form>
 
           <section class="story-card" aria-live="polite">
-            <p class="eyebrow" data-i18n="storyGenerator">Histoires infinies</p>
+            <p class="eyebrow" data-i18n="storyGenerator">Fiche histoire</p>
             <h2 id="storyTitle">La mission des six briques</h2>
+            <div class="tags" id="storyMeta"></div>
+            <p class="summary" id="storyRule"></p>
             <div class="story-text" id="storyText"></div>
-            <div class="story-prompts">
-              <h3 data-i18n="buildPrompts">Invitations à construire</h3>
-              <ol id="storyPrompts"></ol>
+            <button class="secondary-action story-toggle" type="button" id="toggleCorrection" data-i18n="showCorrectionButton">
+              Afficher la correction
+            </button>
+            <div class="story-prompts story-correction is-hidden" id="storyCorrectionWrap" hidden>
+              <h3 data-i18n="correctionTitle">Correction</h3>
+              <p id="storyCorrection"></p>
             </div>
           </section>
         </section>
@@ -290,6 +335,6 @@
 
     </main>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=8"></script>
   </body>
 </html>

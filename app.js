@@ -7,15 +7,15 @@ const activities = [
     duration: "short",
     goals: ["emotion", "attention", "language"],
     source: "Social-Emotional Skills",
-    summary: "Chaque couleur correspond à une émotion. Les enfants montrent l’émotion avec le visage, le corps ou une phrase.",
-    materials: ["Six briques par enfant", "Une liste d’émotions simples"],
+    summary: "Chaque couleur correspond à une émotion. Les participants montrent l’émotion avec le visage, le corps ou une phrase.",
+    materials: ["Six briques par participant", "Une liste d’émotions simples"],
     steps: [
       "Associe une émotion à chaque couleur.",
       "Montre une brique sans parler.",
-      "Les enfants miment l’émotion ou disent une phrase qui correspond.",
+      "Les participants miment l’émotion ou disent une phrase qui correspond.",
       "Change les associations après quelques tours."
     ],
-    variation: "Demande aux enfants de construire une petite scène qui représente l’émotion.",
+    variation: "Demande aux participants de construire une petite scène qui représente l’émotion.",
     question: "Qu’est-ce qui peut t’aider quand tu ressens cette émotion ?"
   },
   {
@@ -27,9 +27,9 @@ const activities = [
     goals: ["cooperation", "language", "movement"],
     source: "Social-Emotional Skills",
     summary: "Un groupe construit une longue chenille et invente ensemble sa façon de se déplacer.",
-    materials: ["Un lot de six briques par enfant"],
+    materials: ["Un lot de six briques par participant"],
     steps: [
-      "Forme des groupes de 4 à 8 enfants.",
+      "Forme des groupes de 4 à 8 participants.",
       "Chaque groupe construit une chenille commune.",
       "Le groupe décide comment la chenille avance, tourne ou s’arrête.",
       "Chaque équipe présente sa chenille aux autres."
@@ -49,11 +49,11 @@ const activities = [
     materials: ["Six briques par équipe", "Un espace au sol"],
     steps: [
       "Délimite deux rives.",
-      "Les enfants placent les briques comme des pierres.",
+      "Les participants placent les briques comme des pierres.",
       "Ils traversent en respectant l’ordre décidé.",
       "Ils recommencent avec moins de briques ou avec un partenaire à guider."
     ],
-    variation: "Un enfant ferme les yeux et son partenaire le guide par la voix.",
+    variation: "Un participant ferme les yeux et son partenaire le guide par la voix.",
     question: "Qu’est-ce qui rend l’aide d’un partenaire facile à comprendre ?"
   },
   {
@@ -64,11 +64,11 @@ const activities = [
     duration: "short",
     goals: ["emotion", "language"],
     source: "Social-Emotional Skills",
-    summary: "Chaque enfant choisit une brique pour dire comment il se sent au début ou à la fin d’une activité.",
-    materials: ["Six briques par enfant"],
+    summary: "Chaque participant choisit une brique pour dire comment il se sent au début ou à la fin d’une activité.",
+    materials: ["Six briques par participant"],
     steps: [
       "Donne une signification émotionnelle aux couleurs.",
-      "Chaque enfant choisit une brique discrètement.",
+      "Chaque participant choisit une brique discrètement.",
       "Ceux qui veulent expliquent leur choix.",
       "Termine par une stratégie pour revenir au calme ou garder l’énergie."
     ],
@@ -83,13 +83,13 @@ const activities = [
     duration: "medium",
     goals: ["movement", "attention", "cooperation"],
     source: "Physical Skills",
-    summary: "Un jeu de poursuite: quand un enfant est touché, il s’immobilise avec sa brique rouge jusqu’à être libéré.",
-    materials: ["Une brique rouge par enfant", "Un espace sécurisé"],
+    summary: "Un jeu de poursuite: quand un participant est touché, il s’immobilise avec sa brique rouge jusqu’à être libéré.",
+    materials: ["Une brique rouge par participant", "Un espace sécurisé"],
     steps: [
       "Choisis un attrapeur.",
       "Les autres courent avec leur brique rouge.",
-      "Quand un enfant est touché, il s’arrête et pose la brique sur sa tête.",
-      "Un autre enfant peut le libérer en reprenant puis rendant la brique."
+      "Quand un participant est touché, il s’arrête et pose la brique sur sa tête.",
+      "Un autre participant peut le libérer en reprenant puis rendant la brique."
     ],
     variation: "Change la couleur de blocage ou ajoute deux attrapeurs.",
     question: "Comment peux-tu aider sans te faire toucher ?"
@@ -102,10 +102,10 @@ const activities = [
     duration: "short",
     goals: ["attention", "movement", "cooperation"],
     source: "Physical Skills",
-    summary: "Les enfants se passent une brique rapidement en suivant un rythme ou une musique.",
+    summary: "Les participants se passent une brique rapidement en suivant un rythme ou une musique.",
     materials: ["Une brique", "Un signal sonore ou une chanson"],
     steps: [
-      "Les enfants forment un cercle.",
+      "Les participants forment un cercle.",
       "Ils se passent la brique de main en main.",
       "Au signal, celui qui tient la brique propose un mouvement.",
       "Tout le groupe imite le mouvement puis le jeu reprend."
@@ -122,12 +122,12 @@ const activities = [
     goals: ["movement", "attention"],
     source: "Physical Skills",
     summary: "Une course d’équilibre où la brique doit voyager sur une cuillère ou une règle.",
-    materials: ["Une brique par équipe", "Une cuillère ou une règle par enfant"],
+    materials: ["Une brique par équipe", "Une cuillère ou une règle par participant"],
     steps: [
       "Trace un départ et une arrivée.",
-      "L’enfant transporte la brique sans la toucher avec l’autre main.",
+      "Le participant transporte la brique sans la toucher avec l’autre main.",
       "Au retour, il passe le matériel au suivant.",
-      "Si la brique tombe, l’enfant reprend depuis le dernier repère."
+      "Si la brique tombe, le participant reprend depuis le dernier repère."
     ],
     variation: "Ajoute un virage, un obstacle doux ou une marche arrière.",
     question: "Quel geste rend ton transport plus stable ?"
@@ -140,8 +140,8 @@ const activities = [
     duration: "short",
     goals: ["movement", "memory", "attention"],
     source: "Physical Skills",
-    summary: "Un enfant invente une séquence de gestes avec une brique, les autres la reproduisent.",
-    materials: ["Une brique par enfant"],
+    summary: "Un participant invente une séquence de gestes avec une brique, les autres la reproduisent.",
+    materials: ["Une brique par participant"],
     steps: [
       "Choisis un meneur.",
       "Il montre deux ou trois gestes avec sa brique.",
@@ -160,10 +160,10 @@ const activities = [
     goals: ["cooperation", "attention", "movement"],
     source: "Groups & Games",
     summary: "En relais, une brique glisse d’une règle à l’autre sans être touchée avec les mains.",
-    materials: ["Une brique par équipe", "Une règle par enfant"],
+    materials: ["Une brique par équipe", "Une règle par participant"],
     steps: [
       "Forme des équipes de 4 à 6.",
-      "Chaque enfant tient une règle.",
+      "Chaque participant tient une règle.",
       "Le premier fait glisser la brique vers la règle suivante.",
       "L’équipe recommence si la brique tombe."
     ],
@@ -178,11 +178,11 @@ const activities = [
     duration: "medium",
     goals: ["movement", "cooperation", "attention"],
     source: "Groups & Games",
-    summary: "Chaque enfant tire une couleur puis cherche dans la pièce des objets de cette couleur.",
+    summary: "Chaque participant tire une couleur puis cherche dans la pièce des objets de cette couleur.",
     materials: ["Un set de six briques par groupe", "Un minuteur"],
     steps: [
       "Place six briques au centre.",
-      "Chaque enfant pioche une brique sans regarder.",
+      "Chaque participant pioche une brique sans regarder.",
       "Pendant une minute, il trouve des objets de la même couleur.",
       "Le groupe compare et classe les trouvailles."
     ],
@@ -197,11 +197,11 @@ const activities = [
     duration: "medium",
     goals: ["cooperation", "movement", "attention"],
     source: "Groups & Games",
-    summary: "Les enfants transportent une brique ensemble sans utiliser les mains.",
+    summary: "Les participants transportent une brique ensemble sans utiliser les mains.",
     materials: ["Une brique par duo ou équipe"],
     steps: [
       "Annonce la partie du corps autorisée: coude, épaule, dos ou genou.",
-      "Les enfants transportent la brique jusqu’à une cible.",
+      "Les participants transportent la brique jusqu’à une cible.",
       "S’ils la font tomber, ils repartent du début.",
       "Change la partie du corps à chaque tour."
     ],
@@ -236,12 +236,12 @@ const activities = [
     goals: ["math", "attention"],
     source: "Numeracy Skills",
     summary: "Deux couleurs servent à répondre rapidement à des questions vrai/faux.",
-    materials: ["Deux briques par enfant"],
+    materials: ["Deux briques par participant"],
     steps: [
       "Choisis une couleur pour vrai et une couleur pour faux.",
       "Pose une question de maths ou de logique.",
-      "Les enfants lèvent la brique qui correspond.",
-      "Demande à un enfant d’expliquer son choix."
+      "Les participants lèvent la brique qui correspond.",
+      "Demande à un participant d’expliquer son choix."
     ],
     variation: "Remplace vrai/faux par plus grand/plus petit ou pair/impair.",
     question: "Comment sais-tu que ta réponse est juste ?"
@@ -254,13 +254,13 @@ const activities = [
     duration: "short",
     goals: ["math", "attention"],
     source: "Numeracy Skills",
-    summary: "Les enfants trient, classent et justifient leurs critères avec six briques.",
-    materials: ["Six briques par enfant ou par duo"],
+    summary: "Les participants trient, classent et justifient leurs critères avec six briques.",
+    materials: ["Six briques par participant ou par duo"],
     steps: [
       "Demande un tri par couleur chaude/froide, claire/foncée ou préférence.",
-      "Les enfants construisent deux ou trois groupes.",
+      "Les participants construisent deux ou trois groupes.",
       "Ils expliquent leur règle de tri.",
-      "Un autre enfant devine la règle."
+      "Un autre participant devine la règle."
     ],
     variation: "Trie par position: début, milieu, fin de ligne.",
     question: "Peut-on trier les mêmes briques autrement ?"
@@ -274,10 +274,10 @@ const activities = [
     goals: ["math", "memory", "attention"],
     source: "Numeracy Skills",
     summary: "Trouver plusieurs façons de faire une tour, une ligne ou un nombre avec six briques.",
-    materials: ["Six briques par enfant"],
+    materials: ["Six briques par participant"],
     steps: [
       "Annonce un défi: faire une tour de 4, une ligne de 6 ou deux groupes égaux.",
-      "Les enfants cherchent une première solution.",
+      "Les participants cherchent une première solution.",
       "Ils doivent ensuite trouver une solution différente.",
       "Compare les stratégies et compte les possibilités."
     ],
@@ -292,15 +292,15 @@ const activities = [
     duration: "medium",
     goals: ["math", "attention", "memory"],
     source: "Numeracy Skills",
-    summary: "Les enfants utilisent les briques pour représenter une forme ou un volume simple.",
-    materials: ["Six briques par enfant", "Cartes de formes si disponibles"],
+    summary: "Les participants utilisent les briques pour représenter une forme ou un volume simple.",
+    materials: ["Six briques par participant", "Cartes de formes si disponibles"],
     steps: [
       "Montre ou nomme une forme.",
-      "Les enfants la représentent avec leurs briques.",
+      "Les participants la représentent avec leurs briques.",
       "Ils décrivent les côtés, coins ou positions.",
       "Recommence avec une forme plus complexe."
     ],
-    variation: "Un enfant construit, l’autre décrit sans regarder le modèle.",
+    variation: "Un participant construit, l’autre décrit sans regarder le modèle.",
     question: "Quelles parties de la forme reconnais-tu dans ta construction ?"
   },
   {
@@ -312,7 +312,7 @@ const activities = [
     goals: ["language", "cooperation"],
     source: "Literacy Skills",
     summary: "Chaque groupe pioche un mot et construit un modèle que les autres doivent deviner.",
-    materials: ["Six briques par enfant", "Mots sur papiers"],
+    materials: ["Six briques par participant", "Mots sur papiers"],
     steps: [
       "Prépare des mots adaptés au niveau.",
       "Chaque groupe pioche un mot en secret.",
@@ -330,15 +330,15 @@ const activities = [
     duration: "short",
     goals: ["language", "memory", "attention"],
     source: "Literacy Skills",
-    summary: "Les enfants suivent une consigne orale de plus en plus longue avec leurs briques.",
-    materials: ["Six briques par enfant"],
+    summary: "Les participants suivent une consigne orale de plus en plus longue avec leurs briques.",
+    materials: ["Six briques par participant"],
     steps: [
       "Donne une consigne simple: pose le rouge sur le bleu.",
       "Ajoute une deuxième action.",
-      "Les enfants réalisent sans parler.",
+      "Les participants réalisent sans parler.",
       "Vérifie ensemble et reformule la consigne."
     ],
-    variation: "Un enfant devient meneur et invente la consigne.",
+    variation: "Un participant devient meneur et invente la consigne.",
     question: "Quelle partie de la consigne fallait-il retenir en premier ?"
   },
   {
@@ -350,14 +350,14 @@ const activities = [
     goals: ["language", "attention"],
     source: "Literacy Skills",
     summary: "Travailler sur, sous, devant, derrière, entre et à côté avec deux ou trois briques.",
-    materials: ["Six briques par enfant"],
+    materials: ["Six briques par participant"],
     steps: [
       "Choisis deux briques de départ.",
       "Donne une préposition à représenter.",
-      "Les enfants placent les briques.",
+      "Les participants placent les briques.",
       "Ils inventent ensuite une phrase avec la préposition."
     ],
-    variation: "Passe en binôme: un enfant décrit, l’autre place.",
+    variation: "Passe en binôme: un participant décrit, l’autre place.",
     question: "Quelle phrase peux-tu faire avec cette position ?"
   },
   {
@@ -373,7 +373,7 @@ const activities = [
     steps: [
       "Pose une première brique et commence une phrase.",
       "Le joueur suivant ajoute une brique et continue l’histoire.",
-      "Chaque enfant répète brièvement ce qui précède.",
+      "Chaque participant répète brièvement ce qui précède.",
       "Termine quand les six briques sont utilisées."
     ],
     variation: "Chaque couleur impose un type d’élément: lieu, personnage, action, émotion.",
@@ -387,10 +387,10 @@ const activities = [
     duration: "short",
     goals: ["attention", "language", "memory"],
     source: "Perceptual Skills",
-    summary: "Les enfants décrivent une brique les yeux fermés en utilisant le toucher.",
-    materials: ["Six briques par enfant", "Un bandeau facultatif"],
+    summary: "Les participants décrivent une brique les yeux fermés en utilisant le toucher.",
+    materials: ["Six briques par participant", "Un bandeau facultatif"],
     steps: [
-      "Les enfants ferment les yeux.",
+      "Les participants ferment les yeux.",
       "Ils choisissent une brique et la touchent attentivement.",
       "Ils décrivent les picots, les bords, les creux et la forme.",
       "Ils ouvrent les yeux et vérifient."
@@ -407,9 +407,9 @@ const activities = [
     goals: ["attention", "memory"],
     source: "Perceptual Skills",
     summary: "Repérer rapidement une brique selon sa position dans une ligne.",
-    materials: ["Six briques par enfant"],
+    materials: ["Six briques par participant"],
     steps: [
-      "Les enfants alignent leurs briques de gauche à droite.",
+      "Les participants alignent leurs briques de gauche à droite.",
       "Demande de toucher la troisième, la première ou la dernière.",
       "Change le point de départ: depuis la droite, depuis le centre.",
       "Accélère doucement le rythme."
@@ -429,7 +429,7 @@ const activities = [
     materials: ["Deux sets de six briques"],
     steps: [
       "Construis un petit modèle.",
-      "Un enfant le copie.",
+      "Un participant le copie.",
       "Change discrètement une couleur, une position ou une orientation.",
       "Le partenaire doit trouver et expliquer l’erreur."
     ],
@@ -445,11 +445,11 @@ const activities = [
     goals: ["memory", "attention"],
     source: "Perceptual Skills",
     summary: "Observer une suite de briques quelques secondes, puis la reconstruire de mémoire.",
-    materials: ["Six briques par enfant", "Un modèle du meneur"],
+    materials: ["Six briques par participant", "Un modèle du meneur"],
     steps: [
       "Montre une suite de trois briques pendant cinq secondes.",
       "Cache le modèle.",
-      "Les enfants reconstruisent la suite.",
+      "Les participants reconstruisent la suite.",
       "Ajoute une brique quand le groupe réussit."
     ],
     variation: "Demande aussi l’orientation des briques.",
@@ -463,15 +463,15 @@ const activities = [
     duration: "short",
     goals: ["movement", "attention"],
     source: "Move & Learn",
-    summary: "Les enfants se déplacent vers une couleur, une forme ou un nombre annoncé.",
+    summary: "Les participants se déplacent vers une couleur, une forme ou un nombre annoncé.",
     materials: ["Briques ou cartes de couleurs au sol"],
     steps: [
       "Dispose des repères colorés au sol.",
       "Annonce une couleur, un nombre ou une forme.",
-      "Les enfants sautent ou marchent vers le bon repère.",
+      "Les participants sautent ou marchent vers le bon repère.",
       "Ajoute des consignes: avant, arrière, gauche, droite."
     ],
-    variation: "Un enfant annonce la prochaine destination.",
+    variation: "Un participant annonce la prochaine destination.",
     question: "Comment ton corps sait-il dans quelle direction aller ?"
   },
   {
@@ -483,11 +483,11 @@ const activities = [
     goals: ["attention", "movement", "math"],
     source: "Move & Learn",
     summary: "Suivre un trajet avec le doigt ou une brique entre couleurs, formes et nombres.",
-    materials: ["Un tapis ou une feuille avec repères", "Une brique par enfant"],
+    materials: ["Un tapis ou une feuille avec repères", "Une brique par participant"],
     steps: [
       "Place la brique sur le point de départ.",
       "Annonce une suite: va au rouge, puis au carré, puis au 2.",
-      "L’enfant trace le chemin avec son doigt ou déplace la brique.",
+      "Le participant trace le chemin avec son doigt ou déplace la brique.",
       "Il nomme le point d’arrivée."
     ],
     variation: "Demande de revenir au départ par un autre chemin.",
@@ -502,9 +502,9 @@ const activities = [
     goals: ["attention", "movement", "memory"],
     source: "XBL Daily Record",
     summary: "Placer ou déplacer les briques avec des consignes spatiales: gauche, droite, centre, haut, bas.",
-    materials: ["Six briques par enfant", "Une ligne ou un tapis"],
+    materials: ["Six briques par participant", "Une ligne ou un tapis"],
     steps: [
-      "Les enfants alignent les six briques.",
+      "Les participants alignent les six briques.",
       "Annonce une position: rouge à gauche, bleu au centre, jaune en haut.",
       "Ils déplacent les briques rapidement.",
       "Ajoute deux briques à déplacer dans la même consigne."
@@ -520,8 +520,8 @@ const activities = [
     duration: "short",
     goals: ["spatial", "movement", "attention"],
     source: "Basic Movements (H & V)",
-    summary: "Les enfants déplacent les six briques depuis la ligne rouge en suivant des consignes simples: haut, bas, avant, arrière, gauche ou droite.",
-    materials: ["Six briques par enfant", "Un tapis B-Line horizontal ou vertical"],
+    summary: "Les participants déplacent les six briques depuis la ligne rouge en suivant des consignes simples: haut, bas, avant, arrière, gauche ou droite.",
+    materials: ["Six briques par participant", "Un tapis B-Line horizontal ou vertical"],
     steps: [
       "Place toutes les briques sur la ligne rouge, dans n’importe quel ordre.",
       "Choisis l’orientation du tapis: horizontal ou vertical.",
@@ -539,13 +539,13 @@ const activities = [
     duration: "medium",
     goals: ["spatial", "attention", "executive"],
     source: "Basic Movements (H & V)",
-    summary: "Les enfants combinent déplacement, rotation et retournement pour travailler l’orientation spatiale et le contrôle inhibiteur.",
-    materials: ["Six briques par enfant", "Un tapis B-Line"],
+    summary: "Les participants combinent déplacement, rotation et retournement pour travailler l’orientation spatiale et le contrôle inhibiteur.",
+    materials: ["Six briques par participant", "Un tapis B-Line"],
     steps: [
       "Revois deux gestes: twist signifie tourner la brique, flip signifie la retourner.",
       "Donne une première consigne avec une couleur et un déplacement.",
       "Ajoute twist ou flip à certaines consignes.",
-      "Demande aux enfants de vérifier si les picots sont visibles ou non."
+      "Demande aux participants de vérifier si les picots sont visibles ou non."
     ],
     variation: "En mode avancé, toutes les consignes de mouvement doivent être faites à l’inverse.",
     question: "Comment sais-tu si la brique est tournée ou retournée ?"
@@ -558,15 +558,15 @@ const activities = [
     duration: "medium",
     goals: ["cooperation", "spatial", "executive"],
     source: "Basic Movements (H & V)",
-    summary: "Deux enfants travaillent sur le même tapis: chacun contrôle une partie des briques ou ils doivent toucher la brique ensemble.",
+    summary: "Deux participants travaillent sur le même tapis: chacun contrôle une partie des briques ou ils doivent toucher la brique ensemble.",
     materials: ["Un tapis B-Line pour deux", "Six briques"],
     steps: [
-      "Place les deux enfants du même côté du tapis.",
-      "Attribue trois briques à chaque enfant ou demande qu’ils touchent ensemble toute brique déplacée.",
+      "Place les deux participants du même côté du tapis.",
+      "Attribue trois briques à chaque participant ou demande qu’ils touchent ensemble toute brique déplacée.",
       "Donne des consignes de déplacement simples.",
       "Observe comment ils négocient la prise de décision et l’espace."
     ],
-    variation: "Les enfants gardent une main collée en high five et utilisent seulement l’autre main.",
+    variation: "Les participants gardent une main collée en high five et utilisent seulement l’autre main.",
     question: "Qu’avez-vous dû faire ensemble pour réussir sans vous gêner ?"
   },
   {
@@ -577,13 +577,13 @@ const activities = [
     duration: "medium",
     goals: ["cooperation", "spatial", "executive"],
     source: "Basic Movements - Partners Opposite Sides",
-    summary: "Deux enfants se placent de chaque côté du tapis. Les consignes deviennent un défi de point de vue et de flexibilité cognitive.",
+    summary: "Deux participants se placent de chaque côté du tapis. Les consignes deviennent un défi de point de vue et de flexibilité cognitive.",
     materials: ["Un tapis B-Line pour deux", "Six briques"],
     steps: [
       "Installe les partenaires sur des côtés opposés du tapis.",
       "Explique que gauche, droite, avant et arrière peuvent être perçus différemment.",
       "Donne des consignes lentes au début.",
-      "Après chaque série, demande aux enfants de comparer leur point de vue."
+      "Après chaque série, demande aux participants de comparer leur point de vue."
     ],
     variation: "Un partenaire ne déplace que les briques bleues, l’autre toutes les autres.",
     question: "Quand vous êtes face à face, qu’est-ce qui devient plus difficile ?"
@@ -596,12 +596,12 @@ const activities = [
     duration: "medium",
     goals: ["memory", "executive", "spatial"],
     source: "Spatial & Working Mem (H & V)",
-    summary: "Les enfants attendent deux, trois ou quatre consignes avant de toucher les briques, puis les exécutent dans l’ordre.",
-    materials: ["Six briques par enfant", "Un tapis B-Line"],
+    summary: "Les participants attendent deux, trois ou quatre consignes avant de toucher les briques, puis les exécutent dans l’ordre.",
+    materials: ["Six briques par participant", "Un tapis B-Line"],
     steps: [
       "Annonce que les mains restent immobiles pendant les consignes.",
       "Donne deux consignes courtes, puis dis go.",
-      "Les enfants réalisent les mouvements dans l’ordre entendu.",
+      "Les participants réalisent les mouvements dans l’ordre entendu.",
       "Augmente à trois ou quatre consignes selon le niveau."
     ],
     variation: "Demande d’exécuter la série en ordre inverse pour les plus avancés.",
@@ -615,15 +615,15 @@ const activities = [
     duration: "medium",
     goals: ["spatial", "attention", "language"],
     source: "Spatial & Working Mem (H & V)",
-    summary: "Les enfants placent les briques dans des zones précises: haut gauche, centre, bas droit, au-dessus ou en dessous de la ligne rouge.",
-    materials: ["Six briques par enfant", "Un tapis B-Line avec zones visibles"],
+    summary: "Les participants placent les briques dans des zones précises: haut gauche, centre, bas droit, au-dessus ou en dessous de la ligne rouge.",
+    materials: ["Six briques par participant", "Un tapis B-Line avec zones visibles"],
     steps: [
       "Présente les zones du tapis: haut, bas, gauche, droite et centre.",
       "Donne une consigne de position: vert en haut à gauche.",
       "Ajoute des relations: bleu sous jaune, orange touche rouge.",
-      "Fais verbaliser la position finale par un enfant."
+      "Fais verbaliser la position finale par un participant."
     ],
-    variation: "Un enfant lit ou invente les coordonnées pour son partenaire.",
+    variation: "Un participant lit ou invente les coordonnées pour son partenaire.",
     question: "Quelle différence fais-tu entre centre au-dessus et centre au-dessous ?"
   },
   {
@@ -634,11 +634,11 @@ const activities = [
     duration: "medium",
     goals: ["spatial", "math", "cooperation"],
     source: "Spatial & Working Mem (H & V)",
-    summary: "Un enfant construit d’un côté de la ligne, l’autre reproduit en miroir de l’autre côté.",
+    summary: "Un participant construit d’un côté de la ligne, l’autre reproduit en miroir de l’autre côté.",
     materials: ["Six briques par duo", "Un tapis B-Line"],
     steps: [
       "Définis la ligne rouge comme axe de symétrie.",
-      "Le premier enfant place deux ou trois briques d’un côté.",
+      "Le premier participant place deux ou trois briques d’un côté.",
       "Le partenaire place les briques correspondantes en miroir.",
       "Le groupe vérifie les distances et les positions."
     ],
@@ -654,11 +654,11 @@ const activities = [
     goals: ["math", "spatial", "attention"],
     source: "Basic Mathematics (H & V)",
     summary: "Les lignes du tapis deviennent des nombres. Les briques se déplacent vers le résultat d’une consigne de nombre ou de calcul simple.",
-    materials: ["Six briques par enfant", "Un tapis B-Line numéroté de 1 à 5 ou 1 à 10"],
+    materials: ["Six briques par participant", "Un tapis B-Line numéroté de 1 à 5 ou 1 à 10"],
     steps: [
       "Choisis une base: nombres de 1 à 5 ou de 1 à 10.",
       "Annonce une couleur et une valeur: jaune à 4, rouge à 2 + 1.",
-      "L’enfant déplace la brique vers la ligne de résultat.",
+      "Le participant déplace la brique vers la ligne de résultat.",
       "Demande parfois quelle brique a bougé en premier ou en dernier."
     ],
     variation: "Utilise +1, -1, +2 et -2 comme déplacements à partir de la position actuelle.",
@@ -672,15 +672,15 @@ const activities = [
     duration: "long",
     goals: ["math", "executive", "memory"],
     source: "Advanced Mathematics (H & V)",
-    summary: "Les enfants résolvent des additions, soustractions, multiplications ou divisions, puis déplacent la brique vers la ligne du résultat.",
-    materials: ["Six briques par enfant", "Un tapis B-Line base 10"],
+    summary: "Les participants résolvent des additions, soustractions, multiplications ou divisions, puis déplacent la brique vers la ligne du résultat.",
+    materials: ["Six briques par participant", "Un tapis B-Line base 10"],
     steps: [
       "Attribue une valeur ou une opération à chaque consigne.",
       "Annonce: bleu vers le résultat de 12 - 8, vert vers 3 x 2.",
-      "Les enfants calculent mentalement puis déplacent la brique.",
+      "Les participants calculent mentalement puis déplacent la brique.",
       "Fais expliciter une stratégie de calcul après quelques tours."
     ],
-    variation: "En duo, un enfant calcule et l’autre vérifie le déplacement.",
+    variation: "En duo, un participant calcule et l’autre vérifie le déplacement.",
     question: "Quelle opération t’a demandé le plus d’effort ?"
   },
   {
@@ -691,12 +691,12 @@ const activities = [
     duration: "short",
     goals: ["movement", "attention", "executive"],
     source: "Variations & Advanced Options",
-    summary: "Les briques ne sont plus déplacées à la main: les enfants utilisent un crayon, une pince, une paille ou seulement certains doigts.",
-    materials: ["Six briques par enfant", "Crayons, pailles, pinces ou baguettes", "Un tapis B-Line"],
+    summary: "Les briques ne sont plus déplacées à la main: les participants utilisent un crayon, une pince, une paille ou seulement certains doigts.",
+    materials: ["Six briques par participant", "Crayons, pailles, pinces ou baguettes", "Un tapis B-Line"],
     steps: [
       "Choisis un outil ou une contrainte de doigts.",
       "Donne des consignes B-Line simples.",
-      "Les enfants doivent soulever et placer, sans faire glisser si possible.",
+      "Les participants doivent soulever et placer, sans faire glisser si possible.",
       "Change d’outil après une courte série."
     ],
     variation: "Une main reste sur la tête, derrière le dos ou avec un doigt sur le nez.",
@@ -710,12 +710,12 @@ const activities = [
     duration: "medium",
     goals: ["executive", "attention", "memory"],
     source: "Variations & Advanced Options",
-    summary: "Les enfants doivent attendre le signal avant de bouger, ou faire toutes les consignes à l’envers.",
-    materials: ["Six briques par enfant", "Un tapis B-Line"],
+    summary: "Les participants doivent attendre le signal avant de bouger, ou faire toutes les consignes à l’envers.",
+    materials: ["Six briques par participant", "Un tapis B-Line"],
     steps: [
       "Annonce une règle d’inhibition: on écoute toute la série avant de toucher.",
       "Donne deux ou trois consignes.",
-      "Au signal, les enfants exécutent.",
+      "Au signal, les participants exécutent.",
       "Ajoute le mode inverse: haut devient bas, gauche devient droite."
     ],
     variation: "Un seul joueur du duo fait les consignes en inverse, l’autre les fait normalement.",
@@ -767,15 +767,15 @@ const activities = [
     duration: "medium",
     goals: ["math", "attention"],
     source: "Care for Education Templates",
-    summary: "Un bingo de nombres où les enfants couvrent les réponses avec leurs briques jusqu’à aligner quatre cases.",
-    materials: ["Grille First2Four imprimée", "Six briques par enfant", "Cartes nombres ou calculs"],
+    summary: "Un bingo de nombres où les participants couvrent les réponses avec leurs briques jusqu’à aligner quatre cases.",
+    materials: ["Grille First2Four imprimée", "Six briques par participant", "Cartes nombres ou calculs"],
     steps: [
-      "Distribue une grille à chaque enfant ou duo.",
+      "Distribue une grille à chaque participant ou duo.",
       "Annonce un nombre, un calcul ou une représentation.",
-      "Les enfants couvrent la case correspondante avec une brique.",
+      "Les participants couvrent la case correspondante avec une brique.",
       "Le premier à obtenir quatre briques alignées explique ses réponses."
     ],
-    variation: "Utilise la version nombres négatifs pour les enfants plus avancés.",
+    variation: "Utilise la version nombres négatifs pour les participants plus avancés.",
     question: "Comment as-tu trouvé la case à couvrir ?"
   },
   {
@@ -786,15 +786,15 @@ const activities = [
     duration: "medium",
     goals: ["math", "spatial", "attention"],
     source: "Care for Education Templates",
-    summary: "Les enfants placent des briques sur un plan cartésien pour travailler coordonnées, repérage et déplacement.",
-    materials: ["Plan cartésien imprimé", "Six briques par enfant"],
+    summary: "Les participants placent des briques sur un plan cartésien pour travailler coordonnées, repérage et déplacement.",
+    materials: ["Plan cartésien imprimé", "Six briques par participant"],
     steps: [
       "Présente les axes horizontal et vertical.",
       "Annonce une coordonnée: rouge en A3 ou bleu en (2, 4).",
-      "Les enfants placent la brique sur l’intersection.",
+      "Les participants placent la brique sur l’intersection.",
       "Crée ensuite un chemin de plusieurs coordonnées à suivre."
     ],
-    variation: "Un enfant dicte les coordonnées et l’autre vérifie le trajet.",
+    variation: "Un participant dicte les coordonnées et l’autre vérifie le trajet.",
     question: "Quel axe regardes-tu en premier pour trouver la position ?"
   },
   {
@@ -806,10 +806,10 @@ const activities = [
     goals: ["memory", "spatial", "attention"],
     source: "Care for Education Templates",
     summary: "Reproduire, compléter ou inventer une suite avec des cartes de motifs en couleur ou en silhouette.",
-    materials: ["Cartes de motifs imprimées", "Six briques par enfant"],
+    materials: ["Cartes de motifs imprimées", "Six briques par participant"],
     steps: [
       "Montre une carte modèle.",
-      "Les enfants reproduisent la suite avec leurs briques.",
+      "Les participants reproduisent la suite avec leurs briques.",
       "Cache la carte et demande de reconstruire de mémoire.",
       "Termine en demandant d’inventer la suite suivante."
     ],
@@ -824,15 +824,15 @@ const activities = [
     duration: "medium",
     goals: ["spatial", "memory", "language"],
     source: "Care for Education Templates",
-    summary: "À partir d’un modèle 3D imprimé, les enfants construisent, décrivent puis modifient une structure.",
-    materials: ["Cartes 3D Builds imprimées", "Six briques par enfant"],
+    summary: "À partir d’un modèle 3D imprimé, les participants construisent, décrivent puis modifient une structure.",
+    materials: ["Cartes 3D Builds imprimées", "Six briques par participant"],
     steps: [
       "Choisis une carte modèle.",
-      "Les enfants construisent la structure avec leurs six briques.",
+      "Les participants construisent la structure avec leurs six briques.",
       "Ils décrivent la position des briques: dessus, dessous, devant, derrière.",
       "Ils changent une brique et expliquent l’effet sur la structure."
     ],
-    variation: "Un enfant décrit la carte sans la montrer, l’autre construit.",
+    variation: "Un participant décrit la carte sans la montrer, l’autre construit.",
     question: "Quelle brique soutient le plus la construction ?"
   },
   {
@@ -847,11 +847,11 @@ const activities = [
     materials: ["Template bar graph imprimé", "Briques comme marqueurs", "Images ou choix à classer"],
     steps: [
       "Choisis un thème: fruits, transports ou préférences du groupe.",
-      "Chaque enfant vote avec une brique.",
+      "Chaque participant vote avec une brique.",
       "Place les briques dans la colonne correspondante.",
       "Compare les colonnes: plus, moins, autant, différence."
     ],
-    variation: "Demande aux enfants de prédire le résultat avant de voter.",
+    variation: "Demande aux participants de prédire le résultat avant de voter.",
     question: "Quelle colonne en a le plus, et comment le vois-tu ?"
   },
   {
@@ -863,11 +863,11 @@ const activities = [
     goals: ["math", "spatial"],
     source: "Care for Education Templates",
     summary: "Utiliser le template de fractions pour représenter moitié, tiers, quart et parties d’un ensemble de six.",
-    materials: ["Template fractions imprimé", "Six briques par enfant"],
+    materials: ["Template fractions imprimé", "Six briques par participant"],
     steps: [
       "Présente les six briques comme un tout.",
       "Demande de montrer la moitié, un tiers ou deux tiers.",
-      "Les enfants placent les briques dans les zones du template.",
+      "Les participants placent les briques dans les zones du template.",
       "Fais verbaliser: deux briques sur six, trois briques sur six."
     ],
     variation: "Ajoute une contrainte de couleur: la moitié doit contenir une brique bleue.",
@@ -881,10 +881,10 @@ const activities = [
     duration: "medium",
     goals: ["language", "cooperation", "spatial"],
     source: "Care for Education Templates",
-    summary: "Un enfant place des briques sur une grille, puis guide un partenaire avec des consignes précises.",
+    summary: "Un participant place des briques sur une grille, puis guide un partenaire avec des consignes précises.",
     materials: ["Grille 5 x 5 ou 6 x 8 imprimée", "Six briques par duo", "Cache ou séparation facultative"],
     steps: [
-      "Le premier enfant construit une disposition sur sa grille.",
+      "Le premier participant construit une disposition sur sa grille.",
       "Il décrit les positions sans montrer son modèle.",
       "Le partenaire reproduit sur sa propre grille.",
       "Les deux comparent et corrigent avec des mots spatiaux."
@@ -901,10 +901,10 @@ const activities = [
     goals: ["math", "attention", "memory"],
     source: "Care for Education Templates",
     summary: "Piocher une carte nombre et la représenter rapidement avec les briques: quantité, décomposition ou comparaison.",
-    materials: ["Cartes nombres imprimées", "Six briques par enfant"],
+    materials: ["Cartes nombres imprimées", "Six briques par participant"],
     steps: [
       "Pioche ou montre une carte nombre.",
-      "Les enfants représentent la quantité avec leurs briques.",
+      "Les participants représentent la quantité avec leurs briques.",
       "Demande une autre représentation: deux groupes, plus un, moins un.",
       "Compare deux cartes avec plus grand, plus petit ou égal."
     ],
@@ -919,12 +919,12 @@ const activities = [
     duration: "medium",
     goals: ["movement", "cooperation", "attention"],
     source: "Care for Education Resources",
-    summary: "Les enfants deviennent une chaîne de transport: une brique passe d’un enfant à l’autre avec une contrainte de mouvement.",
+    summary: "Les participants deviennent une chaîne de transport: une brique passe d’un participant à l’autre avec une contrainte de mouvement.",
     materials: ["Une ou plusieurs briques", "Un espace pour former une ligne ou un cercle"],
     steps: [
-      "Place les enfants en ligne ou en cercle.",
+      "Place les participants en ligne ou en cercle.",
       "Choisis une façon de transmettre la brique: au-dessus, dessous, derrière le dos.",
-      "La brique doit arriver au dernier enfant sans tomber.",
+      "La brique doit arriver au dernier participant sans tomber.",
       "Change le sens ou ajoute une deuxième brique."
     ],
     variation: "Fais transporter uniquement avec les coudes, les avant-bras ou deux doigts.",
@@ -939,7 +939,7 @@ const activities = [
     goals: ["spatial", "attention", "executive"],
     source: "Care for Education Resources",
     summary: "Construire la tour la plus haute possible malgré une règle qui rend l’équilibre plus difficile.",
-    materials: ["Six briques par enfant ou duo", "Un minuteur facultatif"],
+    materials: ["Six briques par participant ou duo", "Un minuteur facultatif"],
     steps: [
       "Annonce la mission: faire tenir une tour avec les six briques.",
       "Ajoute une contrainte: couleurs alternées, une seule main ou briques décalées.",
@@ -957,13 +957,13 @@ const activities = [
     duration: "short",
     goals: ["attention", "memory", "executive"],
     source: "Care for Education Resources",
-    summary: "Une activité de manipulation rapide où l’enfant doit suivre, cacher, retrouver ou échanger une brique cible.",
-    materials: ["Six briques par enfant", "Un tissu ou une main pour cacher"],
+    summary: "Une activité de manipulation rapide où le participant doit suivre, cacher, retrouver ou échanger une brique cible.",
+    materials: ["Six briques par participant", "Un tissu ou une main pour cacher"],
     steps: [
       "Choisis une brique secrète.",
       "Mélange les briques lentement puis plus vite.",
-      "L’enfant suit la brique des yeux et la désigne.",
-      "Inverse les rôles: l’enfant devient meneur."
+      "Le participant suit la brique des yeux et la désigne.",
+      "Inverse les rôles: le participant devient meneur."
     ],
     variation: "Ajoute deux briques cibles à suivre en même temps.",
     question: "Qu’as-tu fait pour ne pas perdre la brique des yeux ?"
@@ -976,11 +976,11 @@ const activities = [
     duration: "medium",
     goals: ["spatial", "memory", "language"],
     source: "Care for Education Resources",
-    summary: "Un enfant observe une petite construction 3D, elle est cachée, puis il la reconstruit de mémoire.",
+    summary: "Un participant observe une petite construction 3D, elle est cachée, puis il la reconstruit de mémoire.",
     materials: ["Deux sets de six briques", "Un cache ou une boîte"],
     steps: [
       "Construis un modèle avec trois à six briques.",
-      "Laisse l’enfant observer quelques secondes.",
+      "Laisse le participant observer quelques secondes.",
       "Cache le modèle.",
       "Il reconstruit, puis compare et décrit les différences."
     ],
@@ -1000,7 +1000,7 @@ const activities = [
     steps: [
       "Choisis une lettre secrète.",
       "Donne un indice par brique: son initial, mot qui commence pareil, forme de la lettre.",
-      "Les enfants proposent une réponse après trois indices.",
+      "Les participants proposent une réponse après trois indices.",
       "Ils construisent ensuite un objet qui commence par cette lettre."
     ],
     variation: "Remplace la lettre par une syllabe ou un phonème cible.",
@@ -1015,7 +1015,7 @@ const activities = [
     goals: ["math", "attention"],
     source: "Care for Education Resources",
     summary: "Observer rapidement une construction et compter les picots visibles, cachés ou au total.",
-    materials: ["Six briques par enfant", "Quelques modèles simples"],
+    materials: ["Six briques par participant", "Quelques modèles simples"],
     steps: [
       "Montre une brique ou une petite construction.",
       "Demande combien de picots sont visibles.",
@@ -1033,15 +1033,15 @@ const activities = [
     duration: "short",
     goals: ["math", "memory", "attention"],
     source: "Care for Education Resources",
-    summary: "Une activité de retrait: on part de six briques, on en cache ou enlève quelques-unes, les enfants trouvent le reste.",
-    materials: ["Six briques par enfant", "Un tissu ou une boîte"],
+    summary: "Une activité de retrait: on part de six briques, on en cache ou enlève quelques-unes, les participants trouvent le reste.",
+    materials: ["Six briques par participant", "Un tissu ou une boîte"],
     steps: [
       "Montre les six briques.",
       "Cache ou enlève une quantité sans la montrer longtemps.",
       "Demande combien il en reste ou combien ont disparu.",
       "Fais représenter l’opération avec les briques visibles."
     ],
-    variation: "Les enfants inventent leurs propres problèmes pour un partenaire.",
+    variation: "Les participants inventent leurs propres problèmes pour un partenaire.",
     question: "As-tu compté ce qui reste ou ce qui manque ?"
   },
   {
@@ -1052,11 +1052,11 @@ const activities = [
     duration: "medium",
     goals: ["math", "attention", "language"],
     source: "Care for Education Resources",
-    summary: "Les enfants estiment une hauteur, une longueur, une quantité de picots ou un nombre de briques, puis vérifient.",
-    materials: ["Six briques par enfant", "Objets de la classe à mesurer"],
+    summary: "Les participants estiment une hauteur, une longueur, une quantité de picots ou un nombre de briques, puis vérifient.",
+    materials: ["Six briques par participant", "Objets de la classe à mesurer"],
     steps: [
       "Choisis une question: combien de briques pour mesurer ce livre ?",
-      "Chaque enfant annonce une estimation.",
+      "Chaque participant annonce une estimation.",
       "Il mesure ou compte avec ses briques.",
       "Compare estimation et résultat réel."
     ],
@@ -1071,11 +1071,11 @@ const activities = [
     duration: "medium",
     goals: ["language", "cooperation", "spatial"],
     source: "Care for Education Resources",
-    summary: "Un enfant décrit précisément une construction; l’autre doit la reproduire sans voir le modèle.",
+    summary: "Un participant décrit précisément une construction; l’autre doit la reproduire sans voir le modèle.",
     materials: ["Deux sets de six briques", "Un cache entre les partenaires"],
     steps: [
-      "Le premier enfant construit un modèle simple.",
-      "Il décrit les couleurs, positions et orientations.",
+      "Le premier participant construit une tour de trois briques, cachée derrière un écran.",
+      "Il décrit chaque couleur, chaque position et chaque orientation avec une phrase courte.",
       "Le partenaire construit uniquement à partir des mots.",
       "Ils comparent puis échangent les rôles."
     ],
@@ -1090,12 +1090,12 @@ const activities = [
     duration: "long",
     goals: ["language", "emotion", "cooperation"],
     source: "Care for Education Resources",
-    summary: "Après une lecture, les enfants reconstruisent un personnage, un lieu ou un problème de l’histoire avec six briques.",
-    materials: ["Un album ou une histoire courte", "Six briques par enfant ou groupe"],
+    summary: "Après une lecture, les participants reconstruisent un personnage, un lieu ou un problème de l’histoire avec six briques.",
+    materials: ["Un album ou une histoire courte", "Six briques par participant ou groupe"],
     steps: [
       "Lis une histoire ou un extrait.",
       "Demande de construire un personnage, un lieu ou un moment important.",
-      "Chaque enfant explique son choix.",
+      "Chaque participant explique son choix.",
       "Le groupe remet les constructions dans l’ordre de l’histoire."
     ],
     variation: "Inventer une suite à l’histoire avec une nouvelle construction.",
@@ -1110,11 +1110,11 @@ const activities = [
     goals: ["language", "memory", "attention"],
     source: "Care for Education Resources",
     summary: "Les briques deviennent des parfums de glace à empiler selon une commande orale.",
-    materials: ["Six briques par enfant", "Cartes commandes facultatives"],
+    materials: ["Six briques par participant", "Cartes commandes facultatives"],
     steps: [
       "Associe chaque couleur à un parfum.",
       "Annonce une commande de deux ou trois parfums.",
-      "Les enfants empilent les briques dans l’ordre demandé.",
+      "Les participants empilent les briques dans l’ordre demandé.",
       "Ils répètent la commande en phrase complète."
     ],
     variation: "Ajoute une commande impossible ou un parfum à retirer.",
@@ -1132,7 +1132,7 @@ const activities = [
     materials: ["Six briques", "Cartes mots ou images"],
     steps: [
       "Place les débuts d’un côté et les fins de l’autre.",
-      "L’enfant choisit deux briques pour former une paire correcte.",
+      "Le participant choisit deux briques pour former une paire correcte.",
       "Il lit ou dit le mot complet.",
       "Il invente ensuite une phrase avec ce mot."
     ],
@@ -1147,11 +1147,11 @@ const activities = [
     duration: "short",
     goals: ["attention", "language", "memory"],
     source: "Care for Education Resources",
-    summary: "Les enfants reconnaissent une brique au toucher dans un sac, puis décrivent ce qu’ils sentent.",
+    summary: "Les participants reconnaissent une brique au toucher dans un sac, puis décrivent ce qu’ils sentent.",
     materials: ["Six briques", "Un sac opaque"],
     steps: [
       "Mets les briques dans le sac.",
-      "L’enfant plonge la main sans regarder.",
+      "Le participant plonge la main sans regarder.",
       "Il décrit la brique avant de la sortir.",
       "Le groupe vérifie puis enrichit le vocabulaire tactile."
     ],
@@ -1166,15 +1166,15 @@ const activities = [
     duration: "short",
     goals: ["memory", "attention", "movement"],
     source: "Care for Education Resources",
-    summary: "Un enfant ou l’adulte montre une action avec les briques; les autres copient exactement.",
-    materials: ["Six briques par enfant"],
+    summary: "Un participant ou l’adulte montre une action avec les briques; les autres copient exactement.",
+    materials: ["Six briques par participant"],
     steps: [
       "Montre une action simple: empiler, toucher, tourner, cacher.",
-      "Les enfants copient la même action.",
+      "Les participants copient la même action.",
       "Ajoute une deuxième action à mémoriser.",
       "Change de meneur après quelques tours."
     ],
-    variation: "Passe en mode miroir: les enfants font l’action opposée.",
+    variation: "Passe en mode miroir: les participants font l’action opposée.",
     question: "Qu’as-tu regardé pour copier exactement ?"
   },
   {
@@ -1841,9 +1841,17 @@ const i18n = {
     kicker: "La première appli française Six Bricks",
     heroText: "Des activités Six Bricks à l’infini, avec ou sans plateau, pour stimuler le langage, les mathématiques, la mémoire, l’attention, la motricité, la créativité, les fonctions exécutives, les compétences sociales et le plaisir d’apprendre, de la petite enfance jusqu’au grand âge.",
     creatorCredit: "Créée par Chloé Schmidt-Dhonneur, docteure en sciences de l’éducation et formatrice Six Bricks.",
+    factoryKicker: "Aujourd’hui dans la Factory",
+    factoryActivities: "activités",
+    factoryModes: "modes",
+    factoryColors: "couleurs",
+    factoryChipActivities: "Activités",
+    factoryChipStories: "Histoires",
+    factoryChipMats: "Plateaux",
+    factoryNote: "Une idée claire, prête à lire ou à animer, en quelques clics.",
     tabFinder: "Trouver une idée",
-    tabGenerator: "Générer à l’infini",
-    tabStories: "Histoires infinies",
+    tabGenerator: "Créer une activité",
+    tabStories: "Créer une histoire",
     category: "Catégorie",
     all: "Toutes",
     participants: "Participants",
@@ -1886,11 +1894,35 @@ const i18n = {
     backToBack: "Dos à dos",
     listenCopy: "Écoute et fais pareil",
     level: "Niveau",
-    generateActivity: "Générer une activité",
-    infiniteGenerator: "Générateur infini",
-    storyLevel: "Difficulté",
-    storyLevel1: "Facile",
-    storyLevel2: "Plus difficile",
+    generateActivity: "Créer une nouvelle activité",
+    activitySheet: "Fiche d’activité",
+    storyLevel: "Niveau d’histoire",
+    storyLevel1: "Niveau 1 - couleurs nommées",
+    storyLevel2: "Niveau 2 - couleurs sous-entendues",
+    colorCount: "Nombre de couleurs",
+    storyTheme: "Thème de l’histoire",
+    themeRandom: "Libre / aléatoire",
+    themeMarket: "Marché",
+    themeForest: "Forêt",
+    themeBeach: "Plage",
+    themeFarm: "Ferme",
+    themeBirthday: "Anniversaire",
+    themeSchool: "École",
+    themeGarden: "Jardin",
+    themeFair: "Fête foraine",
+    themeChristmas: "Noël",
+    themeAnimals: "Animaux",
+    themeKitchen: "Cuisine",
+    themeTravel: "Voyage",
+    themeSpace: "Espace",
+    themePirates: "Pirates",
+    themeMagic: "Magie",
+    correctionOption: "Correction",
+    hideCorrection: "Masquer au départ",
+    showCorrection: "Afficher au départ",
+    showCorrectionButton: "Afficher la correction",
+    hideCorrectionButton: "Masquer la correction",
+    correctionTitle: "Correction",
     colorMode: "Couleurs",
     withColors: "Citer les couleurs",
     withoutColors: "Sans citer les couleurs",
@@ -1898,18 +1930,26 @@ const i18n = {
     adventure: "Aventure",
     nature: "Nature",
     mystery: "Mystère",
-    generateStory: "Générer une histoire",
-    storyGenerator: "Histoires infinies",
+    generateStory: "Créer une nouvelle histoire",
+    storyGenerator: "Fiche histoire",
     buildPrompts: "Invitations à construire",
-    proposals: "Propositions rapides",
+    proposals: "Consignes orales prêtes à dire",
   },
   en: {
     kicker: "The first French Six Bricks app",
     heroText: "Infinite Six Bricks activities, with or without mats, to stimulate language, mathematics, memory, attention, motor skills, creativity, executive functions, social skills and the joy of learning, from early childhood to older age.",
     creatorCredit: "Created by Chloé Schmidt-Dhonneur, Doctor of Education Sciences and Six Bricks trainer.",
+    factoryKicker: "Today in the Factory",
+    factoryActivities: "activities",
+    factoryModes: "modes",
+    factoryColors: "colours",
+    factoryChipActivities: "Activities",
+    factoryChipStories: "Stories",
+    factoryChipMats: "Mats",
+    factoryNote: "A clear idea, ready to read or facilitate, in a few clicks.",
     tabFinder: "Find an idea",
-    tabGenerator: "Generate forever",
-    tabStories: "Infinite stories",
+    tabGenerator: "Create an activity",
+    tabStories: "Create a story",
     category: "Category",
     all: "All",
     participants: "Participants",
@@ -1952,11 +1992,35 @@ const i18n = {
     backToBack: "Back to back",
     listenCopy: "Listen and copy",
     level: "Level",
-    generateActivity: "Generate an activity",
-    infiniteGenerator: "Infinite generator",
-    storyLevel: "Difficulty",
-    storyLevel1: "Easy",
-    storyLevel2: "More difficult",
+    generateActivity: "Create a new activity",
+    activitySheet: "Activity sheet",
+    storyLevel: "Story level",
+    storyLevel1: "Level 1 - named colours",
+    storyLevel2: "Level 2 - implied colours",
+    colorCount: "Number of colours",
+    storyTheme: "Story theme",
+    themeRandom: "Free / random",
+    themeMarket: "Market",
+    themeForest: "Forest",
+    themeBeach: "Beach",
+    themeFarm: "Farm",
+    themeBirthday: "Birthday",
+    themeSchool: "School",
+    themeGarden: "Garden",
+    themeFair: "Funfair",
+    themeChristmas: "Christmas",
+    themeAnimals: "Animals",
+    themeKitchen: "Kitchen",
+    themeTravel: "Travel",
+    themeSpace: "Space",
+    themePirates: "Pirates",
+    themeMagic: "Magic",
+    correctionOption: "Correction",
+    hideCorrection: "Hidden first",
+    showCorrection: "Shown first",
+    showCorrectionButton: "Show correction",
+    hideCorrectionButton: "Hide correction",
+    correctionTitle: "Correction",
     colorMode: "Colours",
     withColors: "Name the colours",
     withoutColors: "Do not name colours",
@@ -1964,8 +2028,8 @@ const i18n = {
     adventure: "Adventure",
     nature: "Nature",
     mystery: "Mystery",
-    generateStory: "Generate a story",
-    storyGenerator: "Infinite stories",
+    generateStory: "Create a new story",
+    storyGenerator: "Story sheet",
     buildPrompts: "Build prompts",
     proposals: "Quick proposals",
   },
@@ -1973,9 +2037,17 @@ const i18n = {
     kicker: "首款法语 Six Bricks 应用",
     heroText: "无限生成 Six Bricks 活动，可使用或不使用垫板，用来促进语言、数学、记忆、注意力、动作能力、创造力、执行功能、社交能力以及学习的乐趣，适合从幼儿到高龄人群。",
     creatorCredit: "由 Chloé Schmidt-Dhonneur 创建。教育科学博士，Six Bricks 培训师。",
+    factoryKicker: "今日 Factory",
+    factoryActivities: "活动",
+    factoryModes: "模式",
+    factoryColors: "颜色",
+    factoryChipActivities: "活动",
+    factoryChipStories: "故事",
+    factoryChipMats: "垫板",
+    factoryNote: "几次点击即可获得清晰、可朗读或可带领的想法。",
     tabFinder: "寻找活动",
-    tabGenerator: "无限生成",
-    tabStories: "无限故事",
+    tabGenerator: "创建活动",
+    tabStories: "创建故事",
     category: "类别",
     all: "全部",
     participants: "参与人数",
@@ -2018,11 +2090,35 @@ const i18n = {
     backToBack: "背靠背",
     listenCopy: "听一听，照着做",
     level: "级别",
-    generateActivity: "生成活动",
-    infiniteGenerator: "无限生成器",
-    storyLevel: "难度",
-    storyLevel1: "简单",
-    storyLevel2: "更难",
+    generateActivity: "创建新活动",
+    activitySheet: "活动卡",
+    storyLevel: "故事级别",
+    storyLevel1: "级别 1 - 明确说出颜色",
+    storyLevel2: "级别 2 - 暗示颜色",
+    colorCount: "颜色数量",
+    storyTheme: "故事主题",
+    themeRandom: "自由 / 随机",
+    themeMarket: "市场",
+    themeForest: "森林",
+    themeBeach: "海滩",
+    themeFarm: "农场",
+    themeBirthday: "生日",
+    themeSchool: "学校",
+    themeGarden: "花园",
+    themeFair: "游乐会",
+    themeChristmas: "圣诞",
+    themeAnimals: "动物",
+    themeKitchen: "厨房",
+    themeTravel: "旅行",
+    themeSpace: "太空",
+    themePirates: "海盗",
+    themeMagic: "魔法",
+    correctionOption: "答案",
+    hideCorrection: "先隐藏",
+    showCorrection: "先显示",
+    showCorrectionButton: "显示答案",
+    hideCorrectionButton: "隐藏答案",
+    correctionTitle: "答案",
     colorMode: "颜色",
     withColors: "说出颜色",
     withoutColors: "不说颜色",
@@ -2030,10 +2126,10 @@ const i18n = {
     adventure: "冒险",
     nature: "自然",
     mystery: "谜题",
-    generateStory: "生成故事",
-    storyGenerator: "无限故事",
+    generateStory: "创建新故事",
+    storyGenerator: "故事卡",
     buildPrompts: "搭建提示",
-    proposals: "快速建议",
+    proposals: "可直接说的口令",
   }
 };
 
@@ -2070,8 +2166,12 @@ const generatedVariation = document.querySelector("#generatedVariation");
 const generatedQuestion = document.querySelector("#generatedQuestion");
 const generatedProposals = document.querySelector("#generatedProposals");
 const storyTitle = document.querySelector("#storyTitle");
+const storyMeta = document.querySelector("#storyMeta");
+const storyRule = document.querySelector("#storyRule");
 const storyText = document.querySelector("#storyText");
-const storyPrompts = document.querySelector("#storyPrompts");
+const storyCorrectionWrap = document.querySelector("#storyCorrectionWrap");
+const storyCorrection = document.querySelector("#storyCorrection");
+const toggleCorrection = document.querySelector("#toggleCorrection");
 
 document.querySelectorAll(".tab-button").forEach((button) => {
   button.addEventListener("click", () => {
@@ -2112,6 +2212,14 @@ document.querySelector("#generatorForm").addEventListener("submit", (event) => {
 document.querySelector("#storyForm").addEventListener("submit", (event) => {
   event.preventDefault();
   renderStory();
+});
+
+toggleCorrection.addEventListener("click", () => {
+  const isHidden = storyCorrectionWrap.classList.toggle("is-hidden");
+  storyCorrectionWrap.hidden = isHidden;
+  toggleCorrection.textContent = isHidden
+    ? i18n[state.lang].showCorrectionButton
+    : i18n[state.lang].hideCorrectionButton;
 });
 
 
@@ -2203,9 +2311,8 @@ function renderActivity() {
   activityTags.innerHTML = [
     durationLabel(activity.duration),
     groupLabel(activity.group),
-    contextLabel(activity.context),
-    `Source: ${activity.source}`
-  ].map((tag) => `<span>${tag}</span>`).join("");
+    contextLabel(activity.context)
+  ].filter(Boolean).map((tag) => `<span>${tag}</span>`).join("");
 
   const isFavorite = state.favorites.some((item) => item.title === activity.title);
   favoriteButton.textContent = isFavorite ? "★" : "☆";
@@ -2246,7 +2353,7 @@ function groupLabel(groups) {
     solo: "solo",
     duo: "duo",
     small: "petit groupe",
-    class: "classe"
+    class: "grand groupe"
   };
   return groups.map((group) => labels[group]).join(" / ");
 }
@@ -2303,8 +2410,16 @@ function renderStory() {
   const values = getFormValues("#storyForm");
   const story = createStory(values, state.lang);
   storyTitle.textContent = story.title;
+  storyMeta.innerHTML = story.tags.map((tag) => `<span>${tag}</span>`).join("");
+  storyRule.textContent = story.instruction;
   storyText.innerHTML = story.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
-  storyPrompts.innerHTML = story.prompts.map((prompt) => `<li>${prompt}</li>`).join("");
+  storyCorrection.textContent = story.correction;
+  const correctionVisible = story.showCorrection;
+  storyCorrectionWrap.classList.toggle("is-hidden", !correctionVisible);
+  storyCorrectionWrap.hidden = !correctionVisible;
+  toggleCorrection.textContent = correctionVisible
+    ? i18n[state.lang].hideCorrectionButton
+    : i18n[state.lang].showCorrectionButton;
 }
 
 const storyEngine = {
@@ -2327,17 +2442,17 @@ const storyEngine = {
     "une réserve naturelle", "un jardin de sculptures", "un bus transformé en classe", "un quai de métro", "une forêt après l’orage", "un festival de lanternes", "un atelier de poterie", "une piste cyclable", "une maison aux fenêtres ouvertes", "un monde dans une goutte d’eau",
     "une librairie ambulante", "un plateau de jeu géant", "un labyrinthe de coussins", "une salle d’attente transformée", "une clairière musicale", "un village de papiers pliés", "une école de détectives", "un bal intergénérationnel", "une planète minuscule", "un cinéma sans écran",
     "un bassin aux nénuphars", "une réserve de graines", "un escalier qui raconte", "un atelier de robots doux", "une forêt de sons", "un marché nocturne", "un sentier de galets", "une maison de vacances", "un parcours de santé", "un studio photo",
-    "une cabane de lecture", "une salle de yoga", "une prairie de printemps", "un refuge pour idées calmes", "une cité de nuages", "un ponton au soleil", "une classe-musée", "un jardin de mémoire", "un atelier de cartes postales", "un cercle de parole"
+    "une cabane de lecture", "une salle de yoga", "une prairie de printemps", "un refuge pour idées calmes", "une cité de nuages", "un espace calme au sol", "une salle-musée", "un jardin de mémoire", "un atelier de cartes postales", "un cercle de parole"
   ],
   missionTypes: [
     "retrouver l’ordre d’un chemin", "fabriquer un code commun", "composer un paysage en six éléments", "transmettre un message sans le répéter", "réparer une suite logique", "inventer un parcours à suivre", "classer des éléments selon une règle", "associer un geste à chaque brique", "raconter une scène en manipulant", "mémoriser une séquence avant d’agir",
     "reproduire un modèle invisible", "changer de point de vue", "choisir la meilleure stratégie", "passer d’un rythme lent à rapide", "construire une réponse collective", "transformer une erreur en nouvelle règle", "anticiper la prochaine étape", "décrire sans montrer", "écouter sans interrompre", "résoudre une contrainte spatiale",
     "comparer deux constructions", "préparer une consigne pour un partenaire", "créer une trace de l’histoire", "inventer un symbole par brique", "faire une suite croissante", "faire une suite décroissante", "lier mouvement et langage", "retenir deux actions avant de bouger", "adapter la consigne au groupe", "décider ensemble d’un ordre",
-    "faire parler une construction", "organiser une mini-exposition", "retrouver l’élément manquant", "construire une réponse émotionnelle", "placer les briques selon un repère", "faire un défi de précision", "inventer une règle d’inhibition", "passer du concret à l’abstrait", "coder une histoire avec les briques", "créer une version silencieuse",
+    "présenter une construction en disant ce que chaque brique représente", "organiser une mini-exposition", "retrouver l’élément manquant", "construire une réponse émotionnelle", "placer les briques selon un repère", "réaliser un déplacement précis annoncé par l’adulte", "appliquer une règle d’inhibition avec un signal stop", "passer du concret à l’abstrait", "coder une histoire avec les briques", "créer une version silencieuse",
     "suivre une consigne inversée", "associer une quantité à une action", "décomposer un problème", "préparer un relais", "créer un chemin de retour"
   ],
   manipulations: [
-    "empiler", "aligner", "déplacer sans soulever", "soulever puis reposer", "retourner", "faire pivoter", "cacher sous la main", "placer derrière le dos", "passer à un partenaire", "pincer avec deux doigts",
+    "empiler", "aligner", "déplacer sans soulever", "soulever puis reposer", "retourner picots vers le bas", "tourner d’un quart de tour vers la droite", "cacher sous la main", "placer derrière le dos", "passer à un partenaire", "pincer avec deux doigts",
     "utiliser la main non dominante", "déplacer avec le coude", "déplacer avec une règle", "poser sur une feuille", "placer dans un coin", "mettre au-dessus", "mettre au-dessous", "faire une tour stable", "faire un pont", "composer un motif",
     "changer deux briques de place", "retirer une brique puis la remettre", "toucher sans déplacer", "nommer avant de bouger", "bouger en silence", "attendre un signal", "exécuter en miroir", "exécuter à l’envers", "faire une ligne brisée", "former un cercle",
     "créer une symétrie", "placer sur un repère corporel", "faire glisser sur une ligne", "construire les yeux mi-clos", "pointer avant de prendre", "choisir une brique témoin"
@@ -2396,396 +2511,596 @@ function capitalize(text) {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
-function createInfiniteActivity(values, lang) {
-  values.level = values.family === "listenCopy" ? "2" : values.family === "backToBack" ? "2" : String(1 + randomIndex([1, 2]));
-  if (values.family === "backToBack") return createBackToBackActivity(values, lang);
-  if (values.family === "listenCopy") return createListenCopyActivity(values, lang);
+const activityColors = ["rouge", "orange", "jaune", "vert", "bleu clair", "bleu foncé"];
 
-  const randomId = createRandomId();
+const familyLabels = {
+  free: "sans plateau",
+  lined: "plateau ligné",
+  movement: "plateau de mouvements",
+  backToBack: "dos à dos",
+  listenCopy: "écoute et fais pareil"
+};
+
+const familyGroups = {
+  free: "solo, duo ou groupe",
+  lined: "solo ou petit groupe",
+  movement: "solo ou groupe",
+  backToBack: "2 participants minimum",
+  listenCopy: "2 participants ou petit groupe"
+};
+
+const goalLabels = {
+  attention: "attention",
+  memory: "mémoire",
+  language: "langage",
+  math: "mathématiques",
+  movement: "motricité",
+  cooperation: "coopération",
+  emotion: "émotions",
+  spatial: "repérage spatial",
+  executive: "fonctions exécutives"
+};
+
+const activityTemplates = {
+  free: [
+    {
+      id: "code-secret-couleurs",
+      title: "Le code secret des couleurs",
+      allowedGoals: ["attention", "memory", "language"],
+      groupType: familyGroups.free,
+      summary: "Les participants écoutent des consignes courtes et doivent toucher ou déplacer uniquement les briques demandées.",
+      materials: ["6 briques Six Bricks par participant", "Une table ou un tapis", "Un espace calme pour poser les briques"],
+      steps: ({ c }) => [
+        "Place les six briques en ligne devant chaque participant, picots vers le haut.",
+        `Dis: "Quand je nomme ${c[0]}, tu touches ${c[0]} avec un doigt, puis tu remets tes mains sur la table."`,
+        `Dis: "Quand je nomme ${c[1]}, tu places ${c[1]} juste à droite de ${c[0]}."`,
+        "Ajoute un signal d’arrêt: \"Quand je dis stop, tu gardes les mains posées et tu ne touches aucune brique.\"",
+        `Fais une petite série avec ${c[0]}, ${c[1]} et stop, puis ajoute ${c[2]} si le participant réussit.`,
+        "Arrête l’activité après trois réussites de suite ou au bout de cinq minutes."
+      ],
+      prompts: ({ c }) => [`${c[0]}: touche la brique, puis mains sur la table.`, `${c[1]}: place-la à droite de ${c[0]}.`, "Stop: mains posées, aucune brique ne bouge."],
+      variation: ({ c }) => `Facile: utiliser seulement ${c[0]} et ${c[1]}. Difficile: ajouter ${c[2]} avec une consigne d’attente avant de toucher.`,
+      question: "Qu’est-ce qui t’a aidé à écouter la bonne consigne ?"
+    },
+    {
+      id: "deux-consignes-tete",
+      title: "Deux consignes dans la tête",
+      allowedGoals: ["memory", "attention", "language"],
+      groupType: familyGroups.free,
+      summary: "Les participants écoutent deux actions, attendent le signal, puis les réalisent dans l’ordre.",
+      materials: ["6 briques Six Bricks par participant", "Une table ou un tapis"],
+      steps: ({ c }) => [
+        "Place les six briques en ligne devant le participant.",
+        "Explique: \"Tu écoutes toute la consigne. Tu bouges seulement quand je dis maintenant.\"",
+        `Dis: "Prends ${c[0]} avec la main droite, puis pose ${c[1]} au-dessus de ${c[0]}. Maintenant."`,
+        "Laisse le participant réaliser les deux actions sans répéter.",
+        `Deuxième série: "Place ${c[2]} à gauche de la petite tour, puis touche ${c[3]} sans le déplacer. Maintenant."`,
+        "Arrête après trois séries ou dès que la mémorisation devient trop coûteuse."
+      ],
+      prompts: ({ c }) => [`Prends ${c[0]}, puis pose ${c[1]} dessus. Maintenant.`, `Place ${c[2]} à gauche, puis touche ${c[3]}. Maintenant.`, "Répète la consigne dans ta tête avant de commencer."],
+      variation: () => "Facile: répéter la consigne deux fois. Difficile: donner trois actions avant le mot maintenant.",
+      question: "Comment as-tu gardé les consignes dans ta tête ?"
+    }
+  ],
+  lined: [
+    {
+      id: "defi-positions-lignes",
+      title: "Le défi des positions",
+      allowedGoals: ["spatial", "attention", "math", "memory"],
+      groupType: familyGroups.lined,
+      summary: "Les participants déplacent les briques sur un plateau ligné en suivant des positions simples et vérifiables.",
+      materials: ["6 briques Six Bricks par participant", "Un plateau ligné ou une feuille avec cinq lignes", "Un repère départ sur la ligne du bas"],
+      steps: ({ c }) => [
+        "Place les six briques sur la ligne du bas du plateau.",
+        `Dis: "Place ${c[0]} sur la deuxième ligne, au milieu."`,
+        `Dis: "Place ${c[1]} sur la ligne juste au-dessus de ${c[0]}."`,
+        `Dis: "Place ${c[2]} sur la même ligne que ${c[0]}, à gauche."`,
+        `Dis: "Replace ${c[1]} sur la ligne du bas."`,
+        "Vérifie avec le participant: chaque brique est-elle sur la bonne ligne ?"
+      ],
+      prompts: ({ c }) => [`${c[0]} va sur la deuxième ligne, au milieu.`, `${c[1]} va une ligne au-dessus.`, `${c[2]} va à gauche de ${c[0]}.`],
+      variation: () => "Facile: utiliser trois lignes seulement. Difficile: annoncer deux déplacements avant de laisser agir.",
+      question: "Quel repère t’a aidé à trouver la bonne ligne ?"
+    },
+    {
+      id: "suite-a-reconstruire",
+      title: "La suite à reconstruire",
+      allowedGoals: ["math", "memory", "spatial"],
+      groupType: familyGroups.lined,
+      summary: "Les participants mémorisent une suite de couleurs puis la reconstruisent sur le plateau.",
+      materials: ["6 briques Six Bricks par participant", "Un plateau ligné", "Une feuille ou un cache facultatif"],
+      steps: ({ c }) => [
+        `Montre trois briques dans cet ordre: ${c[0]}, ${c[1]}, ${c[2]}.`,
+        "Cache le modèle après cinq secondes.",
+        "Le participant reconstruit la suite sur la ligne du milieu, de gauche à droite.",
+        `Ajoute une quatrième brique: ${c[3]}. Montre la nouvelle suite cinq secondes, puis cache-la.`,
+        "Le participant reconstruit la suite complète sur la ligne du haut.",
+        "Comparez avec le modèle et corrigez ensemble si besoin."
+      ],
+      prompts: ({ c }) => [`Regarde l’ordre: ${c[0]}, ${c[1]}, ${c[2]}.`, "Reconstruis de gauche à droite.", `Ajoute maintenant ${c[3]} à la fin de la suite.`],
+      variation: () => "Facile: laisser le modèle visible. Difficile: demander de reconstruire la suite à l’envers.",
+      question: "Qu’as-tu regardé en premier pour retenir l’ordre ?"
+    }
+  ],
+  movement: [
+    {
+      id: "parcours-briques",
+      title: "Le parcours des briques",
+      allowedGoals: ["movement", "attention", "executive"],
+      groupType: familyGroups.movement,
+      summary: "Les participants associent une brique à un déplacement simple, puis reviennent au point de départ.",
+      materials: ["6 briques Six Bricks par participant", "Un plateau de mouvements ou trois repères au sol", "Un espace dégagé"],
+      steps: ({ c }) => [
+        "Place les briques au repère de départ.",
+        `Dis: "Prends ${c[0]}, marche jusqu’au repère action, pose la brique, puis reviens au départ."`,
+        `Dis: "Prends ${c[1]}, marche jusqu’au repère action, tape une fois dans les mains, pose la brique, puis reviens."`,
+        `Dis: "Prends ${c[2]}, avance lentement, pose la brique à côté de ${c[0]}, puis reviens."`,
+        "Après chaque retour, le participant attend la consigne suivante mains libres.",
+        "Arrête quand trois déplacements sont réalisés sans courir ni oublier le retour."
+      ],
+      prompts: ({ c }) => [`${c[0]}: marche, pose, reviens.`, `${c[1]}: marche, tape, pose, reviens.`, `${c[2]}: avance lentement, pose à côté de ${c[0]}.`],
+      variation: () => "Facile: marcher sans geste ajouté. Difficile: annoncer deux briques avant le départ.",
+      question: "Comment as-tu su quand revenir au départ ?"
+    },
+    {
+      id: "stop-ou-encore",
+      title: "Stop ou encore",
+      allowedGoals: ["attention", "movement", "executive"],
+      groupType: familyGroups.movement,
+      summary: "Les participants bougent avec une brique, puis s’arrêtent immédiatement au signal.",
+      materials: ["6 briques Six Bricks par participant", "Un espace au sol", "Un signal sonore ou visuel facultatif"],
+      steps: ({ c }) => [
+        `Le participant tient ${c[0]} dans la main, sans serrer fort.`,
+        "Explique: \"Quand je dis avance, tu fais trois pas. Quand je dis stop, tu t’arrêtes et tu gardes la brique immobile.\"",
+        "Fais trois essais lents avec avance et stop.",
+        `Ajoute ${c[1]}: "Quand je nomme ${c[1]}, tu poses ${c[0]} au sol devant tes pieds."`,
+        "Recommence avec deux ou trois signaux seulement.",
+        "Arrête si le participant fatigue ou si l’arrêt devient moins précis."
+      ],
+      prompts: ({ c }) => ["Avance: trois pas.", "Stop: le corps et la brique ne bougent plus.", `${c[1]}: pose ${c[0]} devant tes pieds.`],
+      variation: () => "Facile: garder seulement avance et stop. Difficile: varier le rythme des signaux.",
+      question: "À quel moment as-tu dû freiner ton geste ?"
+    }
+  ],
+  backToBack: [
+    {
+      id: "defi-dos-a-dos",
+      title: "Défi dos à dos",
+      allowedGoals: ["language", "memory", "cooperation", "spatial"],
+      groupType: familyGroups.backToBack,
+      summary: "Deux participants construisent le même modèle sans se voir: l’un décrit, l’autre construit.",
+      materials: ["6 briques Six Bricks par participant", "Deux participants assis dos à dos ou séparés par un écran", "Une surface plane pour chacun"],
+      steps: ({ c }) => [
+        "Les deux participants prennent les mêmes six briques. Ils ne doivent pas voir la construction de l’autre.",
+        "Le participant 1 construit le modèle en même temps qu’il décrit chaque étape. Le participant 2 écoute et construit.",
+        `Consigne 1: "Place la brique ${c[0]} devant toi, horizontalement, picots vers le haut."`,
+        `Consigne 2: "Pose la brique ${c[1]} au-dessus de la brique ${c[0]}, bien centrée."`,
+        `Consigne 3: "Place la brique ${c[2]} à droite de la brique ${c[1]}, sans l’accrocher."`,
+        `Consigne 4: "Pose la brique ${c[3]} verticalement sous la brique ${c[0]}."`,
+        "Les deux participants comparent les modèles, puis échangent les rôles."
+      ],
+      prompts: ({ c }) => [`Place ${c[0]} devant toi, horizontalement.`, `Pose ${c[1]} au-dessus de ${c[0]}, bien centrée.`, `Place ${c[2]} à droite de ${c[1]}.`, `Pose ${c[3]} verticalement sous ${c[0]}.`],
+      variation: () => "Facile: utiliser trois briques. Difficile: interdire les gestes et autoriser une seule répétition.",
+      question: "Quels mots ont rendu la construction plus facile à refaire ?"
+    },
+    {
+      id: "modele-secret",
+      title: "Le modèle secret",
+      allowedGoals: ["language", "cooperation", "spatial"],
+      groupType: familyGroups.backToBack,
+      summary: "Un participant décrit un modèle très simple, l’autre le reconstruit sans le voir.",
+      materials: ["6 briques Six Bricks par participant", "Un cache entre les deux participants", "Une surface plane"],
+      steps: ({ c }) => [
+        "Le participant qui décrit place trois briques devant lui. L’autre participant ne regarde pas.",
+        `Il dit: "Place ${c[0]} au centre, horizontalement."`,
+        `Il dit: "Place ${c[1]} à gauche de ${c[0]}, dans le même sens."`,
+        `Il dit: "Place ${c[2]} au-dessus de ${c[0]}, verticalement."`,
+        "Le constructeur vérifie en silence et ne pose qu’une question si une position n’est pas claire.",
+        "On enlève le cache, on compare, puis on nomme une consigne qui était précise."
+      ],
+      prompts: ({ c }) => [`${c[0]} au centre, horizontalement.`, `${c[1]} à gauche de ${c[0]}, dans le même sens.`, `${c[2]} au-dessus de ${c[0]}, verticalement.`],
+      variation: () => "Facile: autoriser deux questions. Difficile: ajouter une quatrième brique sous le modèle.",
+      question: "Quelle consigne était la plus claire ? Pourquoi ?"
+    }
+  ],
+  listenCopy: [
+    {
+      id: "consigne-invisible",
+      title: "La consigne invisible",
+      allowedGoals: ["attention", "memory", "executive"],
+      groupType: familyGroups.listenCopy,
+      summary: "Les participants écoutent une suite de consignes et les réalisent tous dans le même ordre.",
+      materials: ["6 briques Six Bricks par participant", "Une feuille A4 devant chaque participant", "Une table ou un tapis"],
+      steps: ({ c }) => [
+        `Chaque participant place les briques en ligne devant lui: ${c.join(", ")}.`,
+        "Pose une feuille A4 devant la ligne de briques.",
+        `Dis: "Prends ${c[0]} avec la main droite et place-la dans le coin supérieur gauche de la feuille."`,
+        `Dis: "Prends ${c[1]} avec la main gauche et place-la dans le coin supérieur droit."`,
+        `Dis: "Échange ${c[0]} et ${c[1]}, puis repose tes mains sur la table."`,
+        `Dis: "Place ${c[2]} au centre de la feuille."`,
+        "À la fin, chacun compare sa feuille avec celle de l’adulte ou du groupe."
+      ],
+      prompts: ({ c }) => [`Main droite: ${c[0]} dans le coin supérieur gauche.`, `Main gauche: ${c[1]} dans le coin supérieur droit.`, `Échange ${c[0]} et ${c[1]}.`, `${c[2]} au centre.`],
+      variation: () => "Facile: lire chaque consigne deux fois. Difficile: lire deux consignes avant de laisser bouger.",
+      question: "Quelle consigne as-tu dû écouter le plus attentivement ?"
+    },
+    {
+      id: "suite-a-ecouter",
+      title: "La suite à écouter",
+      allowedGoals: ["memory", "attention", "language"],
+      groupType: familyGroups.listenCopy,
+      summary: "Les participants construisent une petite suite après avoir écouté l’ordre complet.",
+      materials: ["6 briques Six Bricks par participant", "Une table ou un tapis", "Un cache facultatif"],
+      steps: ({ c }) => [
+        "Les participants gardent les mains sur la table pendant l’écoute.",
+        `Lis l’ordre complet: ${c[0]}, ${c[1]}, ${c[2]}, ${c[3]}.`,
+        "Dis: \"Maintenant, construis une ligne de gauche à droite avec ces quatre briques.\"",
+        "Laisse le groupe construire sans répéter immédiatement.",
+        "Relis l’ordre une seule fois pour vérifier.",
+        "Les participants corrigent si besoin, puis expliquent leur stratégie."
+      ],
+      prompts: ({ c }) => [`Écoute l’ordre: ${c[0]}, ${c[1]}, ${c[2]}, ${c[3]}.`, "Construis la ligne de gauche à droite.", "Vérifie avec l’ordre relu."],
+      variation: () => "Facile: utiliser trois briques. Difficile: demander de reconstruire l’ordre de droite à gauche.",
+      question: "Comment as-tu retenu l’ordre des briques ?"
+    }
+  ]
+};
+
+function createInfiniteActivity(values) {
+  const family = values.family || "free";
+  const goal = values.goal || "attention";
+  const templates = activityTemplates[family] || activityTemplates.free;
+  const matching = templates.filter((template) => template.allowedGoals.includes(goal));
+  const pool = matching.length ? matching : templates;
   const recent = state.activityHistory || [];
-  const structure = pickFresh(storyEngine.narrativeStructures, recent, "structure");
-  const world = pickFresh(storyEngine.worlds, recent, "world");
-  const mission = pickFresh(storyEngine.missionTypes, recent, "mission");
-  const manipulation = pickFresh(storyEngine.manipulations, recent, "manipulation");
-  const objective = values.goal === "all" ? pick(storyEngine.objectives) : pick(goalFamilies[values.goal] || storyEngine.objectives);
-  const challenge = pickFresh(storyEngine.missionTypes, recent, "challenge");
-  const colors = shuffle(Object.keys(storyEngine.colorObjects)).slice(0, 4);
-  const [c1, c2, c3] = colors;
-  const difficulty = pick(["accessible", "intermédiaire", "challenge"]);
-  const titleBits = {
-    fr: {
-      free: "Défi Six Bricks",
-      lined: "Mission sur plateau ligné",
-      movement: "Parcours en mouvement"
-    },
-    en: {
-      free: "Six Bricks challenge",
-      lined: "Lined mat mission",
-      movement: "Movement path"
-    },
-    zh: {
-      free: "六块积木自由挑战",
-      lined: "线条垫板任务",
-      movement: "动作路线"
+
+  for (let attempt = 0; attempt < 12; attempt += 1) {
+    const colors = shuffle(activityColors).slice(0, 6);
+    const recentIds = new Set(recent.slice(0, 4).map((entry) => entry.template));
+    const candidates = pool.filter((template) => !recentIds.has(template.id));
+    const template = pick(candidates.length ? candidates : pool);
+    const activity = buildActivityFromTemplate(template, { family, goal, colors });
+    if (validateGeneratedActivity(activity, { family, goal })) {
+      rememberRecent("activityHistory", { template: template.id, family, goal });
+      return activity;
     }
-  };
-  const materialsByFamily = {
-    fr: {
-      free: ["Six briques par participant", "Un espace de table ou de sol"],
-      lined: ["Six briques par participant", "Un plateau ligné ou une feuille avec lignes"],
-      movement: ["Six briques par participant", "Un plateau de mouvements ou des repères au sol"]
-    },
-    en: {
-      free: ["Six bricks per participant", "A table or floor space"],
-      lined: ["Six bricks per participant", "A lined mat or paper with lines"],
-      movement: ["Six bricks per participant", "A movement mat or floor markers"]
-    },
-    zh: {
-      free: ["每名参与者六块积木", "桌面或地面空间"],
-      lined: ["每名参与者六块积木", "线条垫板或画线纸"],
-      movement: ["每名参与者六块积木", "动作垫板或地面标记"]
-    }
-  };
-  const familyConstraint = {
-    free: `L’activité se déroule dans ${world}, sans support imposé.`,
-    lined: `Le plateau ligné sert à matérialiser les passages, les retours et les changements de zone.`,
-    movement: `Le plateau de mouvements ou les repères au sol ajoutent un déplacement du corps entre deux briques.`
-  }[values.family];
-  const title = `${titleBits.fr[values.family]} : ${capitalize(pick(storyEngine.titleNouns))}`;
-  const waitRule = difficulty === "challenge" ? "Les participants attendent deux consignes avant de manipuler." : "Les participants manipulent après chaque consigne.";
-  const supportRule = values.family === "lined"
-    ? "Chaque brique doit franchir ou toucher une ligne au moins une fois."
-    : values.family === "movement"
-      ? "Entre deux actions, ajoute un geste corporel simple: pas de côté, rotation, étirement ou équilibre."
-      : "Les briques peuvent rester au sol, dans les mains ou sur une feuille selon l’espace disponible.";
-  const steps = [
-    `Annonce l’univers: ${world}. La mission du groupe est de ${mission}.`,
-    `Choisis les briques ${c1}, ${c2} et ${c3}. La première lance l’action, la deuxième change la règle, la troisième sert de signal d’arrêt.`,
-    `Contrainte de manipulation: "${manipulation}" avec la brique ${c1}. Place ensuite ${c2} à une distance ou une position négociée ensemble.`,
-    supportRule,
-    `Ajoute le défi: ${challenge}. Les participants doivent expliquer leur stratégie avant la dernière manipulation.`,
-    difficulty === "challenge" ? "Termine par une reprise silencieuse: même mission, mais seuls les gestes sont autorisés." : "Termine par une courte verbalisation: chacun nomme une chose qu’il a observée."
-  ];
-
-  rememberRecent("activityHistory", { structure, world, mission, manipulation, challenge });
-
-  return {
-    title,
-    randomId,
-    tags: [objective, difficulty, structure],
-    summary: `${familyConstraint} Mission: ${mission}, avec une contrainte de manipulation: ${manipulation}. Objectif principal: ${objective}.`,
-    materials: materialsByFamily[lang]?.[values.family] || materialsByFamily.fr[values.family],
-    steps,
-    variation: `Facile: réduire à trois briques et verbaliser après chaque geste. Difficile: ${waitRule} Ajouter une règle d’inhibition: si ${c3} est nommé, on ne bouge pas.`,
-    question: `Qu’est-ce qui t’a aidé à réussir la mission: regarder, écouter, mémoriser, parler ou bouger ?`,
-    proposals: [
-      `Relance: transformer ${challenge} en défi coopératif.`,
-      `Changer la modalité: ${pick(storyEngine.manipulations)}.`,
-      `Changer l’objectif: ${pick(storyEngine.objectives)}.`
-    ]
-  };
-}
-
-function createBackToBackActivity(values, lang) {
-  const words = activityWords(lang);
-  const order = shuffle(words.colors).slice(0, 6);
-  const relationsEasy = words.relationsEasy;
-  const relationsHard = words.relationsHard;
-  const relationSet = Number(values.level) === 1 ? relationsEasy : relationsHard;
-  const instructions = order.map((color, index) => {
-    if (index === 0) return words.backToBackStart(color);
-    const ref = order[Math.max(0, index - 1)];
-    return words.backToBackPlace(color, pick(relationSet), ref);
-  });
-
-  return {
-    title: words.backToBackTitle,
-    tags: [words.duo, words.memory],
-    summary: words.backToBackSummary,
-    materials: words.backToBackMaterials,
-    steps: [
-      words.backToBackRole1,
-      words.backToBackRole2,
-      ...instructions,
-      words.compareModels,
-      words.switchRoles
-    ],
-    variation: Number(values.level) > 1 ? words.backToBackHardVariation : words.backToBackEasyVariation,
-    question: words.backToBackQuestion,
-    proposals: [
-      words.proposalReadOnce,
-      words.proposalAskQuestions,
-      words.proposalNoColors,
-      words.proposalDrawBeforeCompare
-    ]
-  };
-}
-
-function createListenCopyActivity(values, lang) {
-  const words = activityWords(lang);
-  const order = shuffle(words.colors).slice(0, 6);
-  const corners = shuffle(words.corners);
-  const hand1 = pick(words.hands);
-  const hand2 = pick(words.hands);
-  const stack = shuffle(order);
-  const level = Number(values.level);
-
-  const steps = [
-    words.lineOrder(order),
-    level > 1 ? words.a4Landscape : words.a4Portrait,
-    words.crossSwap(order[0], order[3]),
-    words.handMove(hand1, order[5], order[1]),
-    words.cornerMove(hand2, order[2], corners[0]),
-    words.cornerMove(hand2, order[4], corners[1]),
-    words.anyHandMove(order[0], corners[2]),
-    words.emptyCorner(order[1]),
-    words.remainingQuestion(order[3], order[5]),
-    words.balancePair(order[3], order[5]),
-    words.stackInstruction(stack)
-  ];
-
-  if (level > 2) {
-    steps.splice(5, 0, words.memoryPause);
-    steps.push(words.reverseStack(stack));
   }
 
+  const fallback = buildActivityFromTemplate(activityTemplates.free[0], { family: "free", goal: "attention", colors: activityColors });
+  rememberRecent("activityHistory", { template: activityTemplates.free[0].id, family: "free", goal: "attention" });
+  return fallback;
+}
+
+function buildActivityFromTemplate(template, context) {
+  const data = { c: context.colors, family: context.family, goal: context.goal };
+  const groupType = template.groupType || familyGroups[context.family];
+  const goalLabel = goalLabels[context.goal] || context.goal;
   return {
-    title: words.listenCopyTitle,
-    tags: [words.listen, words.executive],
-    summary: words.listenCopySummary,
-    materials: words.listenCopyMaterials,
-    steps,
-    variation: level > 1 ? words.listenCopyHardVariation : words.listenCopyEasyVariation,
-    question: words.listenCopyQuestion,
-    proposals: [
-      words.proposalRightLeft,
-      words.proposalCornersOnly,
-      words.proposalBalance,
-      words.proposalFinalPhoto
-    ]
+    title: template.title,
+    tags: [familyLabels[context.family], groupType, goalLabel],
+    family: context.family,
+    groupType,
+    summary: template.summary,
+    materials: template.materials,
+    steps: template.steps(data),
+    variation: template.variation(data),
+    question: template.question,
+    proposals: template.prompts(data)
   };
 }
 
-function activityWords(lang) {
-  const data = {
-    fr: {
-      colors: ["rouge", "orange", "jaune", "verte", "bleu clair", "bleu foncé"],
-      relationsEasy: ["au-dessus de", "au-dessous de", "sur", "sous", "en croix sur", "dans le même sens que"],
-      relationsHard: ["au-dessus en couvrant les 4 picots de gauche de", "au-dessus en couvrant les 4 picots de droite de", "horizontalement sur", "verticalement sous", "en recouvrant les picots du milieu de", "en croix sous"],
-      corners: ["coin supérieur gauche", "coin supérieur droit", "coin inférieur gauche", "coin inférieur droit"],
-      hands: ["main droite", "main gauche", "main de ton choix"],
-      duo: "duo",
-      memory: "mémoire et langage spatial",
-      listen: "écoute active",
-      executive: "fonctions exécutives",
-      level: (level) => `Niveau ${level}`,
-      backToBackTitle: "Dos à dos généré",
-      backToBackSummary: "Deux partenaires construisent le même modèle sans se voir: l’un lit les consignes, l’autre écoute et reproduit.",
-      backToBackMaterials: ["Six briques par personne", "Deux partenaires assis ou debout dos à dos"],
-      backToBackRole1: "Personne 1 lit chaque consigne deux fois à voix haute et construit son modèle en même temps.",
-      backToBackRole2: "Personne 2 écoute sans regarder et construit le même modèle sans poser de questions.",
-      backToBackStart: (color) => `Prenez la brique ${color} et posez-la devant vous.`,
-      backToBackPlace: (color, relation, ref) => `Placez la brique ${color} ${relation} la brique ${ref}.`,
-      compareModels: "Comparez les deux modèles et cherchez les différences sans juger.",
-      switchRoles: "Échangez les rôles et générez une nouvelle série.",
-      backToBackEasyVariation: "Niveau doux: autoriser une répétition supplémentaire à la fin de la série.",
-      backToBackHardVariation: "Niveau avancé: la personne qui écoute doit attendre deux consignes avant de construire.",
-      backToBackQuestion: "Quels mots ont rendu la construction plus facile à comprendre ?",
-      listenCopyTitle: "Écoute et fais pareil généré",
-      listenCopySummary: "Les participants partent d’une ligne de six briques, écoutent des consignes de mains, coins, échanges et pile finale.",
-      listenCopyMaterials: ["Six briques par participant", "Une feuille A4 devant la ligne de briques"],
-      lineOrder: (order) => `Disposez les briques de gauche à droite: ${order.join(", ")}.`,
-      a4Landscape: "Posez la feuille A4 devant vous en orientation paysage.",
-      a4Portrait: "Posez la feuille A4 devant vous en orientation portrait.",
-      crossSwap: (a, b) => `Croisez les avant-bras, prenez la brique ${a} et la brique ${b}, puis échangez-les de place.`,
-      handMove: (hand, color, ref) => `Avec votre ${hand}, déplacez la brique ${color} de l’autre côté, devant la brique ${ref}.`,
-      cornerMove: (hand, color, corner) => `Avec votre ${hand}, placez la brique ${color} dans le ${corner} de la feuille.`,
-      anyHandMove: (color, corner) => `Avec n’importe quelle main, placez la brique ${color} dans le ${corner}.`,
-      emptyCorner: (color) => `Déplacez la brique ${color} vers le coin encore vide.`,
-      remainingQuestion: (a, b) => `Quelles couleurs restent dans la ligne ? Réponse attendue: ${a} et ${b}.`,
-      balancePair: (a, b) => `Assemblez les briques ${a} et ${b}, puis gardez-les en équilibre 10 secondes.`,
-      stackInstruction: (stack) => `Construisez une pile finale, de bas en haut: ${stack.join(", ")}.`,
-      memoryPause: "Pause mémoire: répétez mentalement les deux dernières consignes avant de bouger.",
-      reverseStack: (stack) => `Défi avancé: reconstruisez la pile dans l’ordre inverse: ${[...stack].reverse().join(", ")}.`,
-      listenCopyEasyVariation: "Répéter chaque consigne deux fois et laisser les participants pointer avant de déplacer.",
-      listenCopyHardVariation: "Lire la série une seule fois et demander une vérification silencieuse avant la pile finale.",
-      listenCopyQuestion: "Quelle consigne a demandé le plus d’attention ?",
-      proposalReadOnce: "Lire une seule fois au lieu de deux.",
-      proposalAskQuestions: "Autoriser une seule question joker.",
-      proposalNoColors: "Remplacer les couleurs par première, deuxième, troisième brique.",
-      proposalDrawBeforeCompare: "Dessiner le modèle avant de comparer.",
-      proposalRightLeft: "Imposer uniquement main droite puis uniquement main gauche.",
-      proposalCornersOnly: "Faire une série avec seulement les coins de la feuille.",
-      proposalBalance: "Changer la partie du corps pour l’équilibre: tête, front, épaule.",
-      proposalFinalPhoto: "Prendre une photo mentale avant la pile finale."
-    },
-    en: {
-      colors: ["red", "orange", "yellow", "green", "light blue", "dark blue"],
-      relationsEasy: ["above", "below", "on top of", "under", "crosswise on", "in the same direction as"],
-      relationsHard: ["above covering the 4 left studs of", "above covering the 4 right studs of", "horizontally on", "vertically under", "covering the middle studs of", "crosswise under"],
-      corners: ["top-left corner", "top-right corner", "bottom-left corner", "bottom-right corner"],
-      hands: ["right hand", "left hand", "hand of your choice"],
-      duo: "pair",
-      memory: "memory and spatial language",
-      listen: "active listening",
-      executive: "executive functions",
-      level: (level) => `Level ${level}`,
-      backToBackTitle: "Generated back-to-back build",
-      backToBackSummary: "Two partners build the same model without seeing each other: one reads, the other listens and copies.",
-      backToBackMaterials: ["Six bricks per person", "Two partners sitting or standing back to back"],
-      backToBackRole1: "Person 1 reads each instruction twice and builds their model at the same time.",
-      backToBackRole2: "Person 2 listens without looking and builds the same model without asking questions.",
-      backToBackStart: (color) => `Take the ${color} brick and place it in front of you.`,
-      backToBackPlace: (color, relation, ref) => `Place the ${color} brick ${relation} the ${ref} brick.`,
-      compareModels: "Compare both models and look for differences without judging.",
-      switchRoles: "Swap roles and generate a new series.",
-      backToBackEasyVariation: "Gentle level: allow one extra repetition at the end.",
-      backToBackHardVariation: "Advanced level: the listener waits for two instructions before building.",
-      backToBackQuestion: "Which words made the build easier to understand?",
-      listenCopyTitle: "Generated listen-and-copy",
-      listenCopySummary: "Children start from a line of six bricks and follow instructions about hands, corners, swaps and a final stack.",
-      listenCopyMaterials: ["Six bricks per participant", "One A4 sheet in front of the brick line"],
-      lineOrder: (order) => `Place the bricks from left to right: ${order.join(", ")}.`,
-      a4Landscape: "Place the A4 sheet in landscape orientation.",
-      a4Portrait: "Place the A4 sheet in portrait orientation.",
-      crossSwap: (a, b) => `Cross your forearms, take the ${a} and ${b} bricks, then swap their places.`,
-      handMove: (hand, color, ref) => `With your ${hand}, move the ${color} brick to the other side, in front of the ${ref} brick.`,
-      cornerMove: (hand, color, corner) => `With your ${hand}, place the ${color} brick in the ${corner}.`,
-      anyHandMove: (color, corner) => `With either hand, place the ${color} brick in the ${corner}.`,
-      emptyCorner: (color) => `Move the ${color} brick to the empty corner.`,
-      remainingQuestion: (a, b) => `Which colours remain in the line? Expected answer: ${a} and ${b}.`,
-      balancePair: (a, b) => `Connect the ${a} and ${b} bricks, then balance them for 10 seconds.`,
-      stackInstruction: (stack) => `Build a final stack, bottom to top: ${stack.join(", ")}.`,
-      memoryPause: "Memory pause: silently repeat the last two instructions before moving.",
-      reverseStack: (stack) => `Advanced challenge: rebuild the stack in reverse order: ${[...stack].reverse().join(", ")}.`,
-      listenCopyEasyVariation: "Repeat each instruction twice and let participants point before moving.",
-      listenCopyHardVariation: "Read the series only once and ask for a silent check before the final stack.",
-      listenCopyQuestion: "Which instruction required the most attention?",
-      proposalReadOnce: "Read only once instead of twice.",
-      proposalAskQuestions: "Allow one joker question.",
-      proposalNoColors: "Replace colours with first, second, third brick.",
-      proposalDrawBeforeCompare: "Draw the model before comparing.",
-      proposalRightLeft: "Use only the right hand, then only the left hand.",
-      proposalCornersOnly: "Run a sequence using only sheet corners.",
-      proposalBalance: "Change the balancing body part: head, forehead, shoulder.",
-      proposalFinalPhoto: "Take a mental picture before the final stack."
-    },
-    zh: {
-      colors: ["红色", "橙色", "黄色", "绿色", "浅蓝色", "深蓝色"],
-      relationsEasy: ["在上方", "在下方", "放在上面", "放在下面", "交叉放在", "方向和"],
-      relationsHard: ["在上方并盖住左边4个凸点", "在上方并盖住右边4个凸点", "横向放在", "纵向放在下面", "盖住中间凸点", "交叉放在下面"],
-      corners: ["左上角", "右上角", "左下角", "右下角"],
-      hands: ["右手", "左手", "任意一只手"],
-      duo: "两人",
-      memory: "记忆与空间语言",
-      listen: "主动倾听",
-      executive: "执行功能",
-      level: (level) => `级别 ${level}`,
-      backToBackTitle: "背靠背生成搭建",
-      backToBackSummary: "两名伙伴背靠背搭建同一个模型：一人读指令，另一人听并复制。",
-      backToBackMaterials: ["每人六块积木", "两名伙伴背靠背坐或站"],
-      backToBackRole1: "第1人每条指令读两遍，同时搭建自己的模型。",
-      backToBackRole2: "第2人不看模型，只听指令搭建，不能提问。",
-      backToBackStart: (color) => `拿起${color}积木，放在自己面前。`,
-      backToBackPlace: (color, relation, ref) => `把${color}积木${relation}${ref}积木。`,
-      compareModels: "比较两个模型，找出不同，不评价对错。",
-      switchRoles: "交换角色，再生成一组新指令。",
-      backToBackEasyVariation: "温和版：最后允许再重复一次。",
-      backToBackHardVariation: "进阶版：听的人要等两条指令后才能开始搭建。",
-      backToBackQuestion: "哪些词让你更容易理解搭建？",
-      listenCopyTitle: "听一听，照着做生成",
-      listenCopySummary: "参与者从六块积木的一条线开始，听关于手、角落、交换和最终堆叠的指令。",
-      listenCopyMaterials: ["每名参与者六块积木", "一张放在积木线前面的 A4 纸"],
-      lineOrder: (order) => `从左到右摆放积木：${order.join("，")}。`,
-      a4Landscape: "把 A4 纸横向放在面前。",
-      a4Portrait: "把 A4 纸纵向放在面前。",
-      crossSwap: (a, b) => `交叉前臂，拿起${a}和${b}积木，并交换位置。`,
-      handMove: (hand, color, ref) => `用${hand}把${color}积木移到另一边，放在${ref}积木前面。`,
-      cornerMove: (hand, color, corner) => `用${hand}把${color}积木放到纸的${corner}。`,
-      anyHandMove: (color, corner) => `用任意一只手把${color}积木放到${corner}。`,
-      emptyCorner: (color) => `把${color}积木移动到空的角落。`,
-      remainingQuestion: (a, b) => `线里还剩哪两种颜色？参考答案：${a}和${b}。`,
-      balancePair: (a, b) => `把${a}和${b}积木连接起来，并保持平衡10秒。`,
-      stackInstruction: (stack) => `搭建最终积木塔，从下到上：${stack.join("，")}。`,
-      memoryPause: "记忆暂停：移动前在心里重复最后两条指令。",
-      reverseStack: (stack) => `进阶挑战：按相反顺序重建积木塔：${[...stack].reverse().join("，")}。`,
-      listenCopyEasyVariation: "每条指令读两遍，移动前允许参与者先指出位置。",
-      listenCopyHardVariation: "整组指令只读一遍，最终堆叠前先安静检查。",
-      listenCopyQuestion: "哪条指令最需要专注？",
-      proposalReadOnce: "只读一遍，不读两遍。",
-      proposalAskQuestions: "允许一次求助问题。",
-      proposalNoColors: "用第一块、第二块、第三块代替颜色。",
-      proposalDrawBeforeCompare: "比较前先画出模型。",
-      proposalRightLeft: "先只用右手，再只用左手。",
-      proposalCornersOnly: "只使用纸张四个角落做一组指令。",
-      proposalBalance: "更换平衡部位：头、额头、肩膀。",
-      proposalFinalPhoto: "最终堆叠前先拍一张“心理照片”。"
-    }
-  };
-  return data[lang] || data.fr;
+function validateGeneratedActivity(activity, values) {
+  const vaguePattern = /faire parler|faire pivoter|changer la règle|mission secrète|ponton au soleil|activité magique|manipulation libre|position négociée|quelque part|modèle simple|généré|générateur|activité générée/i;
+  const text = [
+    activity.title,
+    activity.summary,
+    activity.variation,
+    activity.question,
+    ...activity.tags,
+    ...activity.materials,
+    ...activity.steps,
+    ...activity.proposals
+  ].join(" ");
+  if (vaguePattern.test(text)) return false;
+  if (!activity.title || activity.title.length < 4) return false;
+  if (!activity.materials.length || !activity.steps.length || !activity.proposals.length) return false;
+  if (activity.steps.some((step) => step.length < 18 || !/[.!?"”]$/.test(step.trim()))) return false;
+  if (values.family === "backToBack") {
+    const backText = activity.steps.join(" ").toLowerCase();
+    if (!activity.groupType.includes("2")) return false;
+    if (!/ne doivent pas voir|ne regarde pas|sans se voir/.test(backText)) return false;
+    if (!/décrit|consigne|dit/.test(backText)) return false;
+    if (!/construit|construire|place/.test(backText)) return false;
+  }
+  if (values.family === "lined" && !text.toLowerCase().includes("ligne")) return false;
+  if (values.family === "movement" && !/repère|marche|pas|sol/i.test(text)) return false;
+  return true;
 }
 
-function createStory(values, lang) {
-  const randomId = createRandomId();
+const storyLabels = {
+  rouge: "Rouge",
+  orange: "Orange",
+  jaune: "Jaune",
+  vert: "Vert",
+  bleuClair: "Bleu clair",
+  bleuFonce: "Bleu foncé"
+};
+
+const storyColorKeys = ["rouge", "orange", "jaune", "vert", "bleuClair", "bleuFonce"];
+
+const commonStoryObjects = {
+  rouge: { level1: ["une fraise rouge", "une tomate rouge", "une cerise rouge", "un coquelicot rouge"], level2: ["une fraise bien mûre", "une tomate ronde", "une cerise", "un coquelicot"] },
+  orange: { level1: ["une carotte orange", "une mandarine orange", "une citrouille orange", "un abricot orange"], level2: ["une carotte", "une mandarine", "une citrouille", "un abricot"] },
+  jaune: { level1: ["un citron jaune", "une banane jaune", "un poussin jaune", "un pissenlit jaune"], level2: ["un citron", "une banane", "un poussin", "un pissenlit"] },
+  vert: { level1: ["une feuille verte", "une salade verte", "une grenouille verte", "une prairie verte"], level2: ["une feuille d’arbre", "une salade croquante", "une grenouille", "une prairie"] },
+  bleuClair: { level1: ["un ciel bleu clair", "une flaque bleu clair", "une eau bleu clair"], level2: ["un ciel d’été", "une flaque lumineuse", "une eau transparente"] },
+  bleuFonce: { level1: ["un ciel bleu foncé", "une mer bleu foncé", "une myrtille bleu foncé"], level2: ["un ciel de minuit", "une mer profonde", "une myrtille", "la nuit"] }
+};
+
+function makeTheme(label, character, openings, frames, closings, objects = commonStoryObjects) {
+  return { label, character, openings, frames, closings, objects };
+}
+
+const marketObjects = {
+  rouge: { level1: ["une fraise rouge", "une tomate rouge", "une cerise rouge"], level2: ["une fraise bien mûre", "une tomate ronde", "une cerise"] },
+  vert: { level1: ["une salade verte", "des herbes fraîches vertes", "une courgette verte"], level2: ["une salade croquante", "des herbes fraîches", "une courgette"] },
+  jaune: { level1: ["un citron jaune", "une banane jaune"], level2: ["un citron", "une banane"] },
+  orange: { level1: ["une carotte orange", "une mandarine orange", "une citrouille orange"], level2: ["une carotte", "une mandarine", "une citrouille"] },
+  bleuClair: { level1: ["un ruban bleu clair", "une bouteille bleu clair"], level2: ["un ruban couleur ciel d’été", "une bouteille d’eau transparente"] },
+  bleuFonce: { level1: ["une barquette de myrtilles bleu foncé", "un tablier bleu foncé"], level2: ["une barquette de myrtilles", "un tablier couleur nuit"] }
+};
+
+const forestObjects = {
+  rouge: { level1: ["une fraise des bois rouge", "un champignon rouge", "une baie rouge", "un coquelicot rouge"], level2: ["une fraise des bois", "un champignon", "une baie", "un coquelicot"] },
+  vert: { level1: ["une feuille verte", "une mousse verte", "un sapin vert", "une fougère verte"], level2: ["une feuille", "de la mousse", "un sapin", "une fougère"] },
+  jaune: { level1: ["un rayon de soleil jaune", "un poussin jaune", "une fleur de pissenlit jaune"], level2: ["un rayon de soleil", "un poussin perdu", "une fleur de pissenlit"] },
+  orange: { level1: ["un renard orange", "une feuille d’automne orange", "un écureuil orange"], level2: ["un renard", "une feuille d’automne", "un écureuil"] },
+  bleuClair: { level1: ["un ciel bleu clair entre les branches", "une goutte d’eau bleu clair"], level2: ["un ciel d’été entre les branches", "une goutte d’eau transparente"] },
+  bleuFonce: { level1: ["un ciel bleu foncé du soir", "une baie de myrtille bleu foncé"], level2: ["la nuit", "une baie de myrtille", "le ciel de minuit"] }
+};
+
+const beachObjects = {
+  rouge: { level1: ["une bouée rouge", "un seau rouge", "une glace à la fraise rouge", "un crabe rouge"], level2: ["une bouée", "un seau", "une glace à la fraise", "un crabe"] },
+  vert: { level1: ["une algue verte", "une pelle verte", "une serviette verte"], level2: ["une algue", "une pelle", "une serviette couleur prairie"] },
+  jaune: { level1: ["du sable jaune", "un soleil jaune", "un coquillage jaune"], level2: ["du sable", "le soleil", "un coquillage doré"] },
+  orange: { level1: ["un brassard orange", "un ballon orange", "une glace à l’abricot orange"], level2: ["un brassard", "un ballon couleur mandarine", "une glace à l’abricot"] },
+  bleuClair: { level1: ["un ciel bleu clair", "une eau bleu clair"], level2: ["un ciel d’été", "une eau transparente"] },
+  bleuFonce: { level1: ["une mer bleu foncé", "un ciel bleu foncé du soir"], level2: ["une mer profonde", "un ciel de minuit"] }
+};
+
+const kitchenObjects = {
+  rouge: { level1: ["une tomate rouge", "une fraise rouge", "une cerise rouge", "une sauce tomate rouge"], level2: ["une tomate", "une fraise", "une cerise", "une sauce tomate"] },
+  vert: { level1: ["une salade verte", "une courgette verte", "du basilic vert", "un concombre vert"], level2: ["une salade", "une courgette", "du basilic", "un concombre"] },
+  jaune: { level1: ["un citron jaune", "une banane jaune", "du maïs jaune", "du beurre jaune"], level2: ["un citron", "une banane", "du maïs", "du beurre"] },
+  orange: { level1: ["une carotte orange", "une mandarine orange", "un potiron orange"], level2: ["une carotte", "une mandarine", "un potiron"] },
+  bleuClair: { level1: ["un verre bleu clair", "une carafe bleu clair"], level2: ["un verre d’eau transparente", "une petite carafe d’eau transparente"] },
+  bleuFonce: { level1: ["une myrtille bleu foncé", "un tablier bleu foncé", "un bol bleu foncé"], level2: ["une myrtille", "un tablier couleur nuit", "un bol sombre"] }
+};
+
+const farmObjects = {
+  rouge: { level1: ["une tomate rouge", "une pomme rouge", "une fraise rouge"], level2: ["une tomate", "une pomme d’amour", "une fraise"] },
+  vert: { level1: ["une feuille de salade verte", "une courgette verte", "une herbe verte"], level2: ["une feuille de salade", "une courgette", "de l’herbe fraîche"] },
+  jaune: { level1: ["un poussin jaune", "du maïs jaune", "une botte de paille jaune"], level2: ["un poussin", "du maïs", "une botte de paille"] },
+  orange: { level1: ["une citrouille orange", "une carotte orange"], level2: ["une citrouille", "une carotte"] },
+  bleuClair: { level1: ["un seau bleu clair", "une bassine bleu clair"], level2: ["un seau couleur ciel d’été", "une bassine d’eau transparente"] },
+  bleuFonce: { level1: ["une couverture bleu foncé", "un seau bleu foncé"], level2: ["une couverture couleur nuit", "un seau sombre"] }
+};
+
+const birthdayObjects = {
+  rouge: { level1: ["une fraise rouge", "une cerise rouge", "un ballon rouge"], level2: ["une fraise", "une cerise", "un ballon couleur tomate"] },
+  vert: { level1: ["des feuilles de menthe vertes", "une serviette verte"], level2: ["quelques feuilles de menthe", "une serviette couleur prairie"] },
+  jaune: { level1: ["une banane jaune", "une bougie jaune", "une étoile jaune"], level2: ["une banane coupée", "une bougie couleur soleil", "une étoile"] },
+  orange: { level1: ["un jus de mandarine orange", "un ballon orange"], level2: ["un jus de mandarine", "un ballon couleur carotte"] },
+  bleuClair: { level1: ["une assiette bleu clair", "une serviette bleu clair"], level2: ["une assiette couleur ciel d’été", "une serviette couleur matin"] },
+  bleuFonce: { level1: ["une guirlande bleu foncé", "une nappe bleu foncé"], level2: ["une guirlande couleur nuit", "une nappe sombre"] }
+};
+
+const schoolObjects = {
+  rouge: { level1: ["un crayon rouge", "un stylo correcteur rouge", "une gommette rouge"], level2: ["le crayon qui sert à corriger", "un stylo correcteur", "une gommette couleur fraise"] },
+  vert: { level1: ["une règle verte", "un cahier vert", "un tableau vert"], level2: ["une règle couleur prairie", "un cahier couleur herbe", "le tableau"] },
+  jaune: { level1: ["une règle jaune", "un post-it jaune", "une étoile jaune"], level2: ["la couleur du soleil", "un post-it", "une étoile"] },
+  orange: { level1: ["un feutre orange", "une trousse orange", "une affiche orange"], level2: ["un feutre couleur mandarine", "une trousse couleur carotte", "une affiche couleur citrouille"] },
+  bleuClair: { level1: ["une peinture bleu clair", "un cahier bleu clair"], level2: ["une peinture couleur ciel d’été", "un cahier couleur matin"] },
+  bleuFonce: { level1: ["une encre bleu foncé", "un cartable bleu foncé"], level2: ["une encre couleur nuit", "un cartable sombre"] }
+};
+
+const fairObjects = {
+  rouge: { level1: ["une pomme d’amour rouge", "un nez de clown rouge", "un ticket rouge"], level2: ["une pomme d’amour", "un nez de clown", "un ticket couleur fraise"] },
+  vert: { level1: ["une grenouille verte", "un ballon vert"], level2: ["une grenouille du stand", "un ballon couleur prairie"] },
+  jaune: { level1: ["une lumière jaune", "du pop-corn jaune", "un canard jaune"], level2: ["une lumière", "du pop-corn", "un canard de pêche"] },
+  orange: { level1: ["un ballon orange", "une confiserie orange"], level2: ["un ballon couleur carotte", "une confiserie à la mandarine"] },
+  bleuClair: { level1: ["un bassin bleu clair", "un ticket bleu clair"], level2: ["un bassin de pêche", "un ticket couleur ciel d’été"] },
+  bleuFonce: { level1: ["un ciel bleu foncé", "un stand bleu foncé"], level2: ["un ciel de minuit", "le stand de la nuit"] }
+};
+
+const christmasObjects = {
+  rouge: { level1: ["une boule rouge", "un ruban rouge", "un manteau rouge"], level2: ["une boule couleur fraise", "un ruban de fête", "le manteau du Père Noël"] },
+  vert: { level1: ["un sapin vert", "une branche de houx verte"], level2: ["un sapin", "une branche de houx"] },
+  jaune: { level1: ["une étoile jaune", "une lumière jaune", "une bougie jaune"], level2: ["une étoile", "une lumière", "une bougie"] },
+  orange: { level1: ["une mandarine orange", "un feu orange"], level2: ["une mandarine", "un feu de cheminée"] },
+  bleuClair: { level1: ["un flocon bleu clair", "une boule bleu clair"], level2: ["un flocon de givre", "une boule couleur glace"] },
+  bleuFonce: { level1: ["une nuit bleu foncé", "un ciel bleu foncé"], level2: ["la nuit de Noël", "un ciel de minuit"] }
+};
+
+const gardenObjects = {
+  rouge: { level1: ["une fraise rouge", "un coquelicot rouge", "une tomate rouge"], level2: ["une fraise bien mûre", "un coquelicot", "une tomate ronde"] },
+  vert: { level1: ["une feuille verte", "une herbe verte", "une grenouille verte"], level2: ["une feuille", "de l’herbe fraîche", "une grenouille"] },
+  jaune: { level1: ["un pissenlit jaune", "un tournesol jaune", "un arrosoir jaune"], level2: ["un pissenlit", "un tournesol", "un arrosoir couleur soleil"] },
+  orange: { level1: ["une carotte orange", "un potiron orange", "une feuille d’automne orange"], level2: ["une carotte", "un potiron", "une feuille d’automne"] },
+  bleuClair: { level1: ["une flaque bleu clair", "un ciel bleu clair", "un ruban bleu clair"], level2: ["une flaque lumineuse", "un ciel d’été", "un ruban couleur matin"] },
+  bleuFonce: { level1: ["un ciel bleu foncé", "une myrtille bleu foncé", "un pot bleu foncé"], level2: ["un ciel de minuit", "une myrtille", "un pot sombre"] }
+};
+
+const animalObjects = {
+  rouge: { level1: ["un collier rouge", "une mangeoire rouge", "un jouet rouge"], level2: ["un collier couleur fraise", "une mangeoire couleur tomate", "un jouet couleur cerise"] },
+  vert: { level1: ["une grenouille verte", "une feuille verte", "une gamelle verte"], level2: ["une grenouille", "une feuille", "une gamelle couleur prairie"] },
+  jaune: { level1: ["un poussin jaune", "une plume jaune", "un panier jaune"], level2: ["un poussin", "une plume couleur soleil", "un panier couleur citron"] },
+  orange: { level1: ["un renard orange", "une carotte orange", "un coussin orange"], level2: ["un renard", "une carotte", "un coussin couleur mandarine"] },
+  bleuClair: { level1: ["un bassin bleu clair", "un ruban bleu clair"], level2: ["un bassin d’eau transparente", "un ruban couleur ciel d’été"] },
+  bleuFonce: { level1: ["une couverture bleu foncé", "un ciel bleu foncé"], level2: ["une couverture couleur nuit", "un ciel de minuit"] }
+};
+
+const travelObjects = {
+  rouge: { level1: ["une valise rouge", "un ticket rouge", "un foulard rouge"], level2: ["une valise couleur fraise", "un ticket couleur tomate", "un foulard couleur cerise"] },
+  vert: { level1: ["un carnet vert", "un panneau vert", "une gourde verte"], level2: ["un carnet couleur prairie", "un panneau de départ", "une gourde couleur herbe"] },
+  jaune: { level1: ["un billet jaune", "un chapeau jaune", "une étiquette jaune"], level2: ["un billet couleur soleil", "un chapeau couleur citron", "une étiquette couleur banane"] },
+  orange: { level1: ["une trousse orange", "une écharpe orange", "une carte orange"], level2: ["une trousse couleur mandarine", "une écharpe couleur carotte", "une carte couleur citrouille"] },
+  bleuClair: { level1: ["un ciel bleu clair", "une bouteille bleu clair"], level2: ["un ciel d’été", "une bouteille d’eau transparente"] },
+  bleuFonce: { level1: ["un sac bleu foncé", "un ciel bleu foncé"], level2: ["un sac couleur nuit", "un ciel de minuit"] }
+};
+
+const spaceObjects = {
+  rouge: { level1: ["un bouton rouge", "une fusée rouge", "un voyant rouge"], level2: ["un bouton d’alerte", "une fusée couleur tomate", "un voyant de départ"] },
+  vert: { level1: ["un écran vert", "une planète verte", "un signal vert"], level2: ["un écran de contrôle", "une planète couverte de prairies", "un signal de départ"] },
+  jaune: { level1: ["une étoile jaune", "un soleil jaune", "un casque jaune"], level2: ["une étoile", "un soleil", "un casque couleur citron"] },
+  orange: { level1: ["une comète orange", "une combinaison orange", "une planète orange"], level2: ["une comète couleur mandarine", "une combinaison couleur carotte", "une planète couleur citrouille"] },
+  bleuClair: { level1: ["un hublot bleu clair", "une planète bleu clair"], level2: ["un hublot couleur ciel d’été", "une planète d’eau transparente"] },
+  bleuFonce: { level1: ["un espace bleu foncé", "un casque bleu foncé"], level2: ["l’espace de minuit", "un casque couleur nuit"] }
+};
+
+const pirateObjects = {
+  rouge: { level1: ["un foulard rouge", "un drapeau rouge", "un coffre rouge"], level2: ["un foulard couleur fraise", "un drapeau couleur tomate", "un coffre couleur cerise"] },
+  vert: { level1: ["une bouteille verte", "une algue verte", "une carte verte"], level2: ["une bouteille couleur prairie", "une algue", "une carte couleur herbe"] },
+  jaune: { level1: ["une pièce jaune", "un parchemin jaune", "une lampe jaune"], level2: ["une pièce d’or", "un parchemin", "une lampe couleur soleil"] },
+  orange: { level1: ["une voile orange", "une boussole orange", "un poisson orange"], level2: ["une voile couleur mandarine", "une boussole couleur carotte", "un poisson couleur abricot"] },
+  bleuClair: { level1: ["un ciel bleu clair", "une eau bleu clair"], level2: ["un ciel d’été", "une eau transparente"] },
+  bleuFonce: { level1: ["une mer bleu foncé", "un ciel bleu foncé"], level2: ["une mer profonde", "un ciel de minuit"] }
+};
+
+const magicObjects = {
+  rouge: { level1: ["une fiole rouge", "une plume rouge", "une cape rouge"], level2: ["une fiole couleur fraise", "une plume couleur cerise", "une cape couleur tomate"] },
+  vert: { level1: ["une pierre verte", "une feuille verte", "une grenouille verte"], level2: ["une pierre couleur prairie", "une feuille", "une grenouille"] },
+  jaune: { level1: ["une étoile jaune", "une bougie jaune", "une poudre jaune"], level2: ["une étoile", "une bougie couleur soleil", "une poudre couleur citron"] },
+  orange: { level1: ["une étincelle orange", "une potion orange", "un ruban orange"], level2: ["une étincelle couleur mandarine", "une potion couleur carotte", "un ruban couleur citrouille"] },
+  bleuClair: { level1: ["une bulle bleu clair", "un cristal bleu clair"], level2: ["une bulle couleur ciel d’été", "un cristal d’eau transparente"] },
+  bleuFonce: { level1: ["un grimoire bleu foncé", "une cape bleu foncé"], level2: ["un grimoire couleur nuit", "une cape de minuit"] }
+};
+
+const storyThemes = {
+  marche: makeTheme("Marché", "Sami", ["Ce matin, Sami va au marché avec son petit panier.", "Sami traverse les allées du marché en regardant chaque stand."], ["Au premier stand, la marchande lui montre {object}.", "Un peu plus loin, il remarque {object}.", "Près d’une caisse, son regard s’arrête sur {object}.", "Avant de changer d’allée, il observe {object}.", "En passant devant les fleurs, il aperçoit {object}.", "Sur le chemin du retour, il repense à {object}."], ["Quand la promenade est terminée, il redit l’ordre dans sa tête."], marketObjects),
+  foret: makeTheme("Forêt", "Lina", ["Lina entre dans la forêt avec son petit sac.", "Lina suit un sentier calme entre les arbres."], ["Au bord du sentier, elle remarque {object}.", "Plus loin, elle aperçoit {object} près d’un tronc.", "Entre les branches, son regard se pose sur {object}.", "Près d’une cabane, elle observe {object}.", "En avançant doucement, elle découvre {object}.", "Avant de sortir du bois, elle regarde encore {object}."], ["Quand le chemin devient plus sombre, elle rentre chez elle."], forestObjects),
+  plage: makeTheme("Plage", "Noé", ["Noé arrive sur la plage avec son seau.", "Noé marche pieds nus sur le sable avec son petit sac."], ["Près du parasol, il remarque {object}.", "Dans le sable, son regard tombe sur {object}.", "Au bord de l’eau, il aperçoit {object}.", "Entre deux rochers, il observe {object}.", "Sur le chemin des serviettes, il retrouve {object}.", "Au loin, il regarde {object}."], ["Il écoute les vagues une dernière fois avant de rentrer."], beachObjects),
+  ferme: makeTheme("Ferme", "Zoé", ["À la ferme, Zoé commence sa tournée près du potager.", "Zoé aide à la ferme pendant une matinée tranquille."], ["Dans le potager, elle remarque {object}.", "Près du clapier, elle aperçoit {object}.", "Au poulailler, son regard s’arrête sur {object}.", "Contre le mur de la grange, elle trouve {object}.", "À côté du puits, elle observe {object}.", "Avant de fermer la barrière, elle regarde {object}."], ["Quand la journée se termine, elle garde la suite en mémoire."], farmObjects),
+  anniversaire: makeTheme("Anniversaire", "Léo", ["Pour son anniversaire, Léo prépare la table avec sa famille.", "Léo installe la fête avant l’arrivée des invités."], ["Sur la table, il repère {object}.", "Autour des assiettes, il remarque {object}.", "Près du gâteau, il observe {object}.", "Sa famille apporte ensuite {object}.", "Avant l’arrivée des invités, il regarde {object}.", "Plus tard, il retrouve {object} dans le décor."], ["Quand les invités arrivent, tout est prêt."], birthdayObjects),
+  ecole: makeTheme("École", "Inès", ["Dans la classe, Inès prépare son cahier.", "Inès s’installe à sa table et ouvre sa trousse."], ["Elle sort {object} pour commencer.", "Elle prend ensuite {object} près de son cahier.", "Sur la page, elle remarque {object}.", "Au tableau, elle observe {object}.", "Près de la fenêtre, elle voit {object}.", "Dans son casier, elle retrouve {object}."], ["Quand tout est rangé, elle montre son cahier à l’adulte."], schoolObjects),
+  jardin: makeTheme("Jardin", "Maya", ["Maya entre dans le jardin avec un petit arrosoir.", "Dans le jardin, Maya suit l’allée entre les plantations."], ["Près du premier bac, elle découvre {object}.", "Sous une plante, elle remarque {object}.", "Au bord de l’allée, elle observe {object}.", "À côté du banc, son regard se pose sur {object}.", "Près de l’arrosoir, elle voit {object}.", "Avant de sortir, elle regarde {object}."], ["Elle referme la barrière et garde l’ordre dans sa tête."], gardenObjects),
+  feteForaine: makeTheme("Fête foraine", "Nora", ["Nora arrive à la fête foraine avec quelques tickets.", "À la fête foraine, Nora avance entre les stands lumineux."], ["Au premier stand, elle remarque {object}.", "Près du manège, elle aperçoit {object}.", "Au jeu suivant, elle observe {object}.", "Devant la pêche aux canards, son regard s’arrête sur {object}.", "Sous les lampions, elle retrouve {object}.", "Quand le soir arrive, elle regarde {object}."], ["Elle revient vers l’entrée avec un grand sourire."], fairObjects),
+  noel: makeTheme("Noël", "Élia", ["Élia prépare le salon pour la soirée de Noël.", "Dans la maison décorée, Élia vérifie le sapin."], ["Sur la table, elle remarque {object}.", "Dans le sapin, elle observe {object}.", "Près de la fenêtre, elle voit {object}.", "À côté de la cheminée, elle trouve {object}.", "Sur la vitre, son regard se pose sur {object}.", "Quand la soirée avance, elle regarde {object}."], ["Quand tout brille, elle s’assoit près du sapin."], christmasObjects),
+  animaux: makeTheme("Animaux", "Tao", ["Tao visite un petit parc animalier avec l’adulte.", "Au refuge, Tao observe les animaux un par un."], ["Dans le premier enclos, il aperçoit {object}.", "Plus loin, le soigneur lui montre {object}.", "Près du bassin, il observe {object}.", "Derrière une barrière, il remarque {object}.", "Au détour du chemin, il retrouve {object}.", "Avant la sortie, il regarde {object}."], ["Avant de partir, il raconte l’ordre des rencontres."], animalObjects),
+  cuisine: makeTheme("Cuisine", "Maya", ["Maya prépare une recette avec sa grand-mère.", "Dans la cuisine, Maya sort les ingrédients un par un."], ["Sur le plan de travail, elle remarque {object}.", "Puis elle pose {object} près de la planche.", "À côté du petit bol, elle observe {object}.", "Elle approche ensuite {object} de la casserole.", "Près de l’évier, elle retrouve {object}.", "Pour terminer la préparation, elle garde {object}."], ["Quand tout est prêt, elle range les ustensiles."], kitchenObjects),
+  voyage: makeTheme("Voyage", "Nina", ["Nina prépare son sac pour un petit voyage.", "À la gare, Nina observe ce qui l’entoure avant de monter dans le train."], ["Dans son sac, elle repère {object}.", "Sur le quai, elle remarque {object}.", "À travers la fenêtre, elle aperçoit {object}.", "Pendant l’arrêt suivant, elle observe {object}.", "Dans son carnet, elle note {object}.", "À la fin du trajet, elle regarde {object}."], ["À l’arrivée, elle raconte tout ce qu’elle a vu dans l’ordre."], travelObjects),
+  espace: makeTheme("Espace", "Iris", ["Iris prépare une petite mission dans la station spatiale.", "Dans le vaisseau, Iris vérifie le tableau de bord."], ["Sur le tableau de bord, elle repère {object}.", "Près du hublot, elle remarque {object}.", "Dans la cabine, elle observe {object}.", "Au-dessus de la planète, elle regarde {object}.", "Avant le retour, elle vérifie {object}.", "Quand les étoiles apparaissent, elle retrouve {object}."], ["La mission se termine quand le vaisseau revient au calme."], spaceObjects),
+  pirates: makeTheme("Pirates", "Malo", ["Malo monte sur le bateau pirate avec une carte roulée.", "Sur le pont du bateau, Malo cherche les repères de la carte."], ["Dans le coffre, il trouve {object}.", "Près du gouvernail, il remarque {object}.", "Sur la carte, il pointe {object}.", "À côté du mât, il aperçoit {object}.", "Au bord du bateau, il observe {object}.", "Quand le soir arrive, il regarde {object}."], ["Il referme la carte et garde la séquence en mémoire."], pirateObjects),
+  magie: makeTheme("Magie", "Lila", ["Lila entre dans l’atelier de magie avec son carnet.", "Dans la salle de magie, Lila prépare une formule très simple."], ["Sur la première étagère, elle choisit {object}.", "Dans un petit tiroir, elle trouve {object}.", "Au centre de la table, elle observe {object}.", "Près du livre, elle remarque {object}.", "Dans la boîte, elle retrouve {object}.", "À la fin, elle regarde {object}."], ["La formule fonctionne quand elle répète l’ordre sans se tromper."], magicObjects)
+};
+
+function createStory(values) {
+  const count = Number(values.colorCount) === 3 ? 3 : 6;
+  const level = values.level === "2" ? "2" : "1";
   const recent = state.storyHistory || [];
-  const structure = pickFresh(storyEngine.narrativeStructures, recent, "structure");
-  const world = pickFresh(storyEngine.worlds, recent, "world");
-  const mission = pickFresh(storyEngine.missionTypes, recent, "mission");
-  const manipulation = pickFresh(storyEngine.manipulations, recent, "manipulation");
-  const objective = pickFresh(storyEngine.objectives, recent, "objective");
-  const opening = pickFresh(storyEngine.openings, recent, "opening");
-  const titleNoun = pickFresh(storyEngine.titleNouns, recent, "titleNoun");
-  const connector = pick(storyEngine.connectors);
-  const relaunch = pick(storyEngine.relaunches);
-  const difficulty = values.level === "1" ? "facile" : "plus difficile";
-  const colors = shuffle(Object.keys(storyEngine.colorObjects));
-  const items = colors.map((color) => {
-    const object = pick(storyEngine.colorObjects[color]);
-    return {
-      color,
-      object,
-      spoken: values.colorMode === "with" ? `${object} ${color}` : object
-    };
+  const shouldShowCorrection = values.showCorrection === "visible";
+
+  for (let attempt = 0; attempt < 16; attempt += 1) {
+    const sequence = pickFreshSequence(storyColorKeys, recent, count);
+    const themeKey = pickStoryTheme(values.theme, recent);
+    const theme = storyThemes[themeKey];
+    const story = buildSixBricksStory({ level, count, sequence, theme, themeKey, showCorrection: shouldShowCorrection });
+    if (validateSixBricksStory(story, shouldShowCorrection)) {
+      rememberRecent("storyHistory", { theme: themeKey, sequence: sequence.join("|"), level });
+      return story;
+    }
+  }
+
+  const fallbackSequence = count === 3
+    ? ["rouge", "vert", "jaune"]
+    : ["rouge", "vert", "jaune", "orange", "bleuClair", "bleuFonce"];
+  const fallback = buildSixBricksStory({
+    level,
+    count,
+    sequence: fallbackSequence,
+    theme: storyThemes.marche,
+    themeKey: "marche",
+    showCorrection: shouldShowCorrection
   });
-  const spokenObjects = items.map((item) => item.spoken);
-  const title = `${capitalize(titleNoun)} ${pick(["en mouvement", "à écouter", "des six gestes", "sans erreur", "du grand ordre", "à partager"])}`;
-  const setup = `${opening}, le groupe découvre ${world}. ${capitalize(structure)}: ${connector}.`;
-  const storyLine = values.colorMode === "with"
-    ? `Dans le récit, les couleurs apparaissent dans cet ordre: ${spokenObjects.join(", ")}. Les participants écoutent sans toucher les briques, puis reconstruisent l’ordre à la fin.`
-    : `Dans le récit, les objets apparaissent dans cet ordre: ${spokenObjects.join(", ")}. Les participants peuvent placer chaque brique au fur et à mesure qu’ils reconnaissent l’objet évoqué.`;
-  const missionText = `Mission Six Bricks: ${mission}, en utilisant la modalité "${manipulation}" et en visant ${objective}.`;
-  const harderRule = values.level === "1"
-    ? "La consigne reste courte: une action, une brique, une verbalisation."
-    : `Ajoute une contrainte: avant de manipuler, il faut retenir deux actions et annoncer pourquoi la brique choisie correspond à l’histoire.`;
-  const constructionInstructions = [
-    values.colorMode === "with"
-      ? "Écoute toute l’histoire sans toucher les briques."
-      : "Place chaque brique au moment où l’objet correspondant est entendu.",
-    `Construis ou place les briques dans l’ordre narratif: ${items.map((item) => values.colorMode === "with" ? item.color : item.object).join(" -> ")}.`,
-    `À chaque étape, ${manipulation} la brique avant de la poser.`,
-    harderRule,
-    "À la fin, raconte la mission en suivant les briques du doigt."
-  ];
+  rememberRecent("storyHistory", { theme: "marche", sequence: fallbackSequence.join("|"), level });
+  return fallback;
+}
 
-  rememberRecent("storyHistory", { structure, world, mission, manipulation, objective, opening, titleNoun });
+function pickFreshSequence(colors, history, count) {
+  for (let attempt = 0; attempt < 12; attempt += 1) {
+    const sequence = shuffle(colors).slice(0, count);
+    if (!(history || []).some((entry) => entry.sequence === sequence.join("|"))) return sequence;
+  }
+  return shuffle(colors).slice(0, count);
+}
 
+function pickStoryTheme(selected, history) {
+  const keys = Object.keys(storyThemes);
+  if (selected && selected !== "random" && storyThemes[selected]) return selected;
+  const recentThemes = new Set((history || []).map((entry) => entry.theme));
+  const pool = keys.filter((key) => !recentThemes.has(key));
+  return pick(pool.length ? pool : keys);
+}
+
+function buildSixBricksStory({ level, count, sequence, theme, themeKey, showCorrection }) {
+  const usedObjects = new Set();
+  const items = sequence.map((colorKey, index) => {
+    const themeObjects = theme.objects[colorKey] || commonStoryObjects[colorKey];
+    const list = themeObjects[level === "1" ? "level1" : "level2"];
+    const choices = list.filter((object) => !usedObjects.has(object));
+    const phrase = pick(choices.length ? choices : list);
+    usedObjects.add(phrase);
+    return { colorKey, label: storyLabels[colorKey], phrase, frame: theme.frames[index % theme.frames.length] };
+  });
+  const opening = pick(theme.openings);
+  const closing = count === 6 ? pick(theme.closings) : "";
+  const body = items.map((item) => item.frame.replace("{object}", item.phrase));
+  const paragraphs = [joinStorySentences([opening, ...body, closing].filter(Boolean))];
+  const instruction = level === "1"
+    ? "Écoute toute l’histoire sans toucher les briques. Quand l’histoire est terminée, replace les briques dans l’ordre des couleurs entendues."
+    : "Tu peux manipuler les briques pendant l’histoire. Place-les dans l’ordre où tu reconnais les couleurs évoquées.";
   return {
-    title,
-    randomId,
-    paragraphs: [
-      `Mise en situation: ${setup}`,
-      storyLine,
-      missionText
-    ],
-    prompts: [
-      `Consignes de construction: ${constructionInstructions.join(" ")}`,
-      `Variante facile: utiliser trois briques seulement, ralentir la lecture et verbaliser après chaque manipulation.`,
-      `Variante difficile: inverser l’ordre final, ajouter une consigne interdite ou demander une justification avant chaque déplacement.`,
-      `Question de verbalisation: Comment as-tu su quelle brique choisir et à quel moment la placer ?`,
-      `Compétence travaillée: ${objective}.`,
-      `Idée de relance: ${relaunch}`
-    ]
+    title: theme.label + (count === 3 ? " en trois couleurs" : " en six couleurs"),
+    tags: ["Niveau " + level, count + " couleurs", level === "1" ? "couleurs nommées" : "couleurs sous-entendues", theme.label],
+    instruction,
+    paragraphs,
+    sequence,
+    correction: items.map((item) => item.label).join(" → "),
+    showCorrection,
+    level,
+    themeKey
   };
+}
+
+function joinStorySentences(sentences) {
+  return sentences.join(" ").replace(/\s+/g, " ").trim();
+}
+
+function validateSixBricksStory(story, requestedVisible) {
+  const text = story.paragraphs.join(" ").toLowerCase();
+  const level1Patterns = {
+    rouge: /\brouges?\b/g,
+    orange: /\boranges?\b/g,
+    jaune: /\bjaunes?\b/g,
+    vert: /\bvert(?:e|es|s)?\b/g,
+    bleuClair: /\bbleu(?:e|es|s)?\s+clair(?:e|es|s)?\b/g,
+    bleuFonce: /\bbleu(?:e|es|s)?\s+fonc(?:é|ée|és|ées|e|ee)/g
+  };
+  const forbiddenLevel2 = /\b(rouge|vert|jaune|orange|bleu|foncé|fonce|clair|claire|clairs|claires)\b/i;
+  const validCount = story.sequence.length === 3 || story.sequence.length === 6;
+  const noRepeat = new Set(story.sequence).size === story.sequence.length;
+  const level1HasColors = story.level === "1"
+    ? story.sequence.every((key) => (text.match(level1Patterns[key]) || []).length === 1)
+    : true;
+  const level2HasNoColors = story.level === "2" ? !forbiddenLevel2.test(text) : true;
+  const correctionItems = story.correction.split(" → ");
+  const correctionCount = correctionItems.length === story.sequence.length;
+  const correctionMatches = correctionItems.every((label, index) => label === storyLabels[story.sequence[index]]);
+  const sentenceCount = (story.paragraphs[0].match(/[.!?]/g) || []).length;
+  const goodLength = sentenceCount >= story.sequence.length + 1 && sentenceCount <= 10;
+  const notList = !/D’abord, .* Ensuite, .* Puis, .* Pour terminer,/.test(story.paragraphs[0]);
+  const visibilityValid = story.showCorrection === requestedVisible;
+  return validCount && noRepeat && level1HasColors && level2HasNoColors && correctionCount && correctionMatches && goodLength && notList && visibilityValid;
 }
 
 function shuffle(items) {

@@ -139,6 +139,18 @@ select {
   padding: 0 0 8px;
 }
 
+.hero-main {
+  display: grid;
+  grid-template-columns: minmax(320px, 540px) minmax(260px, 1fr);
+  align-items: start;
+  gap: 28px;
+}
+
+.hero-brand {
+  display: grid;
+  justify-items: start;
+}
+
 .hero::before {
   display: none;
   content: none;
@@ -162,7 +174,7 @@ select {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  width: min(100%, 460px);
+  width: min(100%, 540px);
   margin: 0 0 10px;
   padding: 8px 12px;
   color: #fff;
@@ -203,13 +215,13 @@ h1 {
 
 .brand-logo {
   display: block;
-  width: min(100%, 460px);
+  width: min(100%, 540px);
   height: auto;
-  max-height: 300px;
+  max-height: 360px;
   object-fit: contain;
   object-position: center;
   margin-top: 0;
-  padding: clamp(16px, 3vw, 28px);
+  padding: clamp(10px, 2vw, 18px);
   background: #fff;
   border: 2px solid rgba(127, 211, 239, 0.38);
   border-radius: 22px;
@@ -219,7 +231,102 @@ h1 {
   filter: saturate(1.08);
 }
 
-.hero p:not(.eyebrow) {
+.factory-panel {
+  display: grid;
+  gap: 16px;
+  margin-top: 68px;
+  padding: 22px;
+  background:
+    radial-gradient(circle at 92% 12%, rgba(255, 212, 59, 0.24), transparent 7rem),
+    radial-gradient(circle at 12% 90%, rgba(127, 211, 239, 0.26), transparent 7rem),
+    rgba(255, 255, 255, 0.94);
+  border: 2px solid rgba(127, 211, 239, 0.48);
+  border-top: 9px solid var(--orange);
+  border-right: 9px solid rgba(232, 63, 152, 0.26);
+  border-bottom: 9px solid rgba(9, 44, 143, 0.12);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.factory-kicker {
+  display: inline-flex;
+  width: fit-content;
+  padding: 7px 11px;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--blue), var(--purple), var(--pink));
+  border-radius: 999px;
+}
+
+.factory-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.factory-stats div {
+  display: grid;
+  min-height: 96px;
+  align-content: center;
+  justify-items: center;
+  padding: 12px 8px;
+  text-align: center;
+  background: #fff;
+  border: 2px solid rgba(127, 211, 239, 0.45);
+  border-bottom: 6px solid rgba(9, 44, 143, 0.12);
+  border-radius: 18px;
+}
+
+.factory-stats strong {
+  color: var(--blue);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 0.95;
+}
+
+.factory-stats span {
+  color: #344056;
+  font-size: 0.85rem;
+  font-weight: 950;
+}
+
+.factory-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.factory-chips span {
+  padding: 8px 10px;
+  color: var(--blue);
+  font-size: 0.82rem;
+  font-weight: 950;
+  background: #fff;
+  border: 2px solid rgba(127, 211, 239, 0.55);
+  border-radius: 999px;
+}
+
+.factory-chips span:nth-child(1) {
+  color: var(--red);
+}
+
+.factory-chips span:nth-child(2) {
+  color: var(--pink);
+}
+
+.factory-chips span:nth-child(3) {
+  color: var(--green);
+}
+
+.factory-note {
+  color: #273246;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.hero > div:not(.hero-main) > p:not(.eyebrow) {
   width: 100%;
   max-width: none;
   margin-top: 18px;
@@ -320,8 +427,9 @@ h1 {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.18);
 }
 
+.is-hidden,
 .tab-panel.is-hidden {
-  display: none;
+  display: none !important;
 }
 
 .filters,
@@ -724,17 +832,17 @@ ol {
 }
 
 .story-text p:nth-child(2) {
-  border-left-color: var(--orange);
+  border-left-color: var(--cyan);
   background:
-    radial-gradient(circle at 100% 0, rgba(255, 147, 30, 0.16), transparent 7rem),
-    #fffaf4;
+    radial-gradient(circle at 100% 0, rgba(127, 211, 239, 0.18), transparent 7rem),
+    #f8fbff;
 }
 
 .story-text p:nth-child(3) {
-  border-left-color: var(--green);
+  border-left-color: var(--cyan);
   background:
-    radial-gradient(circle at 100% 0, rgba(49, 168, 74, 0.14), transparent 7rem),
-    #f8fff9;
+    radial-gradient(circle at 100% 0, rgba(127, 211, 239, 0.18), transparent 7rem),
+    #f8fbff;
 }
 
 .story-prompts {
@@ -762,6 +870,15 @@ ol {
   .favorites-panel,
   .generator-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-main {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .factory-panel {
+    margin-top: 0;
   }
 
   .hero-tools {
@@ -796,10 +913,14 @@ ol {
   }
 
   .brand-logo {
-    width: min(100%, 460px);
-    max-height: 280px;
+    width: min(100%, 540px);
+    max-height: 340px;
     border-width: 2px;
     border-radius: 20px;
+  }
+
+  .factory-stats {
+    grid-template-columns: 1fr;
   }
 
   .hero p:not(.eyebrow),
