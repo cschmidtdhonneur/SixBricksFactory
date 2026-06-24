@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Six Bricks Factory - App FR</title>
-    <link rel="stylesheet" href="style.css?v=8" />
+    <link rel="stylesheet" href="style.css?v=9" />
   </head>
   <body>
     <div class="color-strip" aria-hidden="true">
@@ -80,42 +80,47 @@
         <section class="planner" aria-label="Recherche d'activité">
           <form class="filters" id="filters">
             <label>
-              <span data-i18n="category">Catégorie</span>
-              <select name="category">
-                <option value="all" data-i18n="all">Toutes</option>
-                <option value="Perception">Perception</option>
-                <option value="Littératie">Littératie</option>
-                <option value="Numératie">Numératie</option>
-                <option value="Physique">Physique</option>
-                <option value="Socio-émotionnel">Socio-émotionnel</option>
-                <option value="Groupes et jeux">Groupes et jeux</option>
-                <option value="Mouvement">Mouvement</option>
-                <option value="B-Line">B-Line</option>
-                <option value="Plateaux & feuilles">Plateaux & feuilles</option>
-                <option value="Play Box & communauté">Play Box & communauté</option>
+              <span data-i18n="audience">Public</span>
+              <select name="audience">
+                <option value="all" data-i18n="allAudiences">Tous les publics</option>
+                <option value="early" data-i18n="earlyChildhood">Petite enfance</option>
+                <option value="children" data-i18n="children">Enfants</option>
+                <option value="teens" data-i18n="teens">Ados</option>
+                <option value="adults" data-i18n="adults">Adultes</option>
+                <option value="seniors" data-i18n="seniors">Seniors</option>
               </select>
             </label>
 
             <label>
-              <span data-i18n="participants">Participants</span>
-              <select name="group">
+              <span data-i18n="level">Niveau</span>
+              <select name="level">
                 <option value="all" data-i18n="any">Peu importe</option>
-                <option value="solo" data-i18n="solo">1 participant</option>
-                <option value="duo" data-i18n="duo">2 participants</option>
+                <option value="easy" data-i18n="easyLevel">Facile</option>
+                <option value="medium" data-i18n="mediumLevel">Intermédiaire</option>
+                <option value="challenge" data-i18n="challengeLevel">Défi</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="format">Format</span>
+              <select name="format">
+                <option value="all" data-i18n="any">Peu importe</option>
+                <option value="solo" data-i18n="soloFormat">Solo</option>
+                <option value="duo" data-i18n="duoFormat">Duo</option>
                 <option value="small" data-i18n="smallGroup">Petit groupe</option>
-                <option value="class" data-i18n="wholeClass">Grand groupe</option>
+                <option value="class" data-i18n="classGroup">Classe / groupe</option>
               </select>
             </label>
 
             <label>
-              <span data-i18n="context">Contexte</span>
-              <select name="context">
+              <span data-i18n="support">Support</span>
+              <select name="support">
                 <option value="all" data-i18n="any">Peu importe</option>
-                <option value="table" data-i18n="table">À table</option>
-                <option value="floor" data-i18n="floor">Au sol</option>
-                <option value="outside" data-i18n="outside">Dehors</option>
-                <option value="transition">Transition</option>
-                <option value="calm" data-i18n="calm">Retour au calme</option>
+                <option value="free" data-i18n="freeActivity">Sans plateau</option>
+                <option value="lined" data-i18n="linedBoard">Plateau ligné</option>
+                <option value="movement" data-i18n="movementBoard">Plateau mouvement</option>
+                <option value="backToBack" data-i18n="backToBack">Dos à dos</option>
+                <option value="listenCopy" data-i18n="listenCopy">Écoute et fais pareil</option>
               </select>
             </label>
 
@@ -125,23 +130,7 @@
                 <option value="all" data-i18n="any">Peu importe</option>
                 <option value="short">3 à 5 min</option>
                 <option value="medium">5 à 10 min</option>
-                <option value="long">10 à 20 min</option>
-              </select>
-            </label>
-
-            <label>
-              <span data-i18n="goal">Objectif</span>
-              <select name="goal">
-                <option value="all" data-i18n="any">Peu importe</option>
-                <option value="attention" data-i18n="attention">Attention</option>
-                <option value="memory" data-i18n="memory">Mémoire</option>
-                <option value="language" data-i18n="language">Langage</option>
-                <option value="math" data-i18n="math">Maths</option>
-                <option value="movement" data-i18n="movement">Motricité</option>
-                <option value="cooperation" data-i18n="cooperation">Coopération</option>
-                <option value="emotion" data-i18n="emotions">Émotions</option>
-                <option value="spatial" data-i18n="spatial">Repérage spatial</option>
-                <option value="executive" data-i18n="executive">Fonctions exécutives</option>
+                <option value="long">10 à 15 min</option>
               </select>
             </label>
 
@@ -335,6 +324,6 @@
 
     </main>
 
-    <script src="app.js?v=8"></script>
+    <script src="app.js?v=9"></script>
   </body>
 </html>

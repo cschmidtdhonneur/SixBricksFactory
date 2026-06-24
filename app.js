@@ -1836,6 +1836,35 @@ const categoryColors = {
   "Play Box & communauté": "var(--pink)"
 };
 
+const supportLabels = {
+  free: "sans plateau",
+  lined: "plateau ligné",
+  movement: "plateau mouvement",
+  backToBack: "dos à dos",
+  listenCopy: "écoute et fais pareil"
+};
+
+const audienceLabels = {
+  early: "petite enfance",
+  children: "enfants",
+  teens: "ados",
+  adults: "adultes",
+  seniors: "seniors"
+};
+
+const levelLabels = {
+  easy: "facile",
+  medium: "intermédiaire",
+  challenge: "défi"
+};
+
+const formatLabels = {
+  solo: "solo",
+  duo: "duo",
+  small: "petit groupe",
+  class: "classe / groupe"
+};
+
 const i18n = {
   fr: {
     kicker: "La première appli française Six Bricks",
@@ -1852,6 +1881,21 @@ const i18n = {
     tabFinder: "Trouver une idée",
     tabGenerator: "Créer une activité",
     tabStories: "Créer une histoire",
+    audience: "Public",
+    allAudiences: "Tous les publics",
+    earlyChildhood: "Petite enfance",
+    children: "Enfants",
+    teens: "Ados",
+    adults: "Adultes",
+    seniors: "Seniors",
+    format: "Format",
+    support: "Support",
+    easyLevel: "Facile",
+    mediumLevel: "Intermédiaire",
+    challengeLevel: "Défi",
+    soloFormat: "Solo",
+    duoFormat: "Duo",
+    classGroup: "Classe / groupe",
     category: "Catégorie",
     all: "Toutes",
     participants: "Participants",
@@ -1950,6 +1994,21 @@ const i18n = {
     tabFinder: "Find an idea",
     tabGenerator: "Create an activity",
     tabStories: "Create a story",
+    audience: "Audience",
+    allAudiences: "All audiences",
+    earlyChildhood: "Early childhood",
+    children: "Children",
+    teens: "Teens",
+    adults: "Adults",
+    seniors: "Seniors",
+    format: "Format",
+    support: "Support",
+    easyLevel: "Easy",
+    mediumLevel: "Intermediate",
+    challengeLevel: "Challenge",
+    soloFormat: "Solo",
+    duoFormat: "Pair",
+    classGroup: "Class / group",
     category: "Category",
     all: "All",
     participants: "Participants",
@@ -2048,6 +2107,21 @@ const i18n = {
     tabFinder: "寻找活动",
     tabGenerator: "创建活动",
     tabStories: "创建故事",
+    audience: "对象",
+    allAudiences: "所有对象",
+    earlyChildhood: "幼儿",
+    children: "儿童",
+    teens: "青少年",
+    adults: "成人",
+    seniors: "长者",
+    format: "形式",
+    support: "材料支持",
+    easyLevel: "简单",
+    mediumLevel: "中等",
+    challengeLevel: "挑战",
+    soloFormat: "单人",
+    duoFormat: "双人",
+    classGroup: "班级 / 小组",
     category: "类别",
     all: "全部",
     participants: "参与人数",
@@ -2249,20 +2323,21 @@ favoriteButton.addEventListener("click", () => {
 function applyFilters() {
   const data = new FormData(filtersForm);
   const criteria = {
-    category: data.get("category"),
-    group: data.get("group"),
-    context: data.get("context"),
-    duration: data.get("duration"),
-    goal: data.get("goal")
+    audience: data.get("audience"),
+    level: data.get("level"),
+    format: data.get("format"),
+    support: data.get("support"),
+    duration: data.get("duration")
   };
 
   state.matches = activities.filter((activity) => {
+    const facets = getActivityFacets(activity);
     return (
-      matchesValue(criteria.category, activity.category) &&
-      matchesList(criteria.group, activity.group) &&
-      matchesList(criteria.context, activity.context) &&
-      matchesValue(criteria.duration, activity.duration) &&
-      matchesList(criteria.goal, activity.goals)
+      matchesList(criteria.audience, facets.audiences) &&
+      matchesList(criteria.level, facets.levels) &&
+      matchesList(criteria.format, facets.formats) &&
+      matchesList(criteria.support, facets.supports) &&
+      matchesValue(criteria.duration, activity.duration)
     );
   });
 
@@ -2279,6 +2354,57 @@ function matchesList(filter, list) {
   return filter === "all" || list.includes(filter);
 }
 
+function getActivityFacets(activity) {
+  return {
+    audiences: inferAudiences(activity),
+    levels: inferLevels(activity),
+    formats: activity.group,
+    supports: inferSupports(activity)
+  };
+}
+
+function inferAudiences(activity) {
+  const audiences = new Set(["children"]);
+  const isShort = activity.duration === "short";
+  const isCalmOrTable = activity.context.some((context) => ["table", "calm", "transition"].includes(context));
+  const isPhysicalOutside = activity.context.includes("outside") || activity.category === "Physique";
+  const isComplex = activity.duration === "long" || activity.goals.some((goal) => ["executive", "spatial", "math"].includes(goal));
+
+  if (isShort && !isComplex && !isPhysicalOutside) audiences.add("early");
+  if (isComplex || activity.duration !== "short" || activity.goals.some((goal) => ["cooperation", "executive", "memory", "spatial", "math", "creativity"].includes(goal))) audiences.add("teens");
+  if (activity.goals.some((goal) => ["language", "memory", "attention", "executive", "cooperation", "spatial"].includes(goal))) audiences.add("adults");
+  if (isCalmOrTable && activity.goals.some((goal) => ["language", "memory", "attention", "spatial", "emotion", "cooperation"].includes(goal))) audiences.add("seniors");
+  if (activity.category === "Perception" || activity.category === "Littératie") {
+    audiences.add("early");
+    audiences.add("seniors");
+  }
+
+  return [...audiences];
+}
+
+function inferLevels(activity) {
+  if (activity.duration === "long" || activity.goals.includes("executive") || activity.category === "B-Line") {
+    return ["challenge"];
+  }
+  if (activity.duration === "short" && !activity.goals.includes("math") && !activity.goals.includes("spatial")) {
+    return ["easy"];
+  }
+  return ["medium"];
+}
+
+function inferSupports(activity) {
+  const text = `${activity.title} ${activity.category} ${activity.summary} ${activity.materials.join(" ")} ${activity.steps.join(" ")}`.toLowerCase();
+  const supports = new Set();
+
+  if (activity.category === "B-Line" || /b-line|ligne|ligné|grille|plateau/.test(text)) supports.add("lined");
+  if (activity.category === "Mouvement" || /mouvement|parcours|saute|marche|déplacement|avance|recule/.test(text)) supports.add("movement");
+  if (/dos à dos|décrit|décrire|reconstruire|modèle secret/.test(text)) supports.add("backToBack");
+  if (/écoute|copie|reproduit|reproduire|imite|imiter|chef|meneur/.test(text)) supports.add("listenCopy");
+  if (!supports.size || /sans plateau|six briques par participant|six briques par enfant|une brique/.test(text)) supports.add("free");
+
+  return [...supports];
+}
+
 function syncMatchCount() {
   matchCount.textContent = state.matches.length.toString();
 }
@@ -2291,7 +2417,7 @@ function renderActivity() {
     activityCategory.textContent = "Aucune correspondance";
     activityTitle.textContent = "Essaie d’élargir un filtre";
     activityTags.innerHTML = "";
-    activitySummary.textContent = "Aucune activité ne correspond exactement à cette combinaison. Garde une catégorie, puis relâche le contexte ou la durée.";
+    activitySummary.textContent = "Aucune activité ne correspond exactement à cette combinaison. Essaie un public plus large, un autre support ou une durée plus souple.";
     materialsList.innerHTML = "";
     stepsList.innerHTML = "";
     variationText.textContent = "";
@@ -2301,6 +2427,7 @@ function renderActivity() {
   }
 
   activityCard.style.setProperty("--accent", categoryColors[activity.category] || "var(--red)");
+  const facets = getActivityFacets(activity);
   activityCategory.textContent = activity.category;
   activityTitle.textContent = activity.title;
   activitySummary.textContent = activity.summary;
@@ -2309,9 +2436,12 @@ function renderActivity() {
   variationText.textContent = activity.variation;
   questionText.textContent = activity.question;
   activityTags.innerHTML = [
+    audienceLabel(facets.audiences),
+    levelLabel(facets.levels),
+    formatLabel(facets.formats),
+    supportLabel(facets.supports),
     durationLabel(activity.duration),
-    groupLabel(activity.group),
-    contextLabel(activity.context)
+    goalLabel(activity.goals)
   ].filter(Boolean).map((tag) => `<span>${tag}</span>`).join("");
 
   const isFavorite = state.favorites.some((item) => item.title === activity.title);
@@ -2344,29 +2474,40 @@ function durationLabel(duration) {
   return {
     short: "3 à 5 min",
     medium: "5 à 10 min",
-    long: "10 à 20 min"
+    long: "10 à 15 min"
   }[duration];
 }
 
-function groupLabel(groups) {
-  const labels = {
-    solo: "solo",
-    duo: "duo",
-    small: "petit groupe",
-    class: "grand groupe"
-  };
-  return groups.map((group) => labels[group]).join(" / ");
+function audienceLabel(audiences) {
+  return audiences.map((audience) => audienceLabels[audience]).join(" / ");
 }
 
-function contextLabel(contexts) {
+function levelLabel(levels) {
+  return levels.map((level) => levelLabels[level]).join(" / ");
+}
+
+function formatLabel(formats) {
+  return formats.map((format) => formatLabels[format]).join(" / ");
+}
+
+function supportLabel(supports) {
+  return supports.map((support) => supportLabels[support]).join(" / ");
+}
+
+function goalLabel(goals) {
   const labels = {
-    table: "à table",
-    floor: "au sol",
-    outside: "dehors",
-    transition: "transition",
-    calm: "retour au calme"
+    attention: "attention",
+    memory: "mémoire",
+    language: "langage",
+    math: "maths",
+    movement: "motricité",
+    cooperation: "coopération",
+    emotion: "émotions",
+    spatial: "repérage spatial",
+    executive: "fonctions exécutives",
+    creativity: "créativité"
   };
-  return contexts.map((context) => labels[context]).join(" / ");
+  return goals.map((goal) => labels[goal] || goal).join(" / ");
 }
 
 function randomIndex(items) {
