@@ -727,8 +727,22 @@ ol {
 
 .card-actions {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr) minmax(0, 1.2fr);
   gap: 12px;
+}
+
+.single-action {
+  grid-template-columns: 1fr;
+  margin-top: 16px;
+}
+
+.pdf-action {
+  border-color: rgba(17, 61, 150, 0.24);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.56;
 }
 
 .favorites-panel {

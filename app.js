@@ -1929,6 +1929,7 @@ const i18n = {
     question: "Question à poser",
     previous: "Précédente",
     anotherIdea: "Autre idée",
+    downloadPdf: "Télécharger la fiche PDF",
     favoritesTitle: "Favoris",
     favoritesText: "",
     activityFamily: "Famille d’activité",
@@ -2042,6 +2043,7 @@ const i18n = {
     question: "Question to ask",
     previous: "Previous",
     anotherIdea: "Another idea",
+    downloadPdf: "Download PDF sheet",
     favoritesTitle: "Favorites",
     favoritesText: "",
     activityFamily: "Activity family",
@@ -2155,6 +2157,7 @@ const i18n = {
     question: "提问",
     previous: "上一个",
     anotherIdea: "另一个想法",
+    downloadPdf: "下载 PDF 活动卡",
     favoritesTitle: "收藏",
     favoritesText: "",
     activityFamily: "活动类型",
@@ -2213,7 +2216,8 @@ const state = {
   favorites: [],
   lang: "fr",
   storyHistory: [],
-  activityHistory: []
+  activityHistory: [],
+  generatedActivity: null
 };
 
 const filtersForm = document.querySelector("#filters");
@@ -2228,6 +2232,7 @@ const stepsList = document.querySelector("#stepsList");
 const variationText = document.querySelector("#variationText");
 const questionText = document.querySelector("#questionText");
 const favoriteButton = document.querySelector("#favoriteButton");
+const downloadActivityPdfButton = document.querySelector("#downloadActivityPdfButton");
 const favoritesList = document.querySelector("#favoritesList");
 const languageSelect = document.querySelector("#languageSelect");
 const generatedActivityTitle = document.querySelector("#generatedActivityTitle");
@@ -2239,6 +2244,7 @@ const generatedSteps = document.querySelector("#generatedSteps");
 const generatedVariation = document.querySelector("#generatedVariation");
 const generatedQuestion = document.querySelector("#generatedQuestion");
 const generatedProposals = document.querySelector("#generatedProposals");
+const downloadGeneratedPdfButton = document.querySelector("#downloadGeneratedPdfButton");
 const storyTitle = document.querySelector("#storyTitle");
 const storyMeta = document.querySelector("#storyMeta");
 const storyRule = document.querySelector("#storyRule");
@@ -2318,6 +2324,15 @@ favoriteButton.addEventListener("click", () => {
     : [...state.favorites, activity];
   renderFavorites();
   renderActivity();
+});
+
+downloadActivityPdfButton.addEventListener("click", () => {
+  const activity = state.matches[state.currentIndex];
+  if (activity) openActivityPdfSheet(activity, activity.category);
+});
+
+downloadGeneratedPdfButton.addEventListener("click", () => {
+  if (state.generatedActivity) openActivityPdfSheet(state.generatedActivity, "Fiche d’activité");
 });
 
 function applyFilters() {
@@ -2423,6 +2438,7 @@ function renderActivity() {
     variationText.textContent = "";
     questionText.textContent = "";
     favoriteButton.textContent = "☆";
+    downloadActivityPdfButton.disabled = true;
     return;
   }
 
@@ -2446,6 +2462,7 @@ function renderActivity() {
 
   const isFavorite = state.favorites.some((item) => item.title === activity.title);
   favoriteButton.textContent = isFavorite ? "★" : "☆";
+  downloadActivityPdfButton.disabled = false;
 }
 
 function renderFavorites() {
@@ -2529,6 +2546,7 @@ function getFormValues(formId) {
 function renderGeneratedActivity() {
   const values = getFormValues("#generatorForm");
   const activity = createInfiniteActivity(values, state.lang);
+  state.generatedActivity = activity;
   const familyAccents = {
     free: "var(--red)",
     lined: "var(--blue)",
@@ -2545,6 +2563,343 @@ function renderGeneratedActivity() {
   generatedVariation.textContent = activity.variation;
   generatedQuestion.textContent = activity.question;
   generatedProposals.innerHTML = activity.proposals.map((item) => `<li>${item}</li>`).join("");
+}
+
+function openActivityPdfSheet(activity, categoryLabel) {
+  const printable = window.open("", "_blank");
+  if (!printable) {
+    alert("La fiche PDF n’a pas pu s’ouvrir. Autorise les fenêtres contextuelles, puis réessaie.");
+    return;
+  }
+
+  const logoUrl = new URL("assets/six-bricks-factory-logo.jpeg", window.location.href).href;
+  const accent = pdfAccentColor(categoryLabel);
+  const tags = activity.tags || buildActivityPdfTags(activity);
+  const proposals = activity.proposals || [];
+  const fileTitle = safeText(activity.title || "Fiche Six Bricks");
+
+  printable.document.write(`<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>${fileTitle} - Six Bricks Factory</title>
+    <style>
+      :root {
+        --red: #ef3e36;
+        --orange: #ff941f;
+        --yellow: #ffd84d;
+        --green: #42a84f;
+        --sky: #88d8f2;
+        --blue: #113d96;
+        --pink: #dc4c9a;
+        --ink: #10162f;
+        --muted: #4c5873;
+        --accent: ${accent};
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #eef8ff;
+        color: var(--ink);
+        font-family: "Arial Rounded MT Bold", "Trebuchet MS", Arial, sans-serif;
+      }
+
+      .sheet {
+        width: 194mm;
+        min-height: auto;
+        margin: 0 auto;
+        padding: 8mm;
+        background:
+          radial-gradient(circle at 8% 12%, rgba(255, 216, 77, 0.34), transparent 25%),
+          radial-gradient(circle at 92% 10%, rgba(136, 216, 242, 0.42), transparent 28%),
+          linear-gradient(135deg, #fffdf4 0%, #f3fbff 52%, #fff5fb 100%);
+      }
+
+      .rainbow {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        height: 6mm;
+        overflow: hidden;
+        border-radius: 999px;
+        margin-bottom: 5mm;
+      }
+
+      .rainbow span:nth-child(1) { background: var(--red); }
+      .rainbow span:nth-child(2) { background: var(--orange); }
+      .rainbow span:nth-child(3) { background: var(--yellow); }
+      .rainbow span:nth-child(4) { background: var(--green); }
+      .rainbow span:nth-child(5) { background: var(--sky); }
+      .rainbow span:nth-child(6) { background: var(--blue); }
+      .rainbow span:nth-child(7) { background: var(--pink); }
+
+      header {
+        display: grid;
+        grid-template-columns: 30mm 1fr;
+        gap: 6mm;
+        align-items: center;
+        padding: 5mm;
+        background: rgba(255, 255, 255, 0.96);
+        border: 1.1mm solid rgba(136, 216, 242, 0.75);
+        border-left: 3mm solid var(--accent);
+        border-radius: 8mm;
+      }
+
+      .logo {
+        width: 30mm;
+        height: 30mm;
+        object-fit: contain;
+        border-radius: 5mm;
+        background: #fff;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin: 0 0 2.5mm;
+        padding: 1.6mm 3.5mm;
+        color: #fff;
+        background: linear-gradient(90deg, var(--blue), var(--pink));
+        border-radius: 999px;
+        font-size: 7.4pt;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 23pt;
+        line-height: 1.04;
+        letter-spacing: 0;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.8mm;
+        margin: 3.5mm 0 0;
+      }
+
+      .tags span {
+        padding: 1.4mm 2.5mm;
+        border: 0.4mm solid #e4eaf5;
+        border-radius: 999px;
+        background: #fff;
+        color: var(--blue);
+        font-size: 7.1pt;
+        font-weight: 800;
+      }
+
+      .summary {
+        margin: 5mm 0;
+        padding: 4mm 5mm;
+        border-radius: 6mm;
+        border: 0.5mm solid rgba(136, 216, 242, 0.75);
+        background: rgba(255, 255, 255, 0.94);
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        font-size: 10.8pt;
+        line-height: 1.32;
+        font-weight: 700;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 0.88fr 1.12fr;
+        gap: 4mm;
+      }
+
+      .box {
+        padding: 4mm;
+        border-radius: 6mm;
+        border: 0.5mm solid #e4eaf5;
+        background: rgba(255, 255, 255, 0.96);
+        break-inside: avoid;
+      }
+
+      .box.materials { border-left: 2.2mm solid var(--green); }
+      .box.steps { border-left: 2.2mm solid var(--orange); }
+      .box.variation { border-left: 2.2mm solid var(--pink); }
+      .box.question { border-left: 2.2mm solid var(--blue); }
+      .box.proposals { border-left: 2.2mm solid var(--sky); }
+
+      h2 {
+        margin: 0 0 2mm;
+        color: var(--blue);
+        font-size: 12pt;
+      }
+
+      ul,
+      ol {
+        margin: 0;
+        padding-left: 5mm;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        font-size: 9.8pt;
+        line-height: 1.28;
+        font-weight: 700;
+      }
+
+      li + li {
+        margin-top: 1.5mm;
+      }
+
+      .tips {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4mm;
+        margin-top: 4mm;
+      }
+
+      .box p {
+        margin: 0;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        font-size: 9.8pt;
+        line-height: 1.3;
+        font-weight: 700;
+      }
+
+      footer {
+        margin-top: 4mm;
+        padding: 3mm 4mm;
+        border-radius: 5mm;
+        border: 0.4mm solid rgba(239, 62, 54, 0.28);
+        border-left: 2.2mm solid var(--red);
+        background: rgba(255, 255, 255, 0.94);
+        color: var(--muted);
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        font-size: 8.5pt;
+        line-height: 1.25;
+        font-weight: 700;
+      }
+
+      .print-help {
+        max-width: 210mm;
+        margin: 10px auto;
+        padding: 10px 14px;
+        color: var(--ink);
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      @page {
+        size: A4;
+        margin: 8mm;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .sheet {
+          margin: 0;
+          width: 100%;
+          min-height: 0;
+          padding: 0;
+          box-shadow: none;
+        }
+
+        .print-help {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <div class="rainbow" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <header>
+        <img class="logo" src="${logoUrl}" alt="Six Bricks Factory">
+        <div>
+          <p class="eyebrow">Fiche activité Six Bricks</p>
+          <h1>${safeText(activity.title)}</h1>
+          <div class="tags">${tags.map((tag) => `<span>${safeText(tag)}</span>`).join("")}</div>
+        </div>
+      </header>
+      <p class="summary">${safeText(activity.summary)}</p>
+      <section class="grid">
+        <article class="box materials">
+          <h2>Matériel</h2>
+          <ul>${toListItems(activity.materials)}</ul>
+        </article>
+        <article class="box steps">
+          <h2>Déroulé</h2>
+          <ol>${toListItems(activity.steps)}</ol>
+        </article>
+      </section>
+      <section class="tips">
+        <article class="box variation">
+          <h2>Variante</h2>
+          <p>${safeText(activity.variation)}</p>
+        </article>
+        <article class="box question">
+          <h2>Question à poser</h2>
+          <p>${safeText(activity.question)}</p>
+        </article>
+      </section>
+      ${proposals.length ? `
+      <section class="box proposals" style="margin-top: 4mm;">
+        <h2>Consignes orales prêtes à dire</h2>
+        <ul>${toListItems(proposals)}</ul>
+      </section>` : ""}
+      <footer>
+        Activité issue de l’appli Six Bricks Factory, développée par Chloé Schmidt-Dhonneur.
+      </footer>
+    </main>
+    <p class="print-help">Dans la fenêtre d’impression, choisis “Enregistrer au format PDF”.</p>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => window.print(), 350);
+      });
+    </script>
+  </body>
+</html>`);
+  printable.document.close();
+}
+
+function buildActivityPdfTags(activity) {
+  const facets = getActivityFacets(activity);
+  return [
+    activity.category,
+    audienceLabel(facets.audiences),
+    levelLabel(facets.levels),
+    formatLabel(facets.formats),
+    supportLabel(facets.supports),
+    durationLabel(activity.duration),
+    goalLabel(activity.goals)
+  ].filter(Boolean);
+}
+
+function pdfAccentColor(label) {
+  const palette = {
+    "Socio-émotionnel": "#dc4c9a",
+    Physique: "#ff941f",
+    "Groupes et jeux": "#42a84f",
+    Numératie: "#ffd84d",
+    Littératie: "#113d96",
+    Perception: "#88d8f2",
+    Mouvement: "#ef3e36",
+    "B-Line": "#113d96",
+    "Plateaux & feuilles": "#42a84f",
+    "Play Box & communauté": "#dc4c9a"
+  };
+  return palette[label] || "#ff941f";
+}
+
+function toListItems(items) {
+  return (items || []).map((item) => `<li>${safeText(item)}</li>`).join("");
+}
+
+function safeText(value) {
+  return String(value || "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 function renderStory() {

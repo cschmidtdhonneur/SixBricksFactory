@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Six Bricks Factory - App FR</title>
-    <link rel="stylesheet" href="style.css?v=9" />
+    <link rel="stylesheet" href="style.css?v=11" />
   </head>
   <body>
     <div class="color-strip" aria-hidden="true">
@@ -186,6 +186,7 @@
           <div class="card-actions">
             <button class="secondary-action" type="button" id="previousButton" data-i18n="previous">Précédente</button>
             <button class="primary-action" type="button" id="nextButton" data-i18n="anotherIdea">Autre idée</button>
+            <button class="secondary-action pdf-action" type="button" id="downloadActivityPdfButton" data-i18n="downloadPdf">Télécharger la fiche PDF</button>
           </div>
         </section>
 
@@ -252,6 +253,9 @@
             <div class="story-prompts">
               <h3 data-i18n="proposals">Propositions rapides</h3>
               <ul id="generatedProposals"></ul>
+            </div>
+            <div class="card-actions single-action">
+              <button class="secondary-action pdf-action" type="button" id="downloadGeneratedPdfButton" data-i18n="downloadPdf">Télécharger la fiche PDF</button>
             </div>
           </section>
         </section>
@@ -324,6 +328,6 @@
 
     </main>
 
-    <script src="app.js?v=9"></script>
+    <script src="app.js?v=11"></script>
   </body>
 </html>
