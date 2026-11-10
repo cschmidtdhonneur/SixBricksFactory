@@ -1654,16 +1654,16 @@ const activities = [
     question: "Comment la position change-t-elle le message ?"
   },
   {
-    title: "Derrière le dos",
+    title: "Dos à dos : décris et reconstruis",
     category: "Perception",
-    group: ["solo", "duo", "small"],
+    group: ["duo", "small"],
     context: ["table", "calm"],
     duration: "short",
     goals: ["memory", "spatial", "attention"],
     source: "Activités dos à dos",
     summary: "Un participant construit hors de vue, l’autre reproduit à partir d’une description orale.",
     materials: ["Deux jeux de six briques", "Un écran ou deux participants dos à dos"],
-    steps: ["Le premier construit une petite forme.", "Il décrit sans montrer.", "Le second reproduit.", "Les deux comparent et ajustent le vocabulaire."],
+    steps: ["Installe deux participants dos à dos, chacun avec six briques sur sa table. Ils ne doivent pas voir les briques du partenaire.", "Le premier pose à plat une brique rouge horizontalement devant lui, une jaune à droite de la rouge et une verte devant la rouge, sans les emboîter.", "Il décrit chaque placement : ‘Pose la rouge à plat, grand côté de gauche à droite. Pose la jaune à sa droite, dans le même sens. Pose la verte devant la rouge, plus loin de toi.’ Le partenaire peut demander une précision.", "Quand les trois briques sont placées, les partenaires regardent les deux modèles et comparent les positions. Ils échangent ensuite les rôles."],
     variation: "Interdiction de nommer les couleurs pendant la description.",
     question: "Quelle précision manquait pour réussir du premier coup ?"
   },
@@ -1822,6 +1822,59 @@ const activities = [
     question: "Qu’as-tu gardé et qu’as-tu transformé ?"
   }
 ];
+
+activities.push(
+  {
+    title: "Le relais des six briques", category: "Groupes et jeux", group: ["small", "class"], context: ["floor", "outside"], duration: "medium", goals: ["cooperation", "movement", "attention"],
+    summary: "En équipe, transporter les six briques une par une pour construire une tour à l’arrivée, puis revenir donner le relais.",
+    materials: ["Six briques par équipe", "Deux équipes de deux participants minimum, de même effectif pour une course", "Un repère de départ et un repère d’arrivée par équipe", "Un parcours dégagé de 3 à 5 mètres par équipe"],
+    steps: ["Prépare des couloirs parallèles, suffisamment espacés pour que les équipes ne se croisent pas. Pose les six briques de chaque équipe au départ, derrière son repère. Place les participants en file derrière les briques.", "Dis : ‘Au signal, le premier prend une seule brique, rejoint le repère d’arrivée et la pose à plat. Il revient les mains vides et dit à la personne suivante : À toi !’", "La personne suivante attend que son partenaire soit revenu derrière le départ avant de partir. Elle transporte une brique et l’emboîte sur celle déjà posée, dans le même sens, puis revient donner le relais.", "Continue jusqu’à ce que les six briques forment une tour à l’arrivée. Après son passage, chaque participant rejoint la fin de sa file ; certains peuvent donc passer plusieurs fois.", "Si une brique tombe, la personne qui la transporte s’arrête pour la ramasser. Si la tour se défait, le participant présent à l’arrivée la réassemble avant de revenir.", "L’équipe termine lorsque sa tour de six briques tient seule et que son dernier porteur est revenu au départ. Pour une course, gagne l’équipe qui remplit ces deux conditions en premier. On ne lance pas les briques et on ne dépasse pas dans son couloir."],
+    variation: "Plus facile : faire tout le relais en marchant, sur une distance de deux mètres. Plus difficile : montrer un ordre de six couleurs au départ ; chaque porteur doit choisir la prochaine couleur de la tour, de bas en haut. On peut aussi jouer sans classement : toutes les équipes cherchent à terminer correctement.",
+    question: "Comment votre équipe s’est-elle organisée pour attendre son tour et garder la construction stable ?"
+  },
+  {
+    title: "La tour au toucher", category: "Perception", group: ["solo", "duo", "small"], context: ["table", "calm"], duration: "short", goals: ["attention", "spatial", "movement"],
+    summary: "Construire une tour de six briques en utilisant le toucher plutôt que la vue.",
+    materials: ["Six briques par participant", "Une table dégagée", "Un bandeau facultatif"],
+    steps: ["Assieds les participants devant la table et pose leurs six briques à portée de main.", "Propose de fermer les yeux ou de porter un bandeau, seulement si la personne est à l’aise. Elle peut garder les yeux ouverts si elle le préfère.", "Dis : ‘Trouve une brique et pose-la à plat. Avec tes doigts, repère ses picots. Emboîte la deuxième exactement au-dessus, dans le même sens.’", "Le participant ajoute les quatre autres briques de la même façon, sans se déplacer. Au besoin, un partenaire guide uniquement par la voix.", "Quand les six briques sont assemblées, le participant ouvre les yeux et vérifie la tour. Arrête immédiatement si la personne est mal à l’aise."],
+    variation: "Plus facile : trois briques, yeux ouverts puis fermés. Plus difficile : six briques, sans aide verbale.", question: "Quels repères as-tu trouvés avec tes doigts ?"
+  },
+  {
+    title: "La tour à une main", category: "Physique", group: ["solo", "duo", "small", "class"], context: ["table"], duration: "short", goals: ["movement", "attention", "executive"],
+    summary: "Assembler six briques avec une seule main en recherchant la précision.",
+    materials: ["Six briques par participant", "Une table stable"],
+    steps: ["Pose les six briques séparées devant chaque participant, picots vers le haut.", "Dis : ‘Choisis une main pour construire. L’autre reste posée sur tes genoux, sans être attachée.’", "Le participant pose une brique à plat, puis emboîte les cinq autres dessus, dans le même sens. La table sert d’appui ; l’autre main ne tient pas la tour.", "La manche se termine lorsque la tour tient seule avec les six briques. Démonte-la, puis propose un essai avec l’autre main si c’est confortable."],
+    variation: "Plus facile : trois briques. Plus difficile : utiliser sa main la moins habituelle, sans imposer de vitesse.", question: "Comment as-tu stabilisé la tour avec une seule main ?"
+  },
+  {
+    title: "Au bord de la table", category: "Physique", group: ["solo", "duo", "small"], context: ["table"], duration: "medium", goals: ["spatial", "executive", "movement"],
+    summary: "Explorer le porte-à-faux : faire dépasser une construction du bord de la table sans la tenir.",
+    materials: ["Six briques par participant", "Une table stable, avec un bord accessible", "Un tapis au sol sous la construction"],
+    steps: ["Dégage le bord de la table et l’espace dessous. Personne ne place son visage sous la construction.", "Avec les six briques, emboîte trois étages de deux briques : à chaque étage, les deux briques sont côte à côte ; alterne leur orientation d’un étage à l’autre pour relier l’ensemble.", "Pose le bloc sur la table, puis fais-le glisser vers le bord jusqu’à ce qu’une petite partie dépasse.", "Dis : ‘Avance très doucement le bloc, puis retire tes mains pendant trois secondes. S’il tient, essaie de le faire dépasser un peu plus.’", "Après une chute ou trois essais, replace le bloc entièrement sur la table. Compare ce qui tient et ce qui bascule, sans chercher à le rattraper au vol."],
+    variation: "Plus facile : faire dépasser seulement le bout d’une brique. Plus difficile : modifier la position des briques du dessus pour garder davantage de poids du côté de la table, puis tester à nouveau.", question: "Où faut-il garder du poids pour éviter que la construction bascule ?"
+  },
+  {
+    title: "Le bloc compact chronométré", category: "Perception", group: ["solo", "duo", "small", "class"], context: ["table"], duration: "short", goals: ["spatial", "movement", "attention"],
+    summary: "Assembler rapidement un bloc de six briques en respectant un modèle précis. Avec des briques 2 × 4, ce bloc n’est pas un cube géométrique.",
+    materials: ["Six briques identiques 2 × 4 par participant", "Une table", "Un chronomètre"],
+    steps: ["Montre le modèle : trois étages, chacun constitué de deux briques côte à côte, formant un carré de 4 × 4 picots. Tourne l’orientation des briques de 90 degrés à chaque étage pour solidariser le bloc.", "Laisse chacun essayer sans chronomètre, puis sépare de nouveau les six briques.", "Dis : ‘Au signal, reconstruis ce bloc. Quand il tient en un seul morceau, pose tes mains sur la table.’ Lance le chronomètre au signal et relève le temps de chaque participant.", "Vérifie les trois étages et les emboîtements. Propose un second essai pour comparer son propre temps, sans imposer de classement."],
+    variation: "Plus facile : garder le modèle devant soi. Plus difficile : observer le modèle dix secondes, puis le cacher avant de commencer.", question: "Quel ordre d’assemblage t’a permis d’être précis et rapide ?"
+  },
+  {
+    title: "Cinq lancers, puis un geste", category: "Physique", group: ["solo", "small", "class"], context: ["floor", "outside"], duration: "medium", goals: ["movement", "attention", "memory"],
+    summary: "Lancer et rattraper une brique, puis intercaler une action pendant qu’elle est en l’air.",
+    materials: ["Une brique par participant", "Un espace dégagé permettant d’écarter les bras sans toucher un voisin"],
+    steps: ["Chaque participant reste sur place, à distance des autres. Dis : ‘Lance doucement la brique devant toi, pas plus haut que tes yeux, puis rattrape-la à deux mains.’", "Chacun effectue cinq essais. Si la brique tombe, on la ramasse avant le lancer suivant ; on ne lance jamais vers quelqu’un.", "Propose ensuite cinq essais en ajoutant un seul geste : ‘Lance, tape une fois dans tes mains pendant que la brique est en l’air, puis rattrape.’", "Si ce geste est réussi et confortable, propose cinq essais avec deux frappes dans les mains. Sinon, conserve une frappe ou reviens au lancer simple.", "L’activité s’arrête après les séries choisies. Chacun compte ses réussites sans les comparer à celles des autres."],
+    variation: "Plus facile : transférer la brique d’une main à l’autre sans la lancer. Plus difficile : remplacer la frappe par toucher ses épaules, puis rattraper ; tester une seule nouvelle action à la fois.", question: "À quel moment dois-tu commencer le geste pour avoir le temps de rattraper ?"
+  },
+  {
+    title: "Marteau, ciseaux, papier : les rencontres", category: "Groupes et jeux", group: ["small", "class"], context: ["floor", "outside"], duration: "medium", goals: ["cooperation", "movement", "attention", "memory"],
+    summary: "Rencontrer plusieurs partenaires et déplacer la brique du haut vers le bas de sa tour après chaque victoire.",
+    materials: ["Six briques par participant, emboîtées en tour", "Un espace dégagé", "Un repère commun montrant l’ordre de départ des six couleurs"],
+    steps: ["Tous assemblent leur tour dans le même ordre de couleurs, puis repèrent la couleur placée tout en haut. Chacun garde sa tour dans une main.", "Montre les trois gestes avec l’autre main : poing fermé pour marteau, deux doigts pour ciseaux, main ouverte pour papier. Explique : ‘Le marteau bat les ciseaux, les ciseaux coupent le papier, le papier enveloppe le marteau.’", "Chacun rejoint un partenaire en marchant. Les deux disent ensemble ‘Marteau, ciseaux, papier !’ et montrent leur geste au même instant. En cas d’égalité, ils rejouent.", "Le vainqueur détache uniquement la brique du haut de sa tour et l’emboîte tout en bas, sans changer l’ordre des cinq autres. L’autre participant garde sa tour intacte.", "Les deux cherchent un nouveau partenaire. Après six victoires, la tour retrouve son ordre de départ : le participant le signale à la personne qui anime.", "Arrête le jeu après cinq minutes, même si personne n’a encore terminé le cycle. Les gestes restent sans contact et les déplacements se font en marchant."],
+    variation: "Plus facile : jouer en duo avec trois briques. Pour une version géante, convenir de trois postures du corps, sans contact ; poser les tours sur un emplacement identifié avant chaque duel et les reprendre après.", question: "Comment as-tu vérifié que tu déplaçais toujours la bonne brique ?"
+  }
+);
 
 const categoryColors = {
   "Socio-émotionnel": "var(--pink)",
