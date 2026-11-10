@@ -3660,6 +3660,7 @@ function pick(items) {
   return items[Math.floor(Math.random() * items.length)];
 }
 
+document.getElementById("activityTotal").textContent = activities.length.toString();
 translateStaticUi();
 renderGeneratedActivity();
 renderStory();
